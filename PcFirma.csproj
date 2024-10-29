@@ -116,6 +116,7 @@
     <Compile Include="CustomersList.Designer.cs">
       <DependentUpon>CustomersList.cs</DependentUpon>
     </Compile>
+    <Compile Include="DataClass.cs" />
     <Compile Include="EmbloyeesList.cs">
       <SubType>Form</SubType>
     </Compile>

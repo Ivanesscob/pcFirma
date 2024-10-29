@@ -77,8 +77,8 @@ namespace PcFirma
 
         private void EmbloyeesList_Activated(object sender, EventArgs e)
         {
-            string connectionString = @"Data Source=31.128.43.172;Initial Catalog=pcFirma;User ID=sa;Password=WeNeedABetterPassword!!!1;";
-            connection = new SqlConnection(connectionString);
+            DataClass s = new DataClass();
+            connection = new SqlConnection(s.ConnectionStrings);
             connection.Open();
             _userSet = new DataSet();
             if (connection.State == System.Data.ConnectionState.Open)

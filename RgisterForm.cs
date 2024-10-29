@@ -110,8 +110,7 @@ namespace PcFirma
             DateTime sixteenYearsAgo = DateTime.Now.AddYears(-14);
             if (String.IsNullOrEmpty(LoginText.Text) || String.IsNullOrEmpty(PasswordText.Text) ||
                 String.IsNullOrEmpty(PhoneText.Text) || String.IsNullOrEmpty(EmailText.Text) ||
-                String.IsNullOrEmpty(NameText.Text) || String.IsNullOrEmpty(LastNameText.Text) ||
-                String.IsNullOrEmpty(PatrText.Text))
+                String.IsNullOrEmpty(NameText.Text) || String.IsNullOrEmpty(LastNameText.Text))
             {
                 StatusPol.Text = "Fill all fields";
                 StatusPol.Visible = true;

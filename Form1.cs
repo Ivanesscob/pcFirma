@@ -22,9 +22,8 @@ namespace PcFirma
             InitializeComponent();
             pswdTextBox.PasswordChar = '*';
 
-            string connectionString = @"Data Source=31.128.43.172;Initial Catalog=pcFirma;User ID=sa;Password=WeNeedABetterPassword!!!1;";
-;
-            SqlConnection connection = new SqlConnection(connectionString);
+            DataClass s = new DataClass();
+            SqlConnection connection = new SqlConnection(s.ConnectionStrings);
             connection.Open();
             _userSet = new DataSet();
             if (connection.State == System.Data.ConnectionState.Open)
