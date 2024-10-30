@@ -30,8 +30,8 @@ namespace PcFirma
             InitializeComponent();
             _userSet = dataset;
             _adapter = adapter;
-            itemId = id;
             this.connection = connection;
+            itemId = id;
             addButton.Text = itemId != -1 ? "Edit" : "Add";
             PasswordText.PasswordChar = '*';
             label1.Text = "Add Employees";

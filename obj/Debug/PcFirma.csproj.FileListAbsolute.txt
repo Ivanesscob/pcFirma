@@ -100,3 +100,5 @@ C:\Users\ivane\PcFirma\pcFirma\obj\Debug\PcFirma.csproj.CoreCompileInputs.cache
 C:\Users\ivane\PcFirma\pcFirma\obj\Debug\PcFirma.csproj.Up2Date
 C:\Users\ivane\PcFirma\pcFirma\obj\Debug\PcFirma.exe
 C:\Users\ivane\PcFirma\pcFirma\obj\Debug\PcFirma.pdb
+C:\Users\ivane\PcFirma\pcFirma\obj\Debug\PcFirma.addEditProduct.resources
+C:\Users\ivane\PcFirma\pcFirma\obj\Debug\PcFirma.addCountryCategoryCountry.resources

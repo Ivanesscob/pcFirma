@@ -32,7 +32,14 @@ namespace PcFirma
 
         private void OrdersButton_Click(object sender, EventArgs e)
         {
+            OrdersList l = new OrdersList();
+            l.ShowDialog();
+        }
 
+        private void ProductsButton_Click(object sender, EventArgs e)
+        {
+            ProductsList productsList = new ProductsList();
+            productsList.ShowDialog();
         }
     }
 }

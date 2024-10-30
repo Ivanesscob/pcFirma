@@ -98,6 +98,12 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="addCountryCategoryCountry.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="addCountryCategoryCountry.Designer.cs">
+      <DependentUpon>addCountryCategoryCountry.cs</DependentUpon>
+    </Compile>
     <Compile Include="addEditDelete.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -109,6 +115,12 @@
     </Compile>
     <Compile Include="addEditDeleteEmpl.Designer.cs">
       <DependentUpon>addEditDeleteEmpl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="addEditProduct.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="addEditProduct.Designer.cs">
+      <DependentUpon>addEditProduct.cs</DependentUpon>
     </Compile>
     <Compile Include="CustomersList.cs">
       <SubType>Form</SubType>
@@ -155,11 +167,17 @@
     <Compile Include="RgisterForm.Designer.cs">
       <DependentUpon>RgisterForm.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="addCountryCategoryCountry.resx">
+      <DependentUpon>addCountryCategoryCountry.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="addEditDelete.resx">
       <DependentUpon>addEditDelete.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="addEditDeleteEmpl.resx">
       <DependentUpon>addEditDeleteEmpl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="addEditProduct.resx">
+      <DependentUpon>addEditProduct.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="CustomersList.resx">
       <DependentUpon>CustomersList.cs</DependentUpon>
