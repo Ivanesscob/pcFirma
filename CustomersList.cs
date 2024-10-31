@@ -95,7 +95,7 @@ namespace PcFirma
         private void CustomersList_Activated(object sender, EventArgs e)
         {
             DataClass s = new DataClass();
-            connection = new SqlConnection(s.ConnectionStrings);
+            connection = new SqlConnection(s.ConnectionString());
             connection.Open();
             _userSet = new DataSet();
             if (connection.State == System.Data.ConnectionState.Open)

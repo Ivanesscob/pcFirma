@@ -102,3 +102,5 @@ C:\Users\ivane\PcFirma\pcFirma\obj\Debug\PcFirma.exe
 C:\Users\ivane\PcFirma\pcFirma\obj\Debug\PcFirma.pdb
 C:\Users\ivane\PcFirma\pcFirma\obj\Debug\PcFirma.addEditProduct.resources
 C:\Users\ivane\PcFirma\pcFirma\obj\Debug\PcFirma.addCountryCategoryCountry.resources
+C:\Users\ivane\codeProjects\c#\PcFirma\PcFirma\obj\Debug\PcFirma.addCountryCategoryCountry.resources
+C:\Users\ivane\codeProjects\c#\PcFirma\PcFirma\obj\Debug\PcFirma.addEditProduct.resources

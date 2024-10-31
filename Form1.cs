@@ -23,7 +23,7 @@ namespace PcFirma
             pswdTextBox.PasswordChar = '*';
 
             DataClass s = new DataClass();
-            SqlConnection connection = new SqlConnection(s.ConnectionStrings);
+            SqlConnection connection = new SqlConnection(s.ConnectionString());
             connection.Open();
             _userSet = new DataSet();
             if (connection.State == System.Data.ConnectionState.Open)

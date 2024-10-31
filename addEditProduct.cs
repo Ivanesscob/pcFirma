@@ -25,6 +25,9 @@ namespace PcFirma
         private DataSet _userSetForDic;
         private SqlDataAdapter _adapterForDic;
 
+        private DataSet _userSetForDicBr;
+        private SqlDataAdapter _adapterForDicBr;
+
         string selectCategories;
         public addEditProduct()
         {
@@ -69,6 +72,8 @@ namespace PcFirma
             groupBox6.Visible = true;
             addButton.Visible = false;
             baclButton.Visible = false;
+            groupBox7.Visible = false;
+            groupBox6.Visible = true;
         }
 
         private void nextButton_Click(object sender, EventArgs e)
@@ -83,16 +88,81 @@ namespace PcFirma
                 groupBox6.Visible = false;
                 addButton.Visible = true;
                 baclButton.Visible = true;
+                groupBox7.Visible = true;
             }
             
         }
 
         private void addButton_Click(object sender, EventArgs e)
         {
+            if (String.IsNullOrEmpty(ComboBoxBrand.Text) || String.IsNullOrEmpty(ComboBoxCategory.Text) || String.IsNullOrEmpty(ComboBoxCountry.Text)||
+                String.IsNullOrEmpty(NameText.Text) || String.IsNullOrEmpty(ModelText.Text) || String.IsNullOrEmpty(PriceText.Text)||
+                String.IsNullOrEmpty(StockText.Text))
+            {
+                StatusPol.Visible = true;
+                StatusPol.Text = "Fill all fields";
+                return;
+                
+            }
+            Connection("SELECT * FROM Models;");
+            bool moznoName = false;
+            bool moznoModel = false;
+            foreach (DataRow row1 in _userSet.Tables[0].Rows)
+            {
+                if (row1["Models"].ToString() == ModelText.Text)
+                {
+                    moznoModel = true;
+                }
+            }
+            Connection("SELECT * FROM Products;");
+            foreach (DataRow row1 in _userSet.Tables[0].Rows)
+            {
+                if (row1["ProductName"].ToString() == NameText.Text)
+                {
+                    moznoName = true;
+                }
+            }
+            if (moznoModel)
+            {
+                StatusPol.Visible = true;
+                StatusPol.Text = "This model already exists";
+            }
+            else if (moznoName)
+            {
+                StatusPol.Visible = true;
+                StatusPol.Text = "This product name already exists";
+            }
+            else
+            {
+                Connection("SELECT * FROM Models;");
+                DataRow newRow = _userSet.Tables[0].NewRow();
+                newRow["Models"] = ModelText.Text;
+                newRow["BrandID"] = ComboBoxBrand.SelectedIndex + 1;
+                newRow["CountryID"] = ComboBoxCountry.SelectedIndex + 1;
+                newRow["CategoryID"] = ComboBoxCategory.SelectedIndex + 1;
+                _userSet.Tables[0].Rows.Add(newRow);
+                SaveData();
+                Connection("SELECT * FROM Models;");
+                string a = ((int)_userSet.Tables[0].Rows[_userSet.Tables[0].Rows.Count - 1]["Id"]).ToString();
+                Connection("SELECT * FROM Products;");
 
+                DataRow newRow1 = _userSet.Tables[0].NewRow();
+                newRow1["ProductName"] = NameText.Text;
+                newRow1["ModelID"] = a;
+                newRow1["Price"] = PriceText.Text;
+                newRow1["Stock"] = StockText.Text;
+                _userSet.Tables[0].Rows.Add(newRow1);
+                SaveData();
+                MessageBox.Show("You have successfully add");
+                Close();
+            }
         }
 
-        
+        private void SaveData()
+        {
+            SqlCommandBuilder sqlCommandBuilder = new SqlCommandBuilder(_adapter);
+            _adapter.Update(_userSet);
+        }
 
         private void AddBrand_Click(object sender, EventArgs e)
         {
@@ -118,7 +188,7 @@ namespace PcFirma
         private void Connection(string selectQuery)
         {
             DataClass s = new DataClass();
-            connection = new SqlConnection(s.ConnectionStrings);
+            connection = new SqlConnection(s.ConnectionString());
             connection.Open();
             _userSet = new DataSet();
             if (connection.State == System.Data.ConnectionState.Open)
@@ -131,15 +201,19 @@ namespace PcFirma
 
         private void ComboBoxCountry_SelectedIndexChanged(object sender, EventArgs e)
         {
-            int a = ComboBoxCountry.SelectedIndex;
-            _userSetForDic = new DataSet();
-            selectCategories = "SELECT Brand.Id, Brand.Brand, Brand.CountryID FROM Brand WHERE Brand.CountryID = " + a.ToString()+";";
-            _adapterForDic = new SqlDataAdapter(selectCategories, connection);
-            _adapterForDic.Fill(_userSetForDic);
+            brands.Clear();
+            ComboBoxBrand.Text = null;
+            DataClass s = new DataClass();
+            int a = ComboBoxCountry.SelectedIndex+1;
+            _userSetForDicBr = new DataSet();
+            connection = new SqlConnection(s.ConnectionString());
+            string selectCategoriesBr = "SELECT Brand.Id, Brand.Brand, Brand.CountryID FROM Brand WHERE Brand.CountryID = " + a.ToString()+";";
+            _adapterForDicBr = new SqlDataAdapter(selectCategoriesBr, connection);
+            _adapterForDicBr.Fill(_userSetForDicBr);
 
-            foreach (DataRow categoryRow in _userSetForDic.Tables[0].Rows)
+            foreach (DataRow categoryRow in _userSetForDicBr.Tables[0].Rows)
             {
-                countries.Add(categoryRow["Brand"].ToString(),
+                brands.Add(categoryRow["Brand"].ToString(),
                     Convert.ToInt32(categoryRow["Id"]));
             }
             ComboBoxBrand.DataSource = brands.Keys.ToList();

@@ -9,6 +9,9 @@ namespace PcFirma
 {
     internal class DataClass
     {
-        public string ConnectionStrings = @"Data Source=31.128.43.172;Initial Catalog=pcFirma;User ID=ivanessco;Password=Ibedug47!;";
+        private string ConnectionStrings = @"Data Source=31.128.43.172;Initial Catalog=pcFirma;User ID=ivanessco;Password=Ibedug47!;";
+        
+        public string ConnectionString() { return ConnectionStrings; }
     }
+
 }
