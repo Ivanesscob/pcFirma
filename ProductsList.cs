@@ -103,5 +103,23 @@ namespace PcFirma
             SqlCommandBuilder sqlCommandBuilder = new SqlCommandBuilder(_adapter);
             _adapter.Update(_userSet);
         }
+
+        private void CountryButton_Click(object sender, EventArgs e)
+        {
+            viewBCC viewBCC = new viewBCC(0);
+            viewBCC.Show();
+        }
+
+        private void CategoryButton_Click(object sender, EventArgs e)
+        {
+            viewBCC viewBCC = new viewBCC(2);
+            viewBCC.Show();
+        }
+
+        private void BrandsButton_Click(object sender, EventArgs e)
+        {
+            viewBCC viewBCC = new viewBCC(1);
+            viewBCC.Show();
+        }
     }
 }

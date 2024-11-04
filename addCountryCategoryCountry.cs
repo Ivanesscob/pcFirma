@@ -55,7 +55,7 @@ namespace PcFirma
                             Convert.ToInt32(categoryRow["Id"]));
                     }
                     comboBox1.DataSource = categories.Keys.ToList();
-
+                    
 
                     break ;
                 case 2:

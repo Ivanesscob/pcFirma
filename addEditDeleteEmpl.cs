@@ -35,20 +35,7 @@ namespace PcFirma
             addButton.Text = itemId != -1 ? "Edit" : "Add";
             PasswordText.PasswordChar = '*';
             label1.Text = "Add Employees";
-            if (itemId != -1)
-            {
-                label1.Text = "Edit Employees";
-                var row = _userSet.Tables[0].Rows[itemId];
-                LoginText.Text = row["Login"].ToString();
-                PasswordText.Text = row["Password"].ToString();
-                EmailText.Text = row["Email"].ToString();
-                PhoneText.Text = row["Phone"].ToString();
-                NameText.Text = row["FirstName"].ToString();
-                LastNameText.Text = row["LastName"].ToString() ;
-                PatrText.Text = row["Patronymic"].ToString();
-                BirthDayPicker.Text = row["BirthDay"].ToString();
-                
-            }
+            
 
             _userSetForDic = new DataSet();
             string selectCategories = "SELECT * FROM JobTitles";
@@ -61,6 +48,21 @@ namespace PcFirma
                     Convert.ToInt32(categoryRow["JobTitleID"]));
             }
             comboBox1.DataSource = categories.Keys.ToList();
+
+            if (itemId != -1)
+            {
+                label1.Text = "Edit Employees";
+                var row = _userSet.Tables[0].Rows[itemId];
+                LoginText.Text = row["Login"].ToString();
+                PasswordText.Text = row["Password"].ToString();
+                EmailText.Text = row["Email"].ToString();
+                PhoneText.Text = row["Phone"].ToString();
+                NameText.Text = row["FirstName"].ToString();
+                LastNameText.Text = row["LastName"].ToString();
+                PatrText.Text = row["Patronymic"].ToString();
+                BirthDayPicker.Text = row["BirthDay"].ToString();
+                comboBox1.SelectedIndex =int.Parse( row["JobTitleID"].ToString()) -1 ;
+            }
         }
 
         private void addButton_Click(object sender, EventArgs e)

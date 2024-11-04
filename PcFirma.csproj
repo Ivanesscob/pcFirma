@@ -167,6 +167,12 @@
     <Compile Include="RgisterForm.Designer.cs">
       <DependentUpon>RgisterForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="viewBCC.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="viewBCC.Designer.cs">
+      <DependentUpon>viewBCC.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="addCountryCategoryCountry.resx">
       <DependentUpon>addCountryCategoryCountry.cs</DependentUpon>
     </EmbeddedResource>
@@ -208,6 +214,9 @@
     </Compile>
     <EmbeddedResource Include="RgisterForm.resx">
       <DependentUpon>RgisterForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="viewBCC.resx">
+      <DependentUpon>viewBCC.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">

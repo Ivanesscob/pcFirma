@@ -59,6 +59,32 @@ namespace PcFirma
                     Convert.ToInt32(categoryRow["CategoryID"]));
             }
             ComboBoxCategory.DataSource = categories.Keys.ToList();
+
+            if (id != -1) {
+                Connection("SELECT * FROM Models");
+                var row = _userSet.Tables[0].Rows[id];
+                ComboBoxCategory.SelectedIndex = int.Parse(row["CategoryID"].ToString()) - 1;
+                ComboBoxCountry.SelectedIndex = int.Parse(row["CountryID"].ToString()) - 1;
+
+                ComboBoxCountry_SelectedIndexChanged(null, null);
+
+                
+                int brandId = int.Parse(row["BrandID"].ToString());
+                var brandKey = brands.FirstOrDefault(x => x.Value == brandId).Key;
+                if (brandKey != null)
+                {
+                    ComboBoxBrand.SelectedItem = brandKey;
+                }
+                string a = row["Id"].ToString();
+               ModelText.Text = row["Models"].ToString();
+                MessageBox.Show(a);
+               Connection("SELECT * FROM Products WHERE ModelID = " + a+";");
+               row = _userSet.Tables[0].Rows[0];
+                NameText.Text = row["ProductName"].ToString();
+                StockText.Text = row["Stock"].ToString();
+                PriceText.Text = row["Price"].ToString();
+            }
+
         }
         
 
@@ -95,6 +121,8 @@ namespace PcFirma
 
         private void addButton_Click(object sender, EventArgs e)
         {
+            
+
             if (String.IsNullOrEmpty(ComboBoxBrand.Text) || String.IsNullOrEmpty(ComboBoxCategory.Text) || String.IsNullOrEmpty(ComboBoxCountry.Text)||
                 String.IsNullOrEmpty(NameText.Text) || String.IsNullOrEmpty(ModelText.Text) || String.IsNullOrEmpty(PriceText.Text)||
                 String.IsNullOrEmpty(StockText.Text))
@@ -201,6 +229,7 @@ namespace PcFirma
 
         private void ComboBoxCountry_SelectedIndexChanged(object sender, EventArgs e)
         {
+            
             brands.Clear();
             ComboBoxBrand.Text = null;
             DataClass s = new DataClass();
