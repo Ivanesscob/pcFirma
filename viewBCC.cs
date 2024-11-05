@@ -81,12 +81,38 @@ namespace PcFirma
 
         private void changeButton_Click(object sender, EventArgs e)
         {
+            var selectedRowIndex = -1;
+            if (data.SelectedRows.Count > 0 && data.SelectedRows[0].Index < data.Rows.Count - 1)
+            {
+                selectedRowIndex = data.SelectedRows[0].Index;
+            }
+            else
+            {
+                MessageBox.Show("We didn't select an edit line!");
+                return;
+            }
+            if (bbc == 0)
+            {
+                addCountryCategoryCountry editAddPage = new addCountryCategoryCountry(0, selectedRowIndex, _userSet, _adapter, connection);
+                editAddPage.Show();
+            }
+            else if (bbc == 1)
+            {
+                addCountryCategoryCountry editAddPage = new addCountryCategoryCountry(1, selectedRowIndex, _userSet, _adapter, connection);
+                editAddPage.Show();
 
+            }
+            else
+            {
+                addCountryCategoryCountry editAddPage = new addCountryCategoryCountry(2, selectedRowIndex, _userSet, _adapter, connection);
+                editAddPage.Show();
+            }
+            
         }
 
         private void addButton_Click(object sender, EventArgs e)
         {
-            addCountryCategoryCountry a = new addCountryCategoryCountry(bbc, _userSet, _adapter, connection);
+            addCountryCategoryCountry a = new addCountryCategoryCountry(bbc, -1,_userSet, _adapter, connection);
             a.ShowDialog();
         }
 

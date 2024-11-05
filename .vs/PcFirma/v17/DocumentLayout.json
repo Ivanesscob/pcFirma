@@ -1,121 +1,125 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\ivane\\PcFirma\\pcFirma\\",
+  "WorkspaceRootPath": "C:\\Users\\ivane\\codeProjects\\c#\\PcFirma\\pcFirma\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{C1DA80C5-5F35-4DE0-9A0D-4DBC720DACD7}|PcFirma.csproj|c:\\users\\ivane\\pcfirma\\pcfirma\\addeditproduct.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{C1DA80C5-5F35-4DE0-9A0D-4DBC720DACD7}|PcFirma.csproj|solutionrelative:addeditproduct.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{C1DA80C5-5F35-4DE0-9A0D-4DBC720DACD7}|PcFirma.csproj|C:\\Users\\ivane\\PcFirma\\pcFirma\\addeditproduct.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{C1DA80C5-5F35-4DE0-9A0D-4DBC720DACD7}|PcFirma.csproj|solutionrelative:addeditproduct.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{C1DA80C5-5F35-4DE0-9A0D-4DBC720DACD7}|PcFirma.csproj|C:\\Users\\ivane\\PcFirma\\pcFirma\\productslist.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{C1DA80C5-5F35-4DE0-9A0D-4DBC720DACD7}|PcFirma.csproj|solutionrelative:productslist.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{C1DA80C5-5F35-4DE0-9A0D-4DBC720DACD7}|PcFirma.csproj|C:\\Users\\ivane\\PcFirma\\pcFirma\\productslist.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{C1DA80C5-5F35-4DE0-9A0D-4DBC720DACD7}|PcFirma.csproj|solutionrelative:productslist.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{C1DA80C5-5F35-4DE0-9A0D-4DBC720DACD7}|PcFirma.csproj|C:\\Users\\ivane\\PcFirma\\pcFirma\\addEditDeleteEmpl.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{C1DA80C5-5F35-4DE0-9A0D-4DBC720DACD7}|PcFirma.csproj|solutionrelative:addEditDeleteEmpl.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{C1DA80C5-5F35-4DE0-9A0D-4DBC720DACD7}|PcFirma.csproj|C:\\Users\\ivane\\PcFirma\\pcFirma\\addeditdeleteempl.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{C1DA80C5-5F35-4DE0-9A0D-4DBC720DACD7}|PcFirma.csproj|solutionrelative:addeditdeleteempl.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{C1DA80C5-5F35-4DE0-9A0D-4DBC720DACD7}|PcFirma.csproj|C:\\Users\\ivane\\PcFirma\\pcFirma\\addcountrycategorycountry.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{C1DA80C5-5F35-4DE0-9A0D-4DBC720DACD7}|PcFirma.csproj|solutionrelative:addcountrycategorycountry.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{C1DA80C5-5F35-4DE0-9A0D-4DBC720DACD7}|PcFirma.csproj|C:\\Users\\ivane\\PcFirma\\pcFirma\\mainmenu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{C1DA80C5-5F35-4DE0-9A0D-4DBC720DACD7}|PcFirma.csproj|solutionrelative:mainmenu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{C1DA80C5-5F35-4DE0-9A0D-4DBC720DACD7}|PcFirma.csproj|C:\\Users\\ivane\\PcFirma\\pcFirma\\embloyeeslist.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{C1DA80C5-5F35-4DE0-9A0D-4DBC720DACD7}|PcFirma.csproj|solutionrelative:embloyeeslist.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{C1DA80C5-5F35-4DE0-9A0D-4DBC720DACD7}|PcFirma.csproj|C:\\Users\\ivane\\PcFirma\\pcFirma\\addcountrycategorycountry.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{C1DA80C5-5F35-4DE0-9A0D-4DBC720DACD7}|PcFirma.csproj|C:\\Users\\ivane\\codeProjects\\c#\\PcFirma\\pcFirma\\addcountrycategorycountry.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{C1DA80C5-5F35-4DE0-9A0D-4DBC720DACD7}|PcFirma.csproj|solutionrelative:addcountrycategorycountry.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{C1DA80C5-5F35-4DE0-9A0D-4DBC720DACD7}|PcFirma.csproj|C:\\Users\\ivane\\PcFirma\\pcFirma\\addeditdelete.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{C1DA80C5-5F35-4DE0-9A0D-4DBC720DACD7}|PcFirma.csproj|solutionrelative:addeditdelete.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{C1DA80C5-5F35-4DE0-9A0D-4DBC720DACD7}|PcFirma.csproj|C:\\Users\\ivane\\codeProjects\\c#\\PcFirma\\pcFirma\\addcountrycategorycountry.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{C1DA80C5-5F35-4DE0-9A0D-4DBC720DACD7}|PcFirma.csproj|solutionrelative:addcountrycategorycountry.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{C1DA80C5-5F35-4DE0-9A0D-4DBC720DACD7}|PcFirma.csproj|C:\\Users\\ivane\\PcFirma\\pcFirma\\viewbcc.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{C1DA80C5-5F35-4DE0-9A0D-4DBC720DACD7}|PcFirma.csproj|solutionrelative:viewbcc.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{C1DA80C5-5F35-4DE0-9A0D-4DBC720DACD7}|PcFirma.csproj|C:\\Users\\ivane\\PcFirma\\pcFirma\\rgisterform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{C1DA80C5-5F35-4DE0-9A0D-4DBC720DACD7}|PcFirma.csproj|solutionrelative:rgisterform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{C1DA80C5-5F35-4DE0-9A0D-4DBC720DACD7}|PcFirma.csproj|C:\\Users\\ivane\\PcFirma\\pcFirma\\viewbcc.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{C1DA80C5-5F35-4DE0-9A0D-4DBC720DACD7}|PcFirma.csproj|C:\\Users\\ivane\\codeProjects\\c#\\PcFirma\\pcFirma\\viewbcc.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{C1DA80C5-5F35-4DE0-9A0D-4DBC720DACD7}|PcFirma.csproj|solutionrelative:viewbcc.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{C1DA80C5-5F35-4DE0-9A0D-4DBC720DACD7}|PcFirma.csproj|C:\\Users\\ivane\\PcFirma\\pcFirma\\orderslist.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{C1DA80C5-5F35-4DE0-9A0D-4DBC720DACD7}|PcFirma.csproj|solutionrelative:orderslist.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{C1DA80C5-5F35-4DE0-9A0D-4DBC720DACD7}|PcFirma.csproj|c:\\users\\ivane\\codeprojects\\c#\\pcfirma\\pcfirma\\addeditproduct.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C1DA80C5-5F35-4DE0-9A0D-4DBC720DACD7}|PcFirma.csproj|solutionrelative:addeditproduct.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{C1DA80C5-5F35-4DE0-9A0D-4DBC720DACD7}|PcFirma.csproj|C:\\Users\\ivane\\PcFirma\\pcFirma\\productslist.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{C1DA80C5-5F35-4DE0-9A0D-4DBC720DACD7}|PcFirma.csproj|solutionrelative:productslist.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{C1DA80C5-5F35-4DE0-9A0D-4DBC720DACD7}|PcFirma.csproj|C:\\Users\\ivane\\codeProjects\\c#\\PcFirma\\pcFirma\\addeditproduct.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{C1DA80C5-5F35-4DE0-9A0D-4DBC720DACD7}|PcFirma.csproj|solutionrelative:addeditproduct.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{C1DA80C5-5F35-4DE0-9A0D-4DBC720DACD7}|PcFirma.csproj|C:\\Users\\ivane\\PcFirma\\pcFirma\\app.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
-      "RelativeMoniker": "D:0:0:{C1DA80C5-5F35-4DE0-9A0D-4DBC720DACD7}|PcFirma.csproj|solutionrelative:app.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
+      "AbsoluteMoniker": "D:0:0:{C1DA80C5-5F35-4DE0-9A0D-4DBC720DACD7}|PcFirma.csproj|c:\\users\\ivane\\codeprojects\\c#\\pcfirma\\pcfirma\\addcountrycategorycountry.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C1DA80C5-5F35-4DE0-9A0D-4DBC720DACD7}|PcFirma.csproj|solutionrelative:addcountrycategorycountry.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{C1DA80C5-5F35-4DE0-9A0D-4DBC720DACD7}|PcFirma.csproj|C:\\Users\\ivane\\PcFirma\\pcFirma\\mainmenu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{C1DA80C5-5F35-4DE0-9A0D-4DBC720DACD7}|PcFirma.csproj|solutionrelative:mainmenu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{C1DA80C5-5F35-4DE0-9A0D-4DBC720DACD7}|PcFirma.csproj|C:\\Users\\ivane\\codeProjects\\c#\\PcFirma\\pcFirma\\viewbcc.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{C1DA80C5-5F35-4DE0-9A0D-4DBC720DACD7}|PcFirma.csproj|solutionrelative:viewbcc.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{C1DA80C5-5F35-4DE0-9A0D-4DBC720DACD7}|PcFirma.csproj|C:\\Users\\ivane\\PcFirma\\pcFirma\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{C1DA80C5-5F35-4DE0-9A0D-4DBC720DACD7}|PcFirma.csproj|solutionrelative:form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{C1DA80C5-5F35-4DE0-9A0D-4DBC720DACD7}|PcFirma.csproj|C:\\Users\\ivane\\codeProjects\\c#\\PcFirma\\pcFirma\\productslist.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C1DA80C5-5F35-4DE0-9A0D-4DBC720DACD7}|PcFirma.csproj|solutionrelative:productslist.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{C1DA80C5-5F35-4DE0-9A0D-4DBC720DACD7}|PcFirma.csproj|C:\\Users\\ivane\\PcFirma\\pcFirma\\customerslist.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{C1DA80C5-5F35-4DE0-9A0D-4DBC720DACD7}|PcFirma.csproj|solutionrelative:customerslist.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{C1DA80C5-5F35-4DE0-9A0D-4DBC720DACD7}|PcFirma.csproj|C:\\Users\\ivane\\codeProjects\\c#\\PcFirma\\pcFirma\\productslist.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{C1DA80C5-5F35-4DE0-9A0D-4DBC720DACD7}|PcFirma.csproj|solutionrelative:productslist.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{C1DA80C5-5F35-4DE0-9A0D-4DBC720DACD7}|PcFirma.csproj|C:\\Users\\ivane\\PcFirma\\pcFirma\\EmbloyeesList.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{C1DA80C5-5F35-4DE0-9A0D-4DBC720DACD7}|PcFirma.csproj|solutionrelative:EmbloyeesList.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{C1DA80C5-5F35-4DE0-9A0D-4DBC720DACD7}|PcFirma.csproj|C:\\Users\\ivane\\codeProjects\\c#\\PcFirma\\pcFirma\\addeditdeleteempl.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{C1DA80C5-5F35-4DE0-9A0D-4DBC720DACD7}|PcFirma.csproj|solutionrelative:addeditdeleteempl.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{C1DA80C5-5F35-4DE0-9A0D-4DBC720DACD7}|PcFirma.csproj|C:\\Users\\ivane\\PcFirma\\pcFirma\\dataclass.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{C1DA80C5-5F35-4DE0-9A0D-4DBC720DACD7}|PcFirma.csproj|solutionrelative:dataclass.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{C1DA80C5-5F35-4DE0-9A0D-4DBC720DACD7}|PcFirma.csproj|C:\\Users\\ivane\\PcFirma\\pcFirma\\CustomersList.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{C1DA80C5-5F35-4DE0-9A0D-4DBC720DACD7}|PcFirma.csproj|solutionrelative:CustomersList.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{C1DA80C5-5F35-4DE0-9A0D-4DBC720DACD7}|PcFirma.csproj|C:\\Users\\ivane\\PcFirma\\pcFirma\\addEditDelete.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{C1DA80C5-5F35-4DE0-9A0D-4DBC720DACD7}|PcFirma.csproj|C:\\Users\\ivane\\codeProjects\\c#\\PcFirma\\pcFirma\\addEditDelete.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{C1DA80C5-5F35-4DE0-9A0D-4DBC720DACD7}|PcFirma.csproj|solutionrelative:addEditDelete.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{C1DA80C5-5F35-4DE0-9A0D-4DBC720DACD7}|PcFirma.csproj|C:\\Users\\ivane\\PcFirma\\pcFirma\\orderslist.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{C1DA80C5-5F35-4DE0-9A0D-4DBC720DACD7}|PcFirma.csproj|C:\\Users\\ivane\\codeProjects\\c#\\PcFirma\\pcFirma\\addeditdelete.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{C1DA80C5-5F35-4DE0-9A0D-4DBC720DACD7}|PcFirma.csproj|solutionrelative:addeditdelete.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C1DA80C5-5F35-4DE0-9A0D-4DBC720DACD7}|PcFirma.csproj|C:\\Users\\ivane\\codeProjects\\c#\\PcFirma\\pcFirma\\addEditDeleteEmpl.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C1DA80C5-5F35-4DE0-9A0D-4DBC720DACD7}|PcFirma.csproj|solutionrelative:addEditDeleteEmpl.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C1DA80C5-5F35-4DE0-9A0D-4DBC720DACD7}|PcFirma.csproj|C:\\Users\\ivane\\codeProjects\\c#\\PcFirma\\pcFirma\\mainmenu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C1DA80C5-5F35-4DE0-9A0D-4DBC720DACD7}|PcFirma.csproj|solutionrelative:mainmenu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C1DA80C5-5F35-4DE0-9A0D-4DBC720DACD7}|PcFirma.csproj|C:\\Users\\ivane\\codeProjects\\c#\\PcFirma\\pcFirma\\embloyeeslist.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{C1DA80C5-5F35-4DE0-9A0D-4DBC720DACD7}|PcFirma.csproj|solutionrelative:embloyeeslist.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C1DA80C5-5F35-4DE0-9A0D-4DBC720DACD7}|PcFirma.csproj|C:\\Users\\ivane\\codeProjects\\c#\\PcFirma\\pcFirma\\rgisterform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{C1DA80C5-5F35-4DE0-9A0D-4DBC720DACD7}|PcFirma.csproj|solutionrelative:rgisterform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C1DA80C5-5F35-4DE0-9A0D-4DBC720DACD7}|PcFirma.csproj|C:\\Users\\ivane\\codeProjects\\c#\\PcFirma\\pcFirma\\orderslist.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{C1DA80C5-5F35-4DE0-9A0D-4DBC720DACD7}|PcFirma.csproj|solutionrelative:orderslist.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C1DA80C5-5F35-4DE0-9A0D-4DBC720DACD7}|PcFirma.csproj|C:\\Users\\ivane\\codeProjects\\c#\\PcFirma\\pcFirma\\productslist.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C1DA80C5-5F35-4DE0-9A0D-4DBC720DACD7}|PcFirma.csproj|solutionrelative:productslist.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C1DA80C5-5F35-4DE0-9A0D-4DBC720DACD7}|PcFirma.csproj|C:\\Users\\ivane\\codeProjects\\c#\\PcFirma\\pcFirma\\app.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
+      "RelativeMoniker": "D:0:0:{C1DA80C5-5F35-4DE0-9A0D-4DBC720DACD7}|PcFirma.csproj|solutionrelative:app.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C1DA80C5-5F35-4DE0-9A0D-4DBC720DACD7}|PcFirma.csproj|C:\\Users\\ivane\\codeProjects\\c#\\PcFirma\\pcFirma\\mainmenu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{C1DA80C5-5F35-4DE0-9A0D-4DBC720DACD7}|PcFirma.csproj|solutionrelative:mainmenu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C1DA80C5-5F35-4DE0-9A0D-4DBC720DACD7}|PcFirma.csproj|C:\\Users\\ivane\\codeProjects\\c#\\PcFirma\\pcFirma\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{C1DA80C5-5F35-4DE0-9A0D-4DBC720DACD7}|PcFirma.csproj|solutionrelative:form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C1DA80C5-5F35-4DE0-9A0D-4DBC720DACD7}|PcFirma.csproj|C:\\Users\\ivane\\codeProjects\\c#\\PcFirma\\pcFirma\\customerslist.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{C1DA80C5-5F35-4DE0-9A0D-4DBC720DACD7}|PcFirma.csproj|solutionrelative:customerslist.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C1DA80C5-5F35-4DE0-9A0D-4DBC720DACD7}|PcFirma.csproj|C:\\Users\\ivane\\codeProjects\\c#\\PcFirma\\pcFirma\\EmbloyeesList.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C1DA80C5-5F35-4DE0-9A0D-4DBC720DACD7}|PcFirma.csproj|solutionrelative:EmbloyeesList.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C1DA80C5-5F35-4DE0-9A0D-4DBC720DACD7}|PcFirma.csproj|C:\\Users\\ivane\\codeProjects\\c#\\PcFirma\\pcFirma\\dataclass.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C1DA80C5-5F35-4DE0-9A0D-4DBC720DACD7}|PcFirma.csproj|solutionrelative:dataclass.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C1DA80C5-5F35-4DE0-9A0D-4DBC720DACD7}|PcFirma.csproj|C:\\Users\\ivane\\codeProjects\\c#\\PcFirma\\pcFirma\\CustomersList.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C1DA80C5-5F35-4DE0-9A0D-4DBC720DACD7}|PcFirma.csproj|solutionrelative:CustomersList.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C1DA80C5-5F35-4DE0-9A0D-4DBC720DACD7}|PcFirma.csproj|C:\\Users\\ivane\\codeProjects\\c#\\PcFirma\\pcFirma\\orderslist.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{C1DA80C5-5F35-4DE0-9A0D-4DBC720DACD7}|PcFirma.csproj|solutionrelative:orderslist.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{C1DA80C5-5F35-4DE0-9A0D-4DBC720DACD7}|PcFirma.csproj|C:\\Users\\ivane\\PcFirma\\pcFirma\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{C1DA80C5-5F35-4DE0-9A0D-4DBC720DACD7}|PcFirma.csproj|C:\\Users\\ivane\\codeProjects\\c#\\PcFirma\\pcFirma\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{C1DA80C5-5F35-4DE0-9A0D-4DBC720DACD7}|PcFirma.csproj|solutionrelative:form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{C1DA80C5-5F35-4DE0-9A0D-4DBC720DACD7}|PcFirma.csproj|C:\\Users\\ivane\\PcFirma\\pcFirma\\mainmenu.resx||{FF4D6ACA-9352-4A5F-821E-F4D6EBDCAB11}",
+      "AbsoluteMoniker": "D:0:0:{C1DA80C5-5F35-4DE0-9A0D-4DBC720DACD7}|PcFirma.csproj|C:\\Users\\ivane\\codeProjects\\c#\\PcFirma\\pcFirma\\mainmenu.resx||{FF4D6ACA-9352-4A5F-821E-F4D6EBDCAB11}",
       "RelativeMoniker": "D:0:0:{C1DA80C5-5F35-4DE0-9A0D-4DBC720DACD7}|PcFirma.csproj|solutionrelative:mainmenu.resx||{FF4D6ACA-9352-4A5F-821E-F4D6EBDCAB11}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{C1DA80C5-5F35-4DE0-9A0D-4DBC720DACD7}|PcFirma.csproj|C:\\Users\\ivane\\PcFirma\\pcFirma\\MainMenu.Designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{C1DA80C5-5F35-4DE0-9A0D-4DBC720DACD7}|PcFirma.csproj|C:\\Users\\ivane\\codeProjects\\c#\\PcFirma\\pcFirma\\MainMenu.Designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{C1DA80C5-5F35-4DE0-9A0D-4DBC720DACD7}|PcFirma.csproj|solutionrelative:MainMenu.Designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{C1DA80C5-5F35-4DE0-9A0D-4DBC720DACD7}|PcFirma.csproj|C:\\Users\\ivane\\PcFirma\\pcFirma\\RgisterForm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{C1DA80C5-5F35-4DE0-9A0D-4DBC720DACD7}|PcFirma.csproj|C:\\Users\\ivane\\codeProjects\\c#\\PcFirma\\pcFirma\\RgisterForm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{C1DA80C5-5F35-4DE0-9A0D-4DBC720DACD7}|PcFirma.csproj|solutionrelative:RgisterForm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
@@ -126,30 +130,30 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 4,
+          "SelectedChildIndex": 9,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 23,
+              "DocumentIndex": 10,
               "Title": "addEditDelete.cs",
-              "DocumentMoniker": "C:\\Users\\ivane\\PcFirma\\pcFirma\\addEditDelete.cs",
+              "DocumentMoniker": "C:\\Users\\ivane\\codeProjects\\c#\\PcFirma\\pcFirma\\addEditDelete.cs",
               "RelativeDocumentMoniker": "addEditDelete.cs",
-              "ToolTip": "C:\\Users\\ivane\\PcFirma\\pcFirma\\addEditDelete.cs",
+              "ToolTip": "C:\\Users\\ivane\\codeProjects\\c#\\PcFirma\\pcFirma\\addEditDelete.cs",
               "RelativeToolTip": "addEditDelete.cs",
-              "ViewState": "AQIAAF8AAAAAAAAAAAAgwF4AAAAgAAAA",
+              "ViewState": "AQIAAFMAAAAAAAAAAAAgwGQAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-10-23T21:09:42.578Z",
-              "IsPinned": true
+              "IsPinned": true,
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 12,
               "Title": "addEditDeleteEmpl.cs",
-              "DocumentMoniker": "C:\\Users\\ivane\\PcFirma\\pcFirma\\addEditDeleteEmpl.cs",
+              "DocumentMoniker": "C:\\Users\\ivane\\codeProjects\\c#\\PcFirma\\pcFirma\\addEditDeleteEmpl.cs",
               "RelativeDocumentMoniker": "addEditDeleteEmpl.cs",
-              "ToolTip": "C:\\Users\\ivane\\PcFirma\\pcFirma\\addEditDeleteEmpl.cs",
+              "ToolTip": "C:\\Users\\ivane\\codeProjects\\c#\\PcFirma\\pcFirma\\addEditDeleteEmpl.cs",
               "RelativeToolTip": "addEditDeleteEmpl.cs",
-              "ViewState": "AgIAAFEAAAAAAAAAAAAgwG0AAAAyAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-10-25T18:38:48.2Z",
               "IsPinned": true,
@@ -160,65 +164,75 @@
               "Name": "ST:0:0:{e5c86464-96be-4d7c-9a8b-abcb3bbf5f92}"
             },
             {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{cce594b6-0c39-4442-ba28-10c64ac7e89f}"
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "addCountryCategoryCountry.Designer.cs",
+              "DocumentMoniker": "C:\\Users\\ivane\\codeProjects\\c#\\PcFirma\\PcFirma\\addCountryCategoryCountry.Designer.cs",
+              "RelativeDocumentMoniker": "addCountryCategoryCountry.Designer.cs",
+              "ToolTip": "C:\\Users\\ivane\\codeProjects\\c#\\PcFirma\\PcFirma\\addCountryCategoryCountry.Designer.cs",
+              "RelativeToolTip": "addCountryCategoryCountry.Designer.cs",
+              "ViewState": "AQIAAGsAAAAAAAAAAAAswIEAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-05T23:05:55.043Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 3,
               "Title": "addEditProduct.cs",
-              "DocumentMoniker": "C:\\Users\\ivane\\PcFirma\\pcFirma\\addEditProduct.cs",
+              "DocumentMoniker": "C:\\Users\\ivane\\codeProjects\\c#\\PcFirma\\pcFirma\\addEditProduct.cs",
               "RelativeDocumentMoniker": "addEditProduct.cs",
-              "ToolTip": "C:\\Users\\ivane\\PcFirma\\pcFirma\\addEditProduct.cs",
+              "ToolTip": "C:\\Users\\ivane\\codeProjects\\c#\\PcFirma\\pcFirma\\addEditProduct.cs",
               "RelativeToolTip": "addEditProduct.cs",
-              "ViewState": "AgIAAOgAAAAAAAAAAAAwwP0AAAANAAAAAAAAAA==",
+              "ViewState": "AQIAADQAAAAAAAAAAAAAwEMAAAA2AAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-10-30T17:59:22.015Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
+              "DocumentIndex": 2,
               "Title": "viewBCC.cs",
-              "DocumentMoniker": "C:\\Users\\ivane\\PcFirma\\pcFirma\\viewBCC.cs",
+              "DocumentMoniker": "C:\\Users\\ivane\\codeProjects\\c#\\PcFirma\\pcFirma\\viewBCC.cs",
               "RelativeDocumentMoniker": "viewBCC.cs",
-              "ToolTip": "C:\\Users\\ivane\\PcFirma\\pcFirma\\viewBCC.cs",
+              "ToolTip": "C:\\Users\\ivane\\codeProjects\\c#\\PcFirma\\pcFirma\\viewBCC.cs",
               "RelativeToolTip": "viewBCC.cs",
-              "ViewState": "AQIAAEYAAAAAAAAAAAAAAFUAAAAAAAAA",
+              "ViewState": "AQIAAFcAAAAAAAAAAAAowHIAAABPAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-02T16:33:37.651Z"
+              "WhenOpened": "2024-11-02T16:33:37.651Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 6,
               "Title": "viewBCC.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]",
-              "DocumentMoniker": "C:\\Users\\ivane\\PcFirma\\pcFirma\\viewBCC.cs",
+              "DocumentMoniker": "C:\\Users\\ivane\\codeProjects\\c#\\PcFirma\\pcFirma\\viewBCC.cs",
               "RelativeDocumentMoniker": "viewBCC.cs",
-              "ToolTip": "C:\\Users\\ivane\\codeProjects\\c#\\PcFirma\\PcFirma\\viewBCC.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]",
-              "RelativeToolTip": "..\\..\\codeProjects\\c#\\PcFirma\\PcFirma\\viewBCC.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]",
+              "ToolTip": "C:\\Users\\ivane\\codeProjects\\c#\\PcFirma\\pcFirma\\viewBCC.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]",
+              "RelativeToolTip": "viewBCC.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-02T16:32:16.699Z"
+              "WhenOpened": "2024-11-02T16:32:16.699Z",
+              "EditorCaption": " [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 15,
+              "DocumentIndex": 17,
               "Title": "ProductsList.Designer.cs",
-              "DocumentMoniker": "C:\\Users\\ivane\\PcFirma\\pcFirma\\ProductsList.Designer.cs",
+              "DocumentMoniker": "C:\\Users\\ivane\\codeProjects\\c#\\PcFirma\\pcFirma\\ProductsList.Designer.cs",
               "RelativeDocumentMoniker": "ProductsList.Designer.cs",
-              "ToolTip": "C:\\Users\\ivane\\PcFirma\\pcFirma\\ProductsList.Designer.cs",
+              "ToolTip": "C:\\Users\\ivane\\codeProjects\\c#\\PcFirma\\pcFirma\\ProductsList.Designer.cs",
               "RelativeToolTip": "ProductsList.Designer.cs",
-              "ViewState": "AgIAAGcAAAAAAAAAAAAQwHwAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-11-02T16:24:32.135Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 16,
+              "DocumentIndex": 18,
               "Title": "App.config",
-              "DocumentMoniker": "C:\\Users\\ivane\\PcFirma\\pcFirma\\App.config",
+              "DocumentMoniker": "C:\\Users\\ivane\\codeProjects\\c#\\PcFirma\\pcFirma\\App.config",
               "RelativeDocumentMoniker": "App.config",
-              "ToolTip": "C:\\Users\\ivane\\PcFirma\\pcFirma\\App.config",
+              "ToolTip": "C:\\Users\\ivane\\codeProjects\\c#\\PcFirma\\pcFirma\\App.config",
               "RelativeToolTip": "App.config",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000601|",
@@ -226,34 +240,36 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 0,
               "Title": "addCountryCategoryCountry.cs",
-              "DocumentMoniker": "C:\\Users\\ivane\\PcFirma\\pcFirma\\addCountryCategoryCountry.cs",
+              "DocumentMoniker": "C:\\Users\\ivane\\codeProjects\\c#\\PcFirma\\pcFirma\\addCountryCategoryCountry.cs",
               "RelativeDocumentMoniker": "addCountryCategoryCountry.cs",
-              "ToolTip": "C:\\Users\\ivane\\PcFirma\\pcFirma\\addCountryCategoryCountry.cs",
+              "ToolTip": "C:\\Users\\ivane\\codeProjects\\c#\\PcFirma\\pcFirma\\addCountryCategoryCountry.cs",
               "RelativeToolTip": "addCountryCategoryCountry.cs",
-              "ViewState": "AQIAABwAAAAAAAAAAAAzwDkAAAAUAAAA",
+              "ViewState": "AQIAAGcAAAAAAAAAAAArwHkAAAAVAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-30T18:18:07.584Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "addCountryCategoryCountry.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]",
-              "DocumentMoniker": "C:\\Users\\ivane\\PcFirma\\pcFirma\\addCountryCategoryCountry.cs",
-              "RelativeDocumentMoniker": "addCountryCategoryCountry.cs",
-              "ToolTip": "C:\\Users\\ivane\\codeProjects\\c#\\PcFirma\\PcFirma\\addCountryCategoryCountry.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]",
-              "RelativeToolTip": "..\\..\\codeProjects\\c#\\PcFirma\\PcFirma\\addCountryCategoryCountry.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-30T18:10:57.49Z"
+              "WhenOpened": "2024-10-30T18:18:07.584Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
+              "Title": "addCountryCategoryCountry.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]",
+              "DocumentMoniker": "C:\\Users\\ivane\\codeProjects\\c#\\PcFirma\\pcFirma\\addCountryCategoryCountry.cs",
+              "RelativeDocumentMoniker": "addCountryCategoryCountry.cs",
+              "ToolTip": "C:\\Users\\ivane\\codeProjects\\c#\\PcFirma\\pcFirma\\addCountryCategoryCountry.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]",
+              "RelativeToolTip": "addCountryCategoryCountry.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-30T18:10:57.49Z",
+              "EditorCaption": " [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
               "Title": "addEditProduct.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]",
-              "DocumentMoniker": "C:\\Users\\ivane\\PcFirma\\pcFirma\\addEditProduct.cs",
+              "DocumentMoniker": "C:\\Users\\ivane\\codeProjects\\c#\\PcFirma\\pcFirma\\addEditProduct.cs",
               "RelativeDocumentMoniker": "addEditProduct.cs",
-              "ToolTip": "C:\\Users\\ivane\\PcFirma\\pcFirma\\addEditProduct.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]",
+              "ToolTip": "C:\\Users\\ivane\\codeProjects\\c#\\PcFirma\\pcFirma\\addEditProduct.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]",
               "RelativeToolTip": "addEditProduct.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-10-30T15:44:31.202Z",
@@ -261,11 +277,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 13,
               "Title": "MainMenu.cs",
-              "DocumentMoniker": "C:\\Users\\ivane\\PcFirma\\pcFirma\\MainMenu.cs",
+              "DocumentMoniker": "C:\\Users\\ivane\\codeProjects\\c#\\PcFirma\\pcFirma\\MainMenu.cs",
               "RelativeDocumentMoniker": "MainMenu.cs",
-              "ToolTip": "C:\\Users\\ivane\\PcFirma\\pcFirma\\MainMenu.cs",
+              "ToolTip": "C:\\Users\\ivane\\codeProjects\\c#\\PcFirma\\pcFirma\\MainMenu.cs",
               "RelativeToolTip": "MainMenu.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAABUAAAAJAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -273,11 +289,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 24,
+              "DocumentIndex": 25,
               "Title": "OrdersList.cs",
-              "DocumentMoniker": "C:\\Users\\ivane\\PcFirma\\pcFirma\\OrdersList.cs",
+              "DocumentMoniker": "C:\\Users\\ivane\\codeProjects\\c#\\PcFirma\\pcFirma\\OrdersList.cs",
               "RelativeDocumentMoniker": "OrdersList.cs",
-              "ToolTip": "C:\\Users\\ivane\\PcFirma\\pcFirma\\OrdersList.cs",
+              "ToolTip": "C:\\Users\\ivane\\codeProjects\\c#\\PcFirma\\pcFirma\\OrdersList.cs",
               "RelativeToolTip": "OrdersList.cs",
               "ViewState": "AQIAAEAAAAAAAAAAAAAkwE0AAAAJAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -285,35 +301,35 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 14,
+              "DocumentIndex": 16,
               "Title": "OrdersList.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]",
-              "DocumentMoniker": "C:\\Users\\ivane\\PcFirma\\pcFirma\\OrdersList.cs",
+              "DocumentMoniker": "C:\\Users\\ivane\\codeProjects\\c#\\PcFirma\\pcFirma\\OrdersList.cs",
               "RelativeDocumentMoniker": "OrdersList.cs",
               "ToolTip": "C:\\Users\\ivane\\codeProjects\\c#\\PcFirma\\PcFirma\\OrdersList.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]",
-              "RelativeToolTip": "..\\..\\codeProjects\\c#\\PcFirma\\PcFirma\\OrdersList.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]",
+              "RelativeToolTip": "OrdersList.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-10-30T13:39:03.801Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 7,
               "Title": "ProductsList.cs",
-              "DocumentMoniker": "C:\\Users\\ivane\\PcFirma\\pcFirma\\ProductsList.cs",
+              "DocumentMoniker": "C:\\Users\\ivane\\codeProjects\\c#\\PcFirma\\pcFirma\\ProductsList.cs",
               "RelativeDocumentMoniker": "ProductsList.cs",
-              "ToolTip": "C:\\Users\\ivane\\PcFirma\\pcFirma\\ProductsList.cs",
+              "ToolTip": "C:\\Users\\ivane\\codeProjects\\c#\\PcFirma\\pcFirma\\ProductsList.cs",
               "RelativeToolTip": "ProductsList.cs",
-              "ViewState": "AgIAABgAAAAAAAAAAAAmwC8AAAAlAAAAAAAAAA==",
+              "ViewState": "AQIAADsAAAAAAAAAAAAcwFYAAAAfAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-10-30T13:38:36.405Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 8,
               "Title": "ProductsList.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]",
-              "DocumentMoniker": "C:\\Users\\ivane\\PcFirma\\pcFirma\\ProductsList.cs",
+              "DocumentMoniker": "C:\\Users\\ivane\\codeProjects\\c#\\PcFirma\\pcFirma\\ProductsList.cs",
               "RelativeDocumentMoniker": "ProductsList.cs",
-              "ToolTip": "C:\\Users\\ivane\\PcFirma\\pcFirma\\ProductsList.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]",
+              "ToolTip": "C:\\Users\\ivane\\codeProjects\\c#\\PcFirma\\pcFirma\\ProductsList.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]",
               "RelativeToolTip": "ProductsList.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-10-30T13:37:57.305Z",
@@ -321,22 +337,22 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 17,
+              "DocumentIndex": 19,
               "Title": "MainMenu.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]",
-              "DocumentMoniker": "C:\\Users\\ivane\\PcFirma\\pcFirma\\MainMenu.cs",
+              "DocumentMoniker": "C:\\Users\\ivane\\codeProjects\\c#\\PcFirma\\pcFirma\\MainMenu.cs",
               "RelativeDocumentMoniker": "MainMenu.cs",
               "ToolTip": "C:\\Users\\ivane\\codeProjects\\c#\\PcFirma\\PcFirma\\MainMenu.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]",
-              "RelativeToolTip": "..\\..\\codeProjects\\c#\\PcFirma\\PcFirma\\MainMenu.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]",
+              "RelativeToolTip": "MainMenu.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-10-22T14:28:00.225Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 21,
+              "DocumentIndex": 23,
               "Title": "DataClass.cs",
-              "DocumentMoniker": "C:\\Users\\ivane\\PcFirma\\pcFirma\\DataClass.cs",
+              "DocumentMoniker": "C:\\Users\\ivane\\codeProjects\\c#\\PcFirma\\pcFirma\\DataClass.cs",
               "RelativeDocumentMoniker": "DataClass.cs",
-              "ToolTip": "C:\\Users\\ivane\\PcFirma\\pcFirma\\DataClass.cs",
+              "ToolTip": "C:\\Users\\ivane\\codeProjects\\c#\\PcFirma\\pcFirma\\DataClass.cs",
               "RelativeToolTip": "DataClass.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAA0AAABGAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -344,11 +360,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 25,
+              "DocumentIndex": 26,
               "Title": "Form1.cs",
-              "DocumentMoniker": "C:\\Users\\ivane\\PcFirma\\pcFirma\\Form1.cs",
+              "DocumentMoniker": "C:\\Users\\ivane\\codeProjects\\c#\\PcFirma\\pcFirma\\Form1.cs",
               "RelativeDocumentMoniker": "Form1.cs",
-              "ToolTip": "C:\\Users\\ivane\\PcFirma\\pcFirma\\Form1.cs",
+              "ToolTip": "C:\\Users\\ivane\\codeProjects\\c#\\PcFirma\\pcFirma\\Form1.cs",
               "RelativeToolTip": "Form1.cs",
               "ViewState": "AQIAAAMAAAAAAAAAAAAAABkAAABPAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -356,11 +372,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 27,
+              "DocumentIndex": 28,
               "Title": "MainMenu.Designer.cs",
-              "DocumentMoniker": "C:\\Users\\ivane\\PcFirma\\pcFirma\\MainMenu.Designer.cs",
+              "DocumentMoniker": "C:\\Users\\ivane\\codeProjects\\c#\\PcFirma\\pcFirma\\MainMenu.Designer.cs",
               "RelativeDocumentMoniker": "MainMenu.Designer.cs",
-              "ToolTip": "C:\\Users\\ivane\\PcFirma\\pcFirma\\MainMenu.Designer.cs",
+              "ToolTip": "C:\\Users\\ivane\\codeProjects\\c#\\PcFirma\\pcFirma\\MainMenu.Designer.cs",
               "RelativeToolTip": "MainMenu.Designer.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -368,11 +384,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 20,
+              "DocumentIndex": 22,
               "Title": "EmbloyeesList.cs",
-              "DocumentMoniker": "C:\\Users\\ivane\\PcFirma\\pcFirma\\EmbloyeesList.cs",
+              "DocumentMoniker": "C:\\Users\\ivane\\codeProjects\\c#\\PcFirma\\pcFirma\\EmbloyeesList.cs",
               "RelativeDocumentMoniker": "EmbloyeesList.cs",
-              "ToolTip": "C:\\Users\\ivane\\PcFirma\\pcFirma\\EmbloyeesList.cs",
+              "ToolTip": "C:\\Users\\ivane\\codeProjects\\c#\\PcFirma\\pcFirma\\EmbloyeesList.cs",
               "RelativeToolTip": "EmbloyeesList.cs",
               "ViewState": "AQIAAD0AAAAAAAAAAAAkwFAAAAA/AAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -380,11 +396,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 22,
+              "DocumentIndex": 24,
               "Title": "CustomersList.cs",
-              "DocumentMoniker": "C:\\Users\\ivane\\PcFirma\\pcFirma\\CustomersList.cs",
+              "DocumentMoniker": "C:\\Users\\ivane\\codeProjects\\c#\\PcFirma\\pcFirma\\CustomersList.cs",
               "RelativeDocumentMoniker": "CustomersList.cs",
-              "ToolTip": "C:\\Users\\ivane\\PcFirma\\pcFirma\\CustomersList.cs",
+              "ToolTip": "C:\\Users\\ivane\\codeProjects\\c#\\PcFirma\\pcFirma\\CustomersList.cs",
               "RelativeToolTip": "CustomersList.cs",
               "ViewState": "AQIAADEAAAAAAAAAAAAkwGEAAAA/AAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -392,11 +408,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 28,
+              "DocumentIndex": 29,
               "Title": "RgisterForm.cs",
-              "DocumentMoniker": "C:\\Users\\ivane\\PcFirma\\pcFirma\\RgisterForm.cs",
+              "DocumentMoniker": "C:\\Users\\ivane\\codeProjects\\c#\\PcFirma\\pcFirma\\RgisterForm.cs",
               "RelativeDocumentMoniker": "RgisterForm.cs",
-              "ToolTip": "C:\\Users\\ivane\\PcFirma\\pcFirma\\RgisterForm.cs",
+              "ToolTip": "C:\\Users\\ivane\\codeProjects\\c#\\PcFirma\\pcFirma\\RgisterForm.cs",
               "RelativeToolTip": "RgisterForm.cs",
               "ViewState": "AQIAAAYAAAAAAAAAAAAAABIAAAAlAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -404,44 +420,44 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 26,
+              "DocumentIndex": 27,
               "Title": "MainMenu.resx",
-              "DocumentMoniker": "C:\\Users\\ivane\\PcFirma\\pcFirma\\MainMenu.resx",
+              "DocumentMoniker": "C:\\Users\\ivane\\codeProjects\\c#\\PcFirma\\pcFirma\\MainMenu.resx",
               "RelativeDocumentMoniker": "MainMenu.resx",
-              "ToolTip": "C:\\Users\\ivane\\PcFirma\\pcFirma\\MainMenu.resx",
+              "ToolTip": "C:\\Users\\ivane\\codeProjects\\c#\\PcFirma\\pcFirma\\MainMenu.resx",
               "RelativeToolTip": "MainMenu.resx",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001005|",
               "WhenOpened": "2024-10-29T11:26:56.336Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 14,
               "Title": "EmbloyeesList.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]",
-              "DocumentMoniker": "C:\\Users\\ivane\\PcFirma\\pcFirma\\EmbloyeesList.cs",
+              "DocumentMoniker": "C:\\Users\\ivane\\codeProjects\\c#\\PcFirma\\pcFirma\\EmbloyeesList.cs",
               "RelativeDocumentMoniker": "EmbloyeesList.cs",
               "ToolTip": "C:\\Users\\ivane\\codeProjects\\c#\\PcFirma\\PcFirma\\EmbloyeesList.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]",
-              "RelativeToolTip": "..\\..\\codeProjects\\c#\\PcFirma\\PcFirma\\EmbloyeesList.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]",
+              "RelativeToolTip": "EmbloyeesList.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-10-25T18:44:34.815Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 19,
+              "DocumentIndex": 21,
               "Title": "CustomersList.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]",
-              "DocumentMoniker": "C:\\Users\\ivane\\PcFirma\\pcFirma\\CustomersList.cs",
+              "DocumentMoniker": "C:\\Users\\ivane\\codeProjects\\c#\\PcFirma\\pcFirma\\CustomersList.cs",
               "RelativeDocumentMoniker": "CustomersList.cs",
               "ToolTip": "C:\\Users\\ivane\\codeProjects\\c#\\PcFirma\\PcFirma\\CustomersList.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]",
-              "RelativeToolTip": "..\\..\\codeProjects\\c#\\PcFirma\\PcFirma\\CustomersList.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]",
+              "RelativeToolTip": "CustomersList.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-10-23T20:58:09.505Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 9,
               "Title": "addEditDeleteEmpl.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]",
-              "DocumentMoniker": "C:\\Users\\ivane\\PcFirma\\pcFirma\\addEditDeleteEmpl.cs",
+              "DocumentMoniker": "C:\\Users\\ivane\\codeProjects\\c#\\PcFirma\\pcFirma\\addEditDeleteEmpl.cs",
               "RelativeDocumentMoniker": "addEditDeleteEmpl.cs",
-              "ToolTip": "C:\\Users\\ivane\\PcFirma\\pcFirma\\addEditDeleteEmpl.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]",
+              "ToolTip": "C:\\Users\\ivane\\codeProjects\\c#\\PcFirma\\pcFirma\\addEditDeleteEmpl.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]",
               "RelativeToolTip": "addEditDeleteEmpl.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-10-25T18:34:59.726Z",
@@ -449,34 +465,35 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 15,
               "Title": "RgisterForm.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]",
-              "DocumentMoniker": "C:\\Users\\ivane\\PcFirma\\pcFirma\\RgisterForm.cs",
+              "DocumentMoniker": "C:\\Users\\ivane\\codeProjects\\c#\\PcFirma\\pcFirma\\RgisterForm.cs",
               "RelativeDocumentMoniker": "RgisterForm.cs",
               "ToolTip": "C:\\Users\\ivane\\codeProjects\\c#\\PcFirma\\PcFirma\\RgisterForm.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]",
-              "RelativeToolTip": "..\\..\\codeProjects\\c#\\PcFirma\\PcFirma\\RgisterForm.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]",
+              "RelativeToolTip": "RgisterForm.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-10-24T11:59:44.84Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 11,
               "Title": "addEditDelete.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]",
-              "DocumentMoniker": "C:\\Users\\ivane\\PcFirma\\pcFirma\\addEditDelete.cs",
+              "DocumentMoniker": "C:\\Users\\ivane\\codeProjects\\c#\\PcFirma\\pcFirma\\addEditDelete.cs",
               "RelativeDocumentMoniker": "addEditDelete.cs",
-              "ToolTip": "C:\\Users\\ivane\\codeProjects\\c#\\PcFirma\\PcFirma\\addEditDelete.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]",
-              "RelativeToolTip": "..\\..\\codeProjects\\c#\\PcFirma\\PcFirma\\addEditDelete.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]",
+              "ToolTip": "C:\\Users\\ivane\\codeProjects\\c#\\PcFirma\\pcFirma\\addEditDelete.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]",
+              "RelativeToolTip": "addEditDelete.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-23T21:09:16.409Z"
+              "WhenOpened": "2024-10-23T21:09:16.409Z",
+              "EditorCaption": " [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 18,
+              "DocumentIndex": 20,
               "Title": "Form1.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]",
-              "DocumentMoniker": "C:\\Users\\ivane\\PcFirma\\pcFirma\\Form1.cs",
+              "DocumentMoniker": "C:\\Users\\ivane\\codeProjects\\c#\\PcFirma\\pcFirma\\Form1.cs",
               "RelativeDocumentMoniker": "Form1.cs",
               "ToolTip": "C:\\Users\\ivane\\codeProjects\\c#\\PcFirma\\PcFirma\\Form1.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]",
-              "RelativeToolTip": "..\\..\\codeProjects\\c#\\PcFirma\\PcFirma\\Form1.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]",
+              "RelativeToolTip": "Form1.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-10-22T11:51:04.982Z"
             }

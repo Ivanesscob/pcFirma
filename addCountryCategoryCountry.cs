@@ -19,6 +19,7 @@ namespace PcFirma
         private SqlConnection connection;
 
         private int status;
+        
 
         private DataSet _userSetForDic;
         private SqlDataAdapter _adapterForDic;
@@ -26,41 +27,75 @@ namespace PcFirma
         
 
         private Dictionary<string, int> categories = new Dictionary<string, int>();
-        public addCountryCategoryCountry(int a, DataSet dataset, SqlDataAdapter adapter, SqlConnection connection)
+        public addCountryCategoryCountry(int a,int addOrEdit, DataSet dataset, SqlDataAdapter adapter, SqlConnection connection)
         {
+            InitializeComponent();
             status = a;
             _userSet = dataset;
             _adapter = adapter;
             this.connection = connection;
 
-            InitializeComponent();
-            switch (status)
+            if (addOrEdit == -1) {
+            
+                switch (status)
+                {
+                    case 0:
+                        nameOfAdd.Text = "Add country";
+                        break;
+                    case 1:
+                        nameOfAdd.Text = "Add brand";
+                        groupBox2.Visible = true;
+                        groupBox3.Visible = true;
+
+                        _userSetForDic = new DataSet();
+                        string selectCategories = "SELECT * FROM Counrties";
+                        _adapterForDic = new SqlDataAdapter(selectCategories, connection);
+                        _adapterForDic.Fill(_userSetForDic);
+
+                        foreach (DataRow categoryRow in _userSetForDic.Tables[0].Rows)
+                        {
+                            categories.Add(categoryRow["Country"].ToString(),
+                                Convert.ToInt32(categoryRow["Id"]));
+                        }
+                        comboBox1.DataSource = categories.Keys.ToList();
+
+
+                        break;
+                    case 2:
+                        nameOfAdd.Text = "Add category";
+                        break;
+                }
+            }
+            else
             {
-                case 0:
-                    nameOfAdd.Text = "Add country";
-                    break;
-                case 1:
-                    nameOfAdd.Text = "Add brand";
-                    groupBox2.Visible=true;
-                    groupBox3.Visible=true;
 
-                    _userSetForDic = new DataSet();
-                    string selectCategories = "SELECT * FROM Counrties";
-                    _adapterForDic = new SqlDataAdapter(selectCategories, connection);
-                    _adapterForDic.Fill(_userSetForDic);
+                addButton.Text = "Edit";
+                switch (status)
+                {
+                    case 0:
+                        nameOfAdd.Text = "Add country";
+                        var row = _userSet.Tables[0].Rows[addOrEdit];
+                        textBox1.Text = row["Country"].ToString();
+                        break;
+                    case 1:
+                        nameOfAdd.Text = "Add brand";
+                        groupBox2.Visible = true;
+                        groupBox3.Visible = true;
 
-                    foreach (DataRow categoryRow in _userSetForDic.Tables[0].Rows)
-                    {
-                        categories.Add(categoryRow["Country"].ToString(),
-                            Convert.ToInt32(categoryRow["Id"]));
-                    }
-                    comboBox1.DataSource = categories.Keys.ToList();
-                    
 
-                    break ;
-                case 2:
-                    nameOfAdd.Text = "Add category";
-                    break ;
+
+
+
+
+
+
+                        break;
+                    case 2:
+                        nameOfAdd.Text = "Add category";
+                        var row2 = _userSet.Tables[0].Rows[addOrEdit];
+                        textBox1.Text = row2["CategoryName"].ToString();
+                        break;
+                }
             }
         }
 
@@ -142,5 +177,7 @@ namespace PcFirma
             SqlCommandBuilder sqlCommandBuilder = new SqlCommandBuilder(_adapter);
             _adapter.Update(_userSet);
         }
+
+        
     }
 }

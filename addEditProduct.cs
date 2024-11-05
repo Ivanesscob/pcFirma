@@ -209,7 +209,7 @@ namespace PcFirma
                     productRow["Price"] = PriceText.Text;
                     productRow["Stock"] = StockText.Text;
 
-                    SaveData(); // Сохраняем изменения в Products
+                    SaveData(); 
                     MessageBox.Show("You have successfully edited the data.");
                     Close();
 
@@ -226,21 +226,21 @@ namespace PcFirma
         private void AddBrand_Click(object sender, EventArgs e)
         {
             Connection("SELECT * FROM Brand;");
-            addCountryCategoryCountry addCountryCategoryCountry = new addCountryCategoryCountry(1, _userSet, _adapter, connection);
+            addCountryCategoryCountry addCountryCategoryCountry = new addCountryCategoryCountry(1,-1, _userSet, _adapter, connection);
             addCountryCategoryCountry.Show();
         }
 
         private void AddCategory_Click(object sender, EventArgs e)
         {
             Connection("SELECT * FROM Categories;");
-            addCountryCategoryCountry addCountryCategoryCountry = new addCountryCategoryCountry(2, _userSet, _adapter, connection);
+            addCountryCategoryCountry addCountryCategoryCountry = new addCountryCategoryCountry(2,-1, _userSet, _adapter, connection);
             addCountryCategoryCountry.Show();
         }
 
         private void AddCountry_Click(object sender, EventArgs e)
         {
             Connection("SELECT * FROM Counrties;");
-            addCountryCategoryCountry addCountryCategoryCountry = new addCountryCategoryCountry(0, _userSet, _adapter, connection);
+            addCountryCategoryCountry addCountryCategoryCountry = new addCountryCategoryCountry(0,-1, _userSet, _adapter, connection);
             addCountryCategoryCountry.Show();
             
         }
