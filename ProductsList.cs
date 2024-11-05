@@ -39,6 +39,9 @@ namespace PcFirma
 
                 if (result == DialogResult.Yes)
                 {
+                    Connection("SELECT * FROM Models;");
+                    DataTable productTable = _userSet.Tables[0];
+                    productTable.Rows[selectedRowIndex].Delete();
 
                     dataOfProducts.Rows.RemoveAt(selectedRowIndex);
                     SaveData();
@@ -53,6 +56,20 @@ namespace PcFirma
                 return;
             }
         }
+        private void Connection(string selectQuery)
+        {
+            DataClass s = new DataClass();
+            connection = new SqlConnection(s.ConnectionString());
+            connection.Open();
+            _userSet = new DataSet();
+            if (connection.State == System.Data.ConnectionState.Open)
+            {
+                _adapter = new SqlDataAdapter(selectQuery, connection);
+                _adapter.Fill(_userSet);
+
+            }
+        }
+
 
         private void changeButton_Click(object sender, EventArgs e)
         {
