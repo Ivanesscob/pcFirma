@@ -107,7 +107,20 @@ namespace PcFirma
 
         private void toPdf_Click(object sender, EventArgs e)
         {
+            ToPdf d = new ToPdf("Orders.pdf", dataOfPrders);
+        }
+        private void Connection(string selectQuery)
+        {
+            DataClass s = new DataClass();
+            connection = new SqlConnection(s.ConnectionString());
+            connection.Open();
+            _userSet = new DataSet();
+            if (connection.State == System.Data.ConnectionState.Open)
+            {
+                _adapter = new SqlDataAdapter(selectQuery, connection);
+                _adapter.Fill(_userSet);
 
+            }
         }
     }
 }
