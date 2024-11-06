@@ -51,7 +51,19 @@ namespace PcFirma
             SqlCommandBuilder sqlCommandBuilder = new SqlCommandBuilder(_adapter);
             _adapter.Update(_userSet);
         }
+        private void Connection(string selectQuery)
+        {
+            DataClass s = new DataClass();
+            connection = new SqlConnection(s.ConnectionString());
+            connection.Open();
+            _userSet = new DataSet();
+            if (connection.State == System.Data.ConnectionState.Open)
+            {
+                _adapter = new SqlDataAdapter(selectQuery, connection);
+                _adapter.Fill(_userSet);
 
+            }
+        }
         private void deleteButton_Click(object sender, EventArgs e)
         {
             if (data.SelectedRows.Count > 0 && data.SelectedRows[0].Index < data.Rows.Count - 1)
@@ -65,6 +77,80 @@ namespace PcFirma
                 if (result == DialogResult.Yes)
                 {
 
+                    if (bbc == 0)
+                    {
+                        var row = _userSet.Tables[0].Rows[selectedRowIndex];
+                        string a = row["Id"].ToString();
+                        Connection("SELECT COUNT(*) FROM Models WHERE CountryID = " + a+";");
+                        var row1 = _userSet.Tables[0].Rows[0];
+                        
+                        if (int.Parse(row1[0].ToString()) <= 0)
+                        {
+                            Connection("SELECT COUNT(*) FROM Brand WHERE CountryID = " + a+";");
+                            row1 = _userSet.Tables[0].Rows[0];
+                            if ((int.Parse(row1[0].ToString()) <= 0)){
+
+                                Connection("SELECT * FROM Counrties;");
+                                data.MultiSelect = false;
+                                data.DataSource = _userSet.Tables[0];
+                                data.Rows.RemoveAt(selectedRowIndex);
+                                SaveData();
+                                UpdateDataGrid();
+                            }
+                            else
+                            {
+                                MessageBox.Show("Deletion is not possible, a brand with these parameters exists");
+                            }
+                            
+                        }
+                        else
+                        {
+                            MessageBox.Show("Deletion is not possible, a model with these parameters exists");
+                        }
+                    }
+                    else if (bbc == 1)
+                    {
+                        var row = _userSet.Tables[0].Rows[selectedRowIndex];
+                        string a = row["Id"].ToString();
+                        Connection("SELECT COUNT(*) FROM Models WHERE BrandID = " + a + ";");
+                        var row1 = _userSet.Tables[0].Rows[0];
+
+                        if (int.Parse(row1[0].ToString()) <= 0)
+                        {
+                            Connection("SELECT * FROM Brand;");
+                            data.MultiSelect = false;
+                            data.DataSource = _userSet.Tables[0];
+                            data.Rows.RemoveAt(selectedRowIndex);
+                            SaveData();
+                            UpdateDataGrid();
+                            
+                        }
+                        else
+                        {
+                            MessageBox.Show("Deletion is not possible, a model with these parameters exists");
+                        }
+
+                    }
+                    else if (bbc == 2)
+                    {
+                        var row = _userSet.Tables[0].Rows[selectedRowIndex];
+                        string a = row["CategoryID"].ToString();
+                        Connection("SELECT COUNT(*) FROM Models WHERE CategoryID = " + a + ";");
+                        row = _userSet.Tables[0].Rows[0];
+                        if (int.Parse(row[0].ToString()) <= 0)
+                        {
+                            Connection("SELECT * FROM Categories;");
+                            data.MultiSelect = false;
+                            data.DataSource = _userSet.Tables[0];
+                            data.Rows.RemoveAt(selectedRowIndex);
+                            SaveData();
+                            UpdateDataGrid();
+                        }
+                        else
+                        {
+                            MessageBox.Show("Deletion is not possible, a model with these parameters exists");
+                        }
+                    }
                     
 
                 }
@@ -83,28 +169,30 @@ namespace PcFirma
             if (data.SelectedRows.Count > 0 && data.SelectedRows[0].Index < data.Rows.Count - 1)
             {
                 selectedRowIndex = data.SelectedRows[0].Index;
+
+                if (bbc == 0)
+                {
+                    addCountryCategoryCountry editAddPage = new addCountryCategoryCountry(0, selectedRowIndex, _userSet, _adapter, connection);
+                    editAddPage.Show();
+                }
+                else if (bbc == 1)
+                {
+                    addCountryCategoryCountry editAddPage = new addCountryCategoryCountry(1, selectedRowIndex, _userSet, _adapter, connection);
+                    editAddPage.Show();
+
+                }
+                else
+                {
+                    addCountryCategoryCountry editAddPage = new addCountryCategoryCountry(2, selectedRowIndex, _userSet, _adapter, connection);
+                    editAddPage.Show();
+                }
             }
             else
             {
                 MessageBox.Show("We didn't select an edit line!");
                 return;
             }
-            if (bbc == 0)
-            {
-                addCountryCategoryCountry editAddPage = new addCountryCategoryCountry(0, selectedRowIndex, _userSet, _adapter, connection);
-                editAddPage.Show();
-            }
-            else if (bbc == 1)
-            {
-                addCountryCategoryCountry editAddPage = new addCountryCategoryCountry(1, selectedRowIndex, _userSet, _adapter, connection);
-                editAddPage.Show();
-
-            }
-            else
-            {
-                addCountryCategoryCountry editAddPage = new addCountryCategoryCountry(2, selectedRowIndex, _userSet, _adapter, connection);
-                editAddPage.Show();
-            }
+            
             
         }
 

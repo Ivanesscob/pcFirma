@@ -110,12 +110,13 @@
             // toPdf
             // 
             this.toPdf.Font = new System.Drawing.Font("Yu Gothic UI", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.toPdf.Location = new System.Drawing.Point(26, 377);
+            this.toPdf.Location = new System.Drawing.Point(12, 12);
             this.toPdf.Name = "toPdf";
             this.toPdf.Size = new System.Drawing.Size(213, 58);
             this.toPdf.TabIndex = 34;
             this.toPdf.Text = "To pdf";
             this.toPdf.UseVisualStyleBackColor = true;
+            this.toPdf.Click += new System.EventHandler(this.toPdf_Click);
             // 
             // OrdersList
             // 
