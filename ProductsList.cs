@@ -4,10 +4,15 @@ using System.ComponentModel;
 using System.Data;
 using System.Data.SqlClient;
 using System.Drawing;
+using System.Drawing.Printing;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Xml.Linq;
+using iTextSharp.text;
+using iTextSharp.text.pdf;
 
 namespace PcFirma
 {
@@ -137,6 +142,11 @@ namespace PcFirma
         {
             viewBCC viewBCC = new viewBCC(1);
             viewBCC.Show();
+        }
+
+        private void toPdf_Click(object sender, EventArgs e)
+        {
+            ToPdf t = new ToPdf("Products.pdf", dataOfProducts);
         }
     }
 }

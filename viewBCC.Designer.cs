@@ -34,6 +34,7 @@
             this.changeButton = new System.Windows.Forms.Button();
             this.addButton = new System.Windows.Forms.Button();
             this.data = new System.Windows.Forms.DataGridView();
+            this.toPdf = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.data)).BeginInit();
             this.SuspendLayout();
             // 
@@ -106,11 +107,23 @@
             this.data.Size = new System.Drawing.Size(779, 437);
             this.data.TabIndex = 29;
             // 
+            // toPdf
+            // 
+            this.toPdf.Font = new System.Drawing.Font("Yu Gothic UI", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.toPdf.Location = new System.Drawing.Point(12, 12);
+            this.toPdf.Name = "toPdf";
+            this.toPdf.Size = new System.Drawing.Size(213, 58);
+            this.toPdf.TabIndex = 35;
+            this.toPdf.Text = "To pdf";
+            this.toPdf.UseVisualStyleBackColor = true;
+            this.toPdf.Click += new System.EventHandler(this.toPdf_Click);
+            // 
             // viewBCC
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1164, 686);
+            this.Controls.Add(this.toPdf);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.ExitButton);
             this.Controls.Add(this.deleteButton);
@@ -134,5 +147,6 @@
         private System.Windows.Forms.Button changeButton;
         private System.Windows.Forms.Button addButton;
         private System.Windows.Forms.DataGridView data;
+        private System.Windows.Forms.Button toPdf;
     }
 }

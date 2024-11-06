@@ -161,7 +161,7 @@
             this.Controls.Add(this.addButton);
             this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "addCountryCategoryCountry";
-            this.Text = "addCountryCategoryCountry";
+            this.Text = "Add Country CategoryCountry";
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             this.groupBox2.ResumeLayout(false);

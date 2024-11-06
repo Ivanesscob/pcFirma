@@ -65,9 +65,7 @@ namespace PcFirma
                 if (result == DialogResult.Yes)
                 {
 
-                    data.Rows.RemoveAt(selectedRowIndex);
-                    SaveData();
-                    UpdateDataGrid();
+                    
 
                 }
 
@@ -138,6 +136,22 @@ namespace PcFirma
 
             data.DataSource = _userSet.Tables[0];
             data.Refresh();
+        }
+
+        private void toPdf_Click(object sender, EventArgs e)
+        {
+            if (bbc == 0)
+            {
+                ToPdf t = new ToPdf("Countreis.pdf",data);
+            }
+            else if (bbc == 1)
+            {
+                ToPdf t = new ToPdf("Brands.pdf", data);
+            }
+            else
+            {
+                ToPdf t = new ToPdf("Categories.pdf", data);
+            }
         }
     }
 }

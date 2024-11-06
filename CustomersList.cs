@@ -108,5 +108,10 @@ namespace PcFirma
             }
             UpdateDataGrid();
         }
+
+        private void toPdf_Click(object sender, EventArgs e)
+        {
+            ToPdf t = new ToPdf("Customers.pdf", dataOfCustomers);
+        }
     }
 }

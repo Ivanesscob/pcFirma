@@ -22,7 +22,6 @@ C:\Users\ivane\codeProjects\c#\PcFirma\PcFirma\bin\Debug\K4os.Compression.LZ4.dl
 C:\Users\ivane\codeProjects\c#\PcFirma\PcFirma\bin\Debug\K4os.Compression.LZ4.Streams.dll
 C:\Users\ivane\codeProjects\c#\PcFirma\PcFirma\bin\Debug\K4os.Hash.xxHash.dll
 C:\Users\ivane\codeProjects\c#\PcFirma\PcFirma\bin\Debug\Microsoft.Bcl.AsyncInterfaces.dll
-C:\Users\ivane\codeProjects\c#\PcFirma\PcFirma\bin\Debug\MySql.Data.dll
 C:\Users\ivane\codeProjects\c#\PcFirma\PcFirma\bin\Debug\System.Buffers.dll
 C:\Users\ivane\codeProjects\c#\PcFirma\PcFirma\bin\Debug\System.Configuration.ConfigurationManager.dll
 C:\Users\ivane\codeProjects\c#\PcFirma\PcFirma\bin\Debug\System.Diagnostics.DiagnosticSource.dll
@@ -39,7 +38,6 @@ C:\Users\ivane\codeProjects\c#\PcFirma\PcFirma\bin\Debug\K4os.Compression.LZ4.xm
 C:\Users\ivane\codeProjects\c#\PcFirma\PcFirma\bin\Debug\K4os.Compression.LZ4.Streams.xml
 C:\Users\ivane\codeProjects\c#\PcFirma\PcFirma\bin\Debug\K4os.Hash.xxHash.xml
 C:\Users\ivane\codeProjects\c#\PcFirma\PcFirma\bin\Debug\Microsoft.Bcl.AsyncInterfaces.xml
-C:\Users\ivane\codeProjects\c#\PcFirma\PcFirma\bin\Debug\MySql.Data.xml
 C:\Users\ivane\codeProjects\c#\PcFirma\PcFirma\bin\Debug\System.Buffers.xml
 C:\Users\ivane\codeProjects\c#\PcFirma\PcFirma\bin\Debug\System.Configuration.ConfigurationManager.xml
 C:\Users\ivane\codeProjects\c#\PcFirma\PcFirma\bin\Debug\System.Diagnostics.DiagnosticSource.xml
@@ -106,3 +104,5 @@ C:\Users\ivane\codeProjects\c#\PcFirma\PcFirma\obj\Debug\PcFirma.addCountryCateg
 C:\Users\ivane\codeProjects\c#\PcFirma\PcFirma\obj\Debug\PcFirma.addEditProduct.resources
 C:\Users\ivane\codeProjects\c#\PcFirma\PcFirma\obj\Debug\PcFirma.viewBCC.resources
 C:\Users\ivane\PcFirma\pcFirma\obj\Debug\PcFirma.viewBCC.resources
+C:\Users\ivane\codeProjects\c#\PcFirma\PcFirma\bin\Debug\itextsharp.dll
+C:\Users\ivane\codeProjects\c#\PcFirma\PcFirma\bin\Debug\itextsharp.xml

@@ -102,5 +102,10 @@ namespace PcFirma
             SqlCommandBuilder sqlCommandBuilder = new SqlCommandBuilder(_adapter);
             _adapter.Update(_userSet);
         }
+
+        private void toPdf_Click(object sender, EventArgs e)
+        {
+            ToPdf t = new ToPdf("Employees.pdf", dataOfEmployees);
+        }
     }
 }

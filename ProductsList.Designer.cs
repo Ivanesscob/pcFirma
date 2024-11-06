@@ -38,6 +38,7 @@
             this.CategoryButton = new System.Windows.Forms.Button();
             this.BrandsButton = new System.Windows.Forms.Button();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.toPdf = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dataOfProducts)).BeginInit();
             this.groupBox1.SuspendLayout();
             this.SuspendLayout();
@@ -158,11 +159,23 @@
             this.groupBox1.TabIndex = 32;
             this.groupBox1.TabStop = false;
             // 
+            // toPdf
+            // 
+            this.toPdf.Font = new System.Drawing.Font("Yu Gothic UI", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.toPdf.Location = new System.Drawing.Point(41, 639);
+            this.toPdf.Name = "toPdf";
+            this.toPdf.Size = new System.Drawing.Size(213, 58);
+            this.toPdf.TabIndex = 33;
+            this.toPdf.Text = "To pdf";
+            this.toPdf.UseVisualStyleBackColor = true;
+            this.toPdf.Click += new System.EventHandler(this.toPdf_Click);
+            // 
             // ProductsList
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1364, 718);
+            this.Controls.Add(this.toPdf);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.ExitButton);
@@ -193,5 +206,6 @@
         private System.Windows.Forms.Button CategoryButton;
         private System.Windows.Forms.Button BrandsButton;
         private System.Windows.Forms.GroupBox groupBox1;
+        private System.Windows.Forms.Button toPdf;
     }
 }
