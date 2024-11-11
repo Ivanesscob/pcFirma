@@ -1,12 +1,6 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
 using System.Data;
 using System.Data.SqlClient;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace PcFirma
@@ -41,10 +35,6 @@ namespace PcFirma
                 if (result == DialogResult.Yes)
                 {
 
-                    dataOfPrders.Rows.RemoveAt(selectedRowIndex);
-                    SaveData();
-                    UpdateDataGrid();
-
                 }
 
             }
@@ -67,14 +57,14 @@ namespace PcFirma
                 MessageBox.Show("We didn't select an edit line!");
                 return;
             }
-            addEditDeleteEmpl editAddPage = new addEditDeleteEmpl(selectedRowIndex, _userSet, _adapter, connection);
-            editAddPage.Show();
+            EditOrders es = new EditOrders();
+            es.ShowDialog();
         }
 
         private void addButton_Click(object sender, EventArgs e)
         {
-            addEditDeleteEmpl editAddPage = new addEditDeleteEmpl(-1, _userSet, _adapter, connection);
-            editAddPage.Show();
+            EditOrders es = new EditOrders();
+            es.ShowDialog();
         }
 
         private void OrdersList_Activated(object sender, EventArgs e)

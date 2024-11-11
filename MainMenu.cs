@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Windows.Forms;
+using System.Drawing;
 
 namespace PcFirma
 {
@@ -8,6 +9,7 @@ namespace PcFirma
         public MainMenu()
         {
             InitializeComponent();
+            
         }
 
         private void ExitButton_Click(object sender, EventArgs e)
@@ -40,6 +42,30 @@ namespace PcFirma
         {
             ProductsList productsList = new ProductsList();
             productsList.ShowDialog();
+        }
+
+        private void button7_Click(object sender, EventArgs e)
+        {
+            viewBCC t = new viewBCC(0);
+            t.ShowDialog();
+        }
+
+        private void button8_Click(object sender, EventArgs e)
+        {
+            viewBCC t = new viewBCC(1);
+            t.ShowDialog();
+        }
+
+        private void button6_Click(object sender, EventArgs e)
+        {
+            viewBCC t = new viewBCC(2);
+            t.ShowDialog();
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            JobTitles t = new JobTitles();
+            t.ShowDialog();
         }
     }
 }

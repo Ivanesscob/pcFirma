@@ -90,7 +90,7 @@
             // 
             this.nameOfAdd.AutoSize = true;
             this.nameOfAdd.Font = new System.Drawing.Font("Yu Gothic UI", 36F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.nameOfAdd.Location = new System.Drawing.Point(75, 140);
+            this.nameOfAdd.Location = new System.Drawing.Point(119, 139);
             this.nameOfAdd.Name = "nameOfAdd";
             this.nameOfAdd.Size = new System.Drawing.Size(245, 81);
             this.nameOfAdd.TabIndex = 23;

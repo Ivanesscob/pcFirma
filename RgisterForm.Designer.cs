@@ -68,7 +68,7 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Yu Gothic UI", 36F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label1.Location = new System.Drawing.Point(129, 171);
+            this.label1.Location = new System.Drawing.Point(242, 9);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(248, 81);
             this.label1.TabIndex = 0;
@@ -80,7 +80,7 @@
             this.groupBox1.Controls.Add(this.groupBox4);
             this.groupBox1.Controls.Add(this.Password);
             this.groupBox1.Controls.Add(this.Login);
-            this.groupBox1.Location = new System.Drawing.Point(469, 110);
+            this.groupBox1.Location = new System.Drawing.Point(24, 93);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Size = new System.Drawing.Size(654, 428);
             this.groupBox1.TabIndex = 1;
@@ -165,18 +165,18 @@
             // escapeButton
             // 
             this.escapeButton.Font = new System.Drawing.Font("Yu Gothic UI", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.escapeButton.Location = new System.Drawing.Point(107, 390);
+            this.escapeButton.Location = new System.Drawing.Point(631, 42);
             this.escapeButton.Name = "escapeButton";
-            this.escapeButton.Size = new System.Drawing.Size(270, 79);
+            this.escapeButton.Size = new System.Drawing.Size(47, 44);
             this.escapeButton.TabIndex = 2;
-            this.escapeButton.Text = "Log in";
+            this.escapeButton.Text = "X";
             this.escapeButton.UseVisualStyleBackColor = true;
             this.escapeButton.Click += new System.EventHandler(this.backButton_Click);
             // 
             // nextButton
             // 
             this.nextButton.Font = new System.Drawing.Font("Yu Gothic UI", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.nextButton.Location = new System.Drawing.Point(572, 585);
+            this.nextButton.Location = new System.Drawing.Point(103, 566);
             this.nextButton.Name = "nextButton";
             this.nextButton.Size = new System.Drawing.Size(214, 56);
             this.nextButton.TabIndex = 3;
@@ -187,7 +187,7 @@
             // baclButton
             // 
             this.baclButton.Font = new System.Drawing.Font("Yu Gothic UI", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.baclButton.Location = new System.Drawing.Point(862, 585);
+            this.baclButton.Location = new System.Drawing.Point(393, 566);
             this.baclButton.Name = "baclButton";
             this.baclButton.Size = new System.Drawing.Size(214, 56);
             this.baclButton.TabIndex = 4;
@@ -202,7 +202,7 @@
             this.groupBox2.Controls.Add(this.groupBox6);
             this.groupBox2.Controls.Add(this.groupBox7);
             this.groupBox2.Controls.Add(this.groupBox8);
-            this.groupBox2.Location = new System.Drawing.Point(469, 110);
+            this.groupBox2.Location = new System.Drawing.Point(24, 93);
             this.groupBox2.Name = "groupBox2";
             this.groupBox2.Size = new System.Drawing.Size(654, 428);
             this.groupBox2.TabIndex = 5;
@@ -290,7 +290,7 @@
             this.StatusPol.AutoSize = true;
             this.StatusPol.Font = new System.Drawing.Font("Yu Gothic UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.StatusPol.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.StatusPol.Location = new System.Drawing.Point(762, 541);
+            this.StatusPol.Location = new System.Drawing.Point(317, 524);
             this.StatusPol.Name = "StatusPol";
             this.StatusPol.Size = new System.Drawing.Size(0, 28);
             this.StatusPol.TabIndex = 6;
@@ -299,7 +299,7 @@
             // ButtonReg
             // 
             this.ButtonReg.Font = new System.Drawing.Font("Yu Gothic UI", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.ButtonReg.Location = new System.Drawing.Point(572, 585);
+            this.ButtonReg.Location = new System.Drawing.Point(103, 566);
             this.ButtonReg.Name = "ButtonReg";
             this.ButtonReg.Size = new System.Drawing.Size(214, 56);
             this.ButtonReg.TabIndex = 7;
@@ -312,10 +312,10 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1221, 709);
+            this.ClientSize = new System.Drawing.Size(704, 658);
+            this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.ButtonReg);
             this.Controls.Add(this.StatusPol);
-            this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.baclButton);
             this.Controls.Add(this.nextButton);
             this.Controls.Add(this.escapeButton);

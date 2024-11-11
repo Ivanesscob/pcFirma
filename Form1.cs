@@ -22,13 +22,20 @@ namespace PcFirma
             InitializeComponent();
             pswdTextBox.PasswordChar = '*';
 
+            this.BackgroundImage = Image.FromFile("C:\\Users\\ivane\\OneDrive\\Изображения\\RS.jpg");
+            this.BackgroundImageLayout = ImageLayout.Stretch;
+            Connection("SELECT * FROM Customers;");
+
+        }
+        private void Connection(string selectQuery)
+        {
             DataClass s = new DataClass();
             SqlConnection connection = new SqlConnection(s.ConnectionString());
             connection.Open();
             _userSet = new DataSet();
             if (connection.State == System.Data.ConnectionState.Open)
             {
-                string selectQuery = "SELECT * FROM Employees;";
+                
                 _adapter = new SqlDataAdapter(selectQuery, connection);
                 _adapter.Fill(_userSet);
             }
@@ -36,10 +43,11 @@ namespace PcFirma
 
         private void loginButton_Click(object sender, EventArgs e)
         {
+            Connection("SELECT * FROM Employees;");
             bool statusLog = true;
             foreach (DataRow row in _userSet.Tables[0].Rows)
             {
-                if (row["Login"].ToString() == loginTextBox.Text && row["Password"].ToString() == pswdTextBox.Text)
+                if (row["Login"].ToString().Trim() == loginTextBox.Text.Trim() && row["Password"].ToString().Trim() == pswdTextBox.Text.Trim())
                 {
                     MainMenu m = new MainMenu();
                     m.Show();
@@ -49,21 +57,38 @@ namespace PcFirma
                     return;
                 }
             }
+            Connection("SELECT * FROM Customers;");
+            foreach (DataRow row in _userSet.Tables[0].Rows)
+            {
+                if (row["Login"].ToString().Trim() == loginTextBox.Text.Trim() && row["Password"].ToString().Trim() == pswdTextBox.Text.Trim())
+                {
+                    CustomersProduct product = new CustomersProduct();
+                    product.Show();
+                    Hide();
+                    statusLog = false;
+                    statusLogIn.Visible = false;
+                    return;
+                }
+                
+            }
+            
             if (statusLog)
             {
                 statusLogIn.Visible = true;
             }
         }
 
-        private void signUpButton_Click(object sender, EventArgs e)
-        {
-            RgisterForm g = new RgisterForm(_userSet, _adapter);
-            g.Show();
-        }
+        
 
         private void ExitButton_Click(object sender, EventArgs e)
         {
             Close();
+        }
+
+        private void linkLabel1_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            RgisterForm g = new RgisterForm(_userSet, _adapter);
+            g.Show();
         }
     }
 }

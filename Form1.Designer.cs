@@ -30,14 +30,14 @@
         {
             this.label1 = new System.Windows.Forms.Label();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.signUpButton = new System.Windows.Forms.Button();
+            this.statusLogIn = new System.Windows.Forms.Label();
             this.loginButton = new System.Windows.Forms.Button();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
             this.pswdTextBox = new System.Windows.Forms.TextBox();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.loginTextBox = new System.Windows.Forms.TextBox();
-            this.statusLogIn = new System.Windows.Forms.Label();
             this.ExitButton = new System.Windows.Forms.Button();
+            this.linkLabel1 = new System.Windows.Forms.LinkLabel();
             this.groupBox1.SuspendLayout();
             this.groupBox3.SuspendLayout();
             this.groupBox2.SuspendLayout();
@@ -55,28 +55,29 @@
             // 
             // groupBox1
             // 
+            this.groupBox1.Controls.Add(this.linkLabel1);
+            this.groupBox1.Controls.Add(this.ExitButton);
             this.groupBox1.Controls.Add(this.statusLogIn);
-            this.groupBox1.Controls.Add(this.signUpButton);
             this.groupBox1.Controls.Add(this.loginButton);
             this.groupBox1.Controls.Add(this.groupBox3);
             this.groupBox1.Controls.Add(this.groupBox2);
             this.groupBox1.Controls.Add(this.label1);
             this.groupBox1.Font = new System.Drawing.Font("Yu Gothic UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.groupBox1.Location = new System.Drawing.Point(459, 57);
+            this.groupBox1.Location = new System.Drawing.Point(12, 12);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Size = new System.Drawing.Size(361, 519);
             this.groupBox1.TabIndex = 1;
             this.groupBox1.TabStop = false;
             // 
-            // signUpButton
+            // statusLogIn
             // 
-            this.signUpButton.Location = new System.Drawing.Point(145, 445);
-            this.signUpButton.Name = "signUpButton";
-            this.signUpButton.Size = new System.Drawing.Size(88, 34);
-            this.signUpButton.TabIndex = 6;
-            this.signUpButton.Text = "Sign up";
-            this.signUpButton.UseVisualStyleBackColor = true;
-            this.signUpButton.Click += new System.EventHandler(this.signUpButton_Click);
+            this.statusLogIn.AutoSize = true;
+            this.statusLogIn.Location = new System.Drawing.Point(86, 373);
+            this.statusLogIn.Name = "statusLogIn";
+            this.statusLogIn.Size = new System.Drawing.Size(190, 20);
+            this.statusLogIn.TabIndex = 7;
+            this.statusLogIn.Text = "Incorrect login or password";
+            this.statusLogIn.Visible = false;
             // 
             // loginButton
             // 
@@ -122,33 +123,33 @@
             this.loginTextBox.Size = new System.Drawing.Size(277, 27);
             this.loginTextBox.TabIndex = 2;
             // 
-            // statusLogIn
-            // 
-            this.statusLogIn.AutoSize = true;
-            this.statusLogIn.Location = new System.Drawing.Point(86, 373);
-            this.statusLogIn.Name = "statusLogIn";
-            this.statusLogIn.Size = new System.Drawing.Size(190, 20);
-            this.statusLogIn.TabIndex = 7;
-            this.statusLogIn.Text = "Incorrect login or password";
-            this.statusLogIn.Visible = false;
-            // 
             // ExitButton
             // 
             this.ExitButton.Font = new System.Drawing.Font("Yu Gothic UI", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.ExitButton.Location = new System.Drawing.Point(929, 580);
+            this.ExitButton.Location = new System.Drawing.Point(297, 17);
             this.ExitButton.Name = "ExitButton";
-            this.ExitButton.Size = new System.Drawing.Size(209, 57);
+            this.ExitButton.Size = new System.Drawing.Size(58, 57);
             this.ExitButton.TabIndex = 2;
-            this.ExitButton.Text = "Exit";
+            this.ExitButton.Text = "X";
             this.ExitButton.UseVisualStyleBackColor = true;
             this.ExitButton.Click += new System.EventHandler(this.ExitButton_Click);
+            // 
+            // linkLabel1
+            // 
+            this.linkLabel1.AutoSize = true;
+            this.linkLabel1.Location = new System.Drawing.Point(150, 454);
+            this.linkLabel1.Name = "linkLabel1";
+            this.linkLabel1.Size = new System.Drawing.Size(57, 20);
+            this.linkLabel1.TabIndex = 8;
+            this.linkLabel1.TabStop = true;
+            this.linkLabel1.Text = "sign up";
+            this.linkLabel1.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkLabel1_LinkClicked);
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1280, 753);
-            this.Controls.Add(this.ExitButton);
+            this.ClientSize = new System.Drawing.Size(389, 554);
             this.Controls.Add(this.groupBox1);
             this.Name = "Form1";
             this.Text = "Log in";
@@ -170,10 +171,10 @@
         private System.Windows.Forms.GroupBox groupBox2;
         private System.Windows.Forms.GroupBox groupBox3;
         private System.Windows.Forms.TextBox pswdTextBox;
-        private System.Windows.Forms.Button signUpButton;
         private System.Windows.Forms.Button loginButton;
         private System.Windows.Forms.Label statusLogIn;
         private System.Windows.Forms.Button ExitButton;
+        private System.Windows.Forms.LinkLabel linkLabel1;
     }
 }
 

@@ -116,6 +116,12 @@
     <Compile Include="addEditDeleteEmpl.Designer.cs">
       <DependentUpon>addEditDeleteEmpl.cs</DependentUpon>
     </Compile>
+    <Compile Include="addEditOrder.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="addEditOrder.Designer.cs">
+      <DependentUpon>addEditOrder.cs</DependentUpon>
+    </Compile>
     <Compile Include="addEditProduct.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -128,7 +134,19 @@
     <Compile Include="CustomersList.Designer.cs">
       <DependentUpon>CustomersList.cs</DependentUpon>
     </Compile>
+    <Compile Include="CustomersProduct.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CustomersProduct.Designer.cs">
+      <DependentUpon>CustomersProduct.cs</DependentUpon>
+    </Compile>
     <Compile Include="DataClass.cs" />
+    <Compile Include="EditOrders.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EditOrders.Designer.cs">
+      <DependentUpon>EditOrders.cs</DependentUpon>
+    </Compile>
     <Compile Include="EmbloyeesList.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -140,6 +158,12 @@
     </Compile>
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="JobTitles.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="JobTitles.Designer.cs">
+      <DependentUpon>JobTitles.cs</DependentUpon>
     </Compile>
     <Compile Include="MainMenu.cs">
       <SubType>Form</SubType>
@@ -183,17 +207,29 @@
     <EmbeddedResource Include="addEditDeleteEmpl.resx">
       <DependentUpon>addEditDeleteEmpl.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="addEditOrder.resx">
+      <DependentUpon>addEditOrder.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="addEditProduct.resx">
       <DependentUpon>addEditProduct.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="CustomersList.resx">
       <DependentUpon>CustomersList.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="CustomersProduct.resx">
+      <DependentUpon>CustomersProduct.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EditOrders.resx">
+      <DependentUpon>EditOrders.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="EmbloyeesList.resx">
       <DependentUpon>EmbloyeesList.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="JobTitles.resx">
+      <DependentUpon>JobTitles.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="MainMenu.resx">
       <DependentUpon>MainMenu.cs</DependentUpon>

@@ -66,6 +66,30 @@ namespace PcFirma
                     moznoPhone = false;
                 }
             }
+            Connection("SELECT * FROM Employees;");
+            foreach (DataRow row in _userSet.Tables[0].Rows)
+            {
+
+                if (row["Login"].ToString() == LoginText.Text)
+                {
+                    mozno = false;
+                }
+            }
+            foreach (DataRow row1 in _userSet.Tables[0].Rows)
+            {
+                if (row1["Email"].ToString() == EmailText.Text)
+                {
+                    moznoEmail = false;
+                }
+            }
+            foreach (DataRow row1 in _userSet.Tables[0].Rows)
+            {
+                if (row1["Phone"].ToString() == PhoneText.Text)
+                {
+                    moznoPhone = false;
+                }
+            }
+            Connection("SELECT * FROM Customers;");
             if (String.IsNullOrEmpty(LoginText.Text) || String.IsNullOrEmpty(PasswordText.Text) ||
                 String.IsNullOrEmpty(PhoneText.Text) || String.IsNullOrEmpty(EmailText.Text) || !mozno || !moznoEmail || !moznoPhone)
             {
@@ -142,6 +166,19 @@ namespace PcFirma
         {
             SqlCommandBuilder sqlCommandBuilder = new SqlCommandBuilder(_adapter);
             _adapter.Update(_userSet);
+        }
+        private void Connection(string selectQuery)
+        {
+            DataClass s = new DataClass();
+            SqlConnection connection = new SqlConnection(s.ConnectionString());
+            connection.Open();
+            _userSet = new DataSet();
+            if (connection.State == System.Data.ConnectionState.Open)
+            {
+
+                _adapter = new SqlDataAdapter(selectQuery, connection);
+                _adapter.Fill(_userSet);
+            }
         }
     }
 }
