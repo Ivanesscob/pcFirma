@@ -111,3 +111,4 @@ C:\Users\ivane\codeProjects\c#\PcFirma\PcFirma\obj\Debug\PcFirma.EditOrders.reso
 C:\Users\ivane\codeProjects\c#\PcFirma\PcFirma\obj\Debug\PcFirma.JobTitles.resources
 C:\Users\ivane\codeProjects\c#\PcFirma\PcFirma\obj\Debug\PcFirma.CustomersProduct.resources
 C:\Users\ivane\codeProjects\c#\PcFirma\PcFirma\obj\Debug\PcFirma.ProfileCustpmer.resources
+C:\Users\ivane\codeProjects\c#\PcFirma\PcFirma\obj\Debug\PcFirma.buyProduct.resources

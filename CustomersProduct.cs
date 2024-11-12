@@ -169,7 +169,8 @@ namespace PcFirma
             }
             else
             {
-                
+                buyProduct buyProduct = new buyProduct();
+                buyProduct.ShowDialog();
             }
         }
 

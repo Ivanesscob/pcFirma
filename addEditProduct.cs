@@ -28,9 +28,11 @@ namespace PcFirma
         private DataSet _userSetForDicBr;
         private SqlDataAdapter _adapterForDicBr;
 
+        string selectCategories;
+
         private int id;
 
-        string selectCategories;
+        
         public addEditProduct()
         {
             InitializeComponent();
@@ -118,6 +120,7 @@ namespace PcFirma
                 addButton.Visible = true;
                 baclButton.Visible = true;
                 groupBox7.Visible = true;
+                
             }
             
         }
