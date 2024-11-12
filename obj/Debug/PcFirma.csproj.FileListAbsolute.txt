@@ -110,3 +110,4 @@ C:\Users\ivane\codeProjects\c#\PcFirma\PcFirma\obj\Debug\PcFirma.addEditOrder.re
 C:\Users\ivane\codeProjects\c#\PcFirma\PcFirma\obj\Debug\PcFirma.EditOrders.resources
 C:\Users\ivane\codeProjects\c#\PcFirma\PcFirma\obj\Debug\PcFirma.JobTitles.resources
 C:\Users\ivane\codeProjects\c#\PcFirma\PcFirma\obj\Debug\PcFirma.CustomersProduct.resources
+C:\Users\ivane\codeProjects\c#\PcFirma\PcFirma\obj\Debug\PcFirma.ProfileCustpmer.resources

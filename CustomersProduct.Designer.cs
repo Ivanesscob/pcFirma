@@ -34,6 +34,8 @@
             this.dataOfProducts = new System.Windows.Forms.DataGridView();
             this.listBox1 = new System.Windows.Forms.ListBox();
             this.label2 = new System.Windows.Forms.Label();
+            this.button1 = new System.Windows.Forms.Button();
+            this.button2 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dataOfProducts)).BeginInit();
             this.SuspendLayout();
             // 
@@ -43,14 +45,14 @@
             this.label1.Font = new System.Drawing.Font("Yu Gothic UI", 36F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.label1.Location = new System.Drawing.Point(434, 47);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(266, 81);
+            this.label1.Size = new System.Drawing.Size(212, 65);
             this.label1.TabIndex = 34;
             this.label1.Text = "Products";
             // 
             // ExitButton
             // 
             this.ExitButton.Font = new System.Drawing.Font("Yu Gothic UI", 16.8F);
-            this.ExitButton.Location = new System.Drawing.Point(804, 618);
+            this.ExitButton.Location = new System.Drawing.Point(858, 618);
             this.ExitButton.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.ExitButton.Name = "ExitButton";
             this.ExitButton.Size = new System.Drawing.Size(204, 57);
@@ -61,12 +63,12 @@
             // addButton
             // 
             this.addButton.Font = new System.Drawing.Font("Yu Gothic UI", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.addButton.Location = new System.Drawing.Point(214, 618);
+            this.addButton.Location = new System.Drawing.Point(121, 618);
             this.addButton.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.addButton.Name = "addButton";
             this.addButton.Size = new System.Drawing.Size(213, 57);
             this.addButton.TabIndex = 30;
-            this.addButton.Text = "Buy";
+            this.addButton.Text = "Add";
             this.addButton.UseVisualStyleBackColor = true;
             this.addButton.Click += new System.EventHandler(this.addButton_Click);
             // 
@@ -98,15 +100,41 @@
             this.label2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.label2.Location = new System.Drawing.Point(913, 113);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(56, 31);
+            this.label2.Size = new System.Drawing.Size(47, 25);
             this.label2.TabIndex = 36;
             this.label2.Text = "Cart";
+            // 
+            // button1
+            // 
+            this.button1.Font = new System.Drawing.Font("Yu Gothic UI", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.button1.Location = new System.Drawing.Point(499, 618);
+            this.button1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(213, 57);
+            this.button1.TabIndex = 37;
+            this.button1.Text = "Buy";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
+            // button2
+            // 
+            this.button2.Font = new System.Drawing.Font("Yu Gothic UI", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.button2.Location = new System.Drawing.Point(1070, 11);
+            this.button2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(101, 42);
+            this.button2.TabIndex = 38;
+            this.button2.Text = "Profile";
+            this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // CustomersProduct
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1183, 712);
+            this.Controls.Add(this.button2);
+            this.Controls.Add(this.button1);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.listBox1);
             this.Controls.Add(this.label1);
@@ -130,5 +158,7 @@
         private System.Windows.Forms.DataGridView dataOfProducts;
         private System.Windows.Forms.ListBox listBox1;
         private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button button2;
     }
 }

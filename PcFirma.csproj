@@ -183,6 +183,12 @@
     <Compile Include="ProductsList.Designer.cs">
       <DependentUpon>ProductsList.cs</DependentUpon>
     </Compile>
+    <Compile Include="ProfileCustpmer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ProfileCustpmer.Designer.cs">
+      <DependentUpon>ProfileCustpmer.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="RgisterForm.cs">
@@ -239,6 +245,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="ProductsList.resx">
       <DependentUpon>ProductsList.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ProfileCustpmer.resx">
+      <DependentUpon>ProfileCustpmer.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
