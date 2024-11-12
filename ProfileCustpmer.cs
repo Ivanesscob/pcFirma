@@ -24,8 +24,10 @@ namespace PcFirma
         {
             InitializeComponent();
             this.id = id;
-  
-            
+
+            listBox1.DrawMode = DrawMode.OwnerDrawVariable;
+            listBox1.MeasureItem += ListBox1_MeasureItem;
+            listBox1.DrawItem += ListBox1_DrawItem;
 
             DataClass s = new DataClass();
             SqlConnection connection = new SqlConnection(s.ConnectionString());
@@ -53,6 +55,52 @@ namespace PcFirma
                 }
 
             }
+        }
+        private void ListBox1_MeasureItem(object sender, MeasureItemEventArgs e)
+        {
+
+            e.ItemHeight = 50;
+        }
+
+        private void ListBox1_DrawItem(object sender, DrawItemEventArgs e)
+        {
+            if (e.Index < 0) return;
+
+
+            string itemText = listBox1.Items[e.Index].ToString();
+
+
+            e.DrawBackground();
+
+
+            if ((e.State & DrawItemState.Selected) == DrawItemState.Selected)
+            {
+                e.Graphics.FillRectangle(Brushes.LightBlue, e.Bounds);
+            }
+            else
+            {
+                e.Graphics.FillRectangle(Brushes.White, e.Bounds);
+            }
+
+
+            using (StringFormat stringFormat = new StringFormat())
+            {
+                stringFormat.Alignment = StringAlignment.Center;
+                stringFormat.LineAlignment = StringAlignment.Center;
+
+
+                using (Brush textBrush = new SolidBrush(e.ForeColor))
+                {
+                    e.Graphics.DrawString(itemText, e.Font, textBrush, e.Bounds, stringFormat);
+                }
+            }
+
+
+
+            e.Graphics.DrawRectangle(Pens.Gray, e.Bounds);
+
+
+            e.DrawFocusRectangle();
         }
 
         private void ExitButton_Click(object sender, EventArgs e)
