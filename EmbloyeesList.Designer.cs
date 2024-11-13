@@ -41,11 +41,11 @@
             // dataOfEmployees
             // 
             this.dataOfEmployees.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataOfEmployees.Location = new System.Drawing.Point(239, 138);
+            this.dataOfEmployees.Location = new System.Drawing.Point(115, 138);
             this.dataOfEmployees.Name = "dataOfEmployees";
             this.dataOfEmployees.RowHeadersWidth = 51;
             this.dataOfEmployees.RowTemplate.Height = 24;
-            this.dataOfEmployees.Size = new System.Drawing.Size(778, 437);
+            this.dataOfEmployees.Size = new System.Drawing.Size(1050, 437);
             this.dataOfEmployees.TabIndex = 1;
             // 
             // ExitButton

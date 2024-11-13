@@ -83,7 +83,8 @@ namespace PcFirma
             _userSet = new DataSet();
             if (connection.State == System.Data.ConnectionState.Open)
             {
-                string selectQuery = "SELECT * FROM Employees;";
+                string selectQuery = "SELECT Login, FirstName, LastName, Patronymic, Password, Phone, Email, BirthDay" +
+                    ", JobTitle FROM Employees JOIN JobTitles ON Employees.JobTitleID = JobTitles.JobTitleID;";
                 _adapter = new SqlDataAdapter(selectQuery, connection);
                 _adapter.Fill(_userSet);
                 dataOfEmployees.MultiSelect = false;

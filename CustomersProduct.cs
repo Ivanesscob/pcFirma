@@ -16,6 +16,7 @@ namespace PcFirma
         private DataSet _userSet;
         private SqlDataAdapter _adapter;
         private SqlConnection connection;
+        
 
         private int id;
 
@@ -28,6 +29,7 @@ namespace PcFirma
             listBox1.MeasureItem += ListBox1_MeasureItem;
             listBox1.DrawItem += ListBox1_DrawItem;
             id = int.Parse(log);
+            
 
 
         }
@@ -87,7 +89,8 @@ namespace PcFirma
             _userSet = new DataSet();
             if (connection.State == System.Data.ConnectionState.Open)
             {
-                string selectQuery = "SELECT * FROM Products;";
+                string selectQuery = "SELECT ProductName,Models,Price,Stock FROM Products JOIN " +
+                    "Models ON Products.ModelID = Models.Id;";
                 _adapter = new SqlDataAdapter(selectQuery, connection);
                 _adapter.Fill(_userSet);
                 dataOfProducts.MultiSelect = false;
@@ -169,7 +172,7 @@ namespace PcFirma
             }
             else
             {
-                buyProduct buyProduct = new buyProduct();
+                buyProduct buyProduct = new buyProduct(this);
                 buyProduct.ShowDialog();
             }
         }
@@ -217,6 +220,31 @@ namespace PcFirma
         {
             ProfileCustpmer profileCustpmer = new ProfileCustpmer(id);
             profileCustpmer.Show();
+        }
+        public void addInCart(string name, int quantity)
+        {
+            
+            foreach (DataRow row in _userSet.Tables[0].Rows)
+            {
+                if (row["ProductName"].ToString().Trim() == name)
+                {
+                    if (products.ContainsKey(row["ProductName"].ToString()))
+                    {
+                        products[row["ProductName"].ToString()] += quantity;
+                    }
+                    else
+                    {
+                        products.Add(row["ProductName"].ToString(), quantity);
+                    }
+                    listBox1.Items.Clear();
+
+                    foreach (var item in products)
+                    {
+                        listBox1.Items.Add(item.Key + " Qty: " + item.Value);
+                    }
+                }
+
+            }
         }
     }
 }

@@ -28,6 +28,8 @@ namespace PcFirma
         private DataSet _userSetForDicBr;
         private SqlDataAdapter _adapterForDicBr;
 
+        private CustomersProduct a;
+
         string selectCategories;
 
         private void Connection(string selectQuery)
@@ -44,9 +46,10 @@ namespace PcFirma
 
             }
         }
-        public buyProduct()
+        public buyProduct(CustomersProduct f)
         {
             InitializeComponent();
+            a = f;
             price.Text = "-";
             DataClass s = new DataClass();
             connection = new SqlConnection(s.ConnectionString());
@@ -89,7 +92,18 @@ namespace PcFirma
 
         private void addButton_Click(object sender, EventArgs e)
         {
-
+          if (String.IsNullOrEmpty(comboBoxName.Text) || String.IsNullOrEmpty(stock.Text))
+            {
+                StatusPol.Visible = true;
+                StatusPol.Text = "Fill all fields!";
+            }
+            else
+            {
+                var row = _userSetForDic.Tables[0].Rows[comboBoxName.SelectedIndex];
+                a.addInCart(row["ProductName"].ToString().Trim(), int.Parse(stock.Text));
+                Close();
+            }
+            
         }
 
         private void baclButton_Click(object sender, EventArgs e)

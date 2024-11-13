@@ -14,6 +14,7 @@ namespace PcFirma
     {
         public ToPdf(string nameFile, DataGridView data) {
 
+            
             Document pdfDoc = new Document(PageSize.A4, 10, 10, 10, 10);
             PdfWriter writer = PdfWriter.GetInstance(pdfDoc, new FileStream(Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.Desktop), DateTime.Now.ToString("yyyyMMdd_HHmmss")+" " + nameFile), FileMode.Create));
             pdfDoc.Open();

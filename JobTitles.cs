@@ -34,7 +34,7 @@ namespace PcFirma
             _userSet = new DataSet();
             if (connection.State == System.Data.ConnectionState.Open)
             {
-                string selectQuery = "SELECT * FROM JobTitles;";
+                string selectQuery = "SELECT JobTitle FROM JobTitles;";
                 _adapter = new SqlDataAdapter(selectQuery, connection);
                 _adapter.Fill(_userSet);
                 data.MultiSelect = false;

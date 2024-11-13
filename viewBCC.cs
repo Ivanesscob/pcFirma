@@ -216,6 +216,7 @@ namespace PcFirma
                 _adapter.Fill(_userSet);
                 data.MultiSelect = false;
                 data.DataSource = _userSet.Tables[0];
+                data.Columns[0].Visible = false;
             }
             UpdateDataGrid();
         }

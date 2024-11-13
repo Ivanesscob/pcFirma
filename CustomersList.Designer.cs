@@ -41,11 +41,11 @@
             // dataOfCustomers
             // 
             this.dataOfCustomers.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataOfCustomers.Location = new System.Drawing.Point(235, 108);
+            this.dataOfCustomers.Location = new System.Drawing.Point(76, 108);
             this.dataOfCustomers.Name = "dataOfCustomers";
             this.dataOfCustomers.RowHeadersWidth = 51;
             this.dataOfCustomers.RowTemplate.Height = 24;
-            this.dataOfCustomers.Size = new System.Drawing.Size(778, 437);
+            this.dataOfCustomers.Size = new System.Drawing.Size(1050, 437);
             this.dataOfCustomers.TabIndex = 0;
             // 
             // label1

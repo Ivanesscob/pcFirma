@@ -80,6 +80,7 @@ namespace PcFirma
                 _adapter.Fill(_userSet);
                 dataOfPrders.MultiSelect = false;
                 dataOfPrders.DataSource = _userSet.Tables[0];
+                dataOfPrders.Columns[0].Visible = false;
             }
             UpdateDataGrid();
         }

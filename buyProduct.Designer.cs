@@ -32,6 +32,7 @@
             this.groupBox11 = new System.Windows.Forms.GroupBox();
             this.stock = new System.Windows.Forms.TextBox();
             this.groupBox9 = new System.Windows.Forms.GroupBox();
+            this.comboBoxName = new System.Windows.Forms.ComboBox();
             this.groupBox10 = new System.Windows.Forms.GroupBox();
             this.price = new System.Windows.Forms.Label();
             this.StatusPol = new System.Windows.Forms.Label();
@@ -46,7 +47,7 @@
             this.ComboBoxCategory = new System.Windows.Forms.ComboBox();
             this.groupBox4 = new System.Windows.Forms.GroupBox();
             this.ComboBoxBrand = new System.Windows.Forms.ComboBox();
-            this.comboBoxName = new System.Windows.Forms.ComboBox();
+            this.label1 = new System.Windows.Forms.Label();
             this.groupBox7.SuspendLayout();
             this.groupBox11.SuspendLayout();
             this.groupBox9.SuspendLayout();
@@ -62,7 +63,7 @@
             this.groupBox7.Controls.Add(this.groupBox11);
             this.groupBox7.Controls.Add(this.groupBox9);
             this.groupBox7.Controls.Add(this.groupBox10);
-            this.groupBox7.Location = new System.Drawing.Point(708, 64);
+            this.groupBox7.Location = new System.Drawing.Point(385, 64);
             this.groupBox7.Margin = new System.Windows.Forms.Padding(4);
             this.groupBox7.Name = "groupBox7";
             this.groupBox7.Padding = new System.Windows.Forms.Padding(4);
@@ -102,6 +103,16 @@
             this.groupBox9.TabStop = false;
             this.groupBox9.Text = "Name of Product";
             // 
+            // comboBoxName
+            // 
+            this.comboBoxName.FormattingEnabled = true;
+            this.comboBoxName.Location = new System.Drawing.Point(1, 49);
+            this.comboBoxName.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.comboBoxName.Name = "comboBoxName";
+            this.comboBoxName.Size = new System.Drawing.Size(262, 24);
+            this.comboBoxName.TabIndex = 44;
+            this.comboBoxName.SelectedIndexChanged += new System.EventHandler(this.comboBoxName_SelectedIndexChanged);
+            // 
             // groupBox10
             // 
             this.groupBox10.Controls.Add(this.price);
@@ -120,7 +131,7 @@
             this.price.Font = new System.Drawing.Font("Yu Gothic UI", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.price.Location = new System.Drawing.Point(7, 47);
             this.price.Name = "price";
-            this.price.Size = new System.Drawing.Size(63, 25);
+            this.price.Size = new System.Drawing.Size(78, 32);
             this.price.TabIndex = 0;
             this.price.Text = "label1";
             // 
@@ -131,7 +142,7 @@
             this.StatusPol.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
             this.StatusPol.Location = new System.Drawing.Point(193, 519);
             this.StatusPol.Name = "StatusPol";
-            this.StatusPol.Size = new System.Drawing.Size(0, 21);
+            this.StatusPol.Size = new System.Drawing.Size(0, 28);
             this.StatusPol.TabIndex = 42;
             // 
             // addButton
@@ -261,21 +272,22 @@
             this.ComboBoxBrand.Size = new System.Drawing.Size(259, 24);
             this.ComboBoxBrand.TabIndex = 23;
             // 
-            // comboBoxName
+            // label1
             // 
-            this.comboBoxName.FormattingEnabled = true;
-            this.comboBoxName.Location = new System.Drawing.Point(1, 49);
-            this.comboBoxName.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.comboBoxName.Name = "comboBoxName";
-            this.comboBoxName.Size = new System.Drawing.Size(262, 24);
-            this.comboBoxName.TabIndex = 44;
-            this.comboBoxName.SelectedIndexChanged += new System.EventHandler(this.comboBoxName_SelectedIndexChanged);
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Yu Gothic UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.label1.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.label1.Location = new System.Drawing.Point(380, 500);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(0, 28);
+            this.label1.TabIndex = 44;
             // 
             // buyProduct
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1035, 638);
+            this.Controls.Add(this.label1);
             this.Controls.Add(this.groupBox7);
             this.Controls.Add(this.StatusPol);
             this.Controls.Add(this.addButton);
@@ -321,5 +333,6 @@
         private System.Windows.Forms.GroupBox groupBox4;
         private System.Windows.Forms.ComboBox ComboBoxBrand;
         private System.Windows.Forms.ComboBox comboBoxName;
+        private System.Windows.Forms.Label label1;
     }
 }

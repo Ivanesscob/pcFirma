@@ -111,6 +111,7 @@ namespace PcFirma
                 _adapter.Fill(_userSet);
                 dataOfProducts.MultiSelect = false;
                 dataOfProducts.DataSource = _userSet.Tables[0];
+                dataOfProducts.Columns[0].Visible = false;
             }
             UpdateDataGrid();
         }

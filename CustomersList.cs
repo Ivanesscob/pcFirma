@@ -100,7 +100,7 @@ namespace PcFirma
             _userSet = new DataSet();
             if (connection.State == System.Data.ConnectionState.Open)
             {
-                string selectQuery = "SELECT * FROM Customers;";
+                string selectQuery = "SELECT Phone, Email, Login, Password, BirthDay, FirstName, LastName, Patronymic FROM Customers;";
                 _adapter = new SqlDataAdapter(selectQuery, connection);
                 _adapter.Fill(_userSet);
                 dataOfCustomers.MultiSelect = false;
