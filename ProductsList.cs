@@ -85,7 +85,7 @@ namespace PcFirma
             }
             else
             {
-                MessageBox.Show("We didn't select an edit line!");
+                MessageBox.Show("Вы не выбрали строку для редактирования!");
                 return;
             }
             addEditProduct editAddPage = new addEditProduct(selectedRowIndex, _userSet, _adapter, connection);
