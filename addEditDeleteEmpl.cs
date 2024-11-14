@@ -32,9 +32,9 @@ namespace PcFirma
             _adapter = adapter;
             this.connection = connection;
             itemId = id;
-            addButton.Text = itemId != -1 ? "Edit" : "Add";
+            addButton.Text = itemId != -1 ? "Редактировать" : "Добавить";
             PasswordText.PasswordChar = '*';
-            label1.Text = "Add Employees";
+            label1.Text = "Добавить сотрудников";
             
 
             _userSetForDic = new DataSet();
@@ -51,7 +51,7 @@ namespace PcFirma
 
             if (itemId != -1)
             {
-                label1.Text = "Edit Employees";
+                label1.Text = "Редактировать сотрудников";
                 var row = _userSet.Tables[0].Rows[itemId];
                 LoginText.Text = row["Login"].ToString();
                 PasswordText.Text = row["Password"].ToString();
@@ -74,13 +74,13 @@ namespace PcFirma
                 String.IsNullOrEmpty(PhoneText.Text) || String.IsNullOrEmpty(EmailText.Text) ||
                 String.IsNullOrEmpty(NameText.Text) || String.IsNullOrEmpty(LastNameText.Text))
             {
-                StatusPol.Text = "Fill all fields";
+                StatusPol.Text = "Заполни все поля!";
                 StatusPol.Visible = true;
                 
             }
             else if (selectedDate > sixteenYearsAgo)
             {
-                StatusPol.Text = "You need to be over 14 years old";
+                StatusPol.Text = "Ты не должен быть моложе 14 лет!";
                 StatusPol.Visible = true;
             }
             else
@@ -100,7 +100,7 @@ namespace PcFirma
                     newRow["JobTitleID"] = categories[comboBox1.Text].ToString();
                     _userSet.Tables[0].Rows.Add(newRow);
                     SaveData();
-                    MessageBox.Show("You have successfully add");
+                    MessageBox.Show("Вы успешно добавили запись");
                     
                 }
                 else
@@ -117,7 +117,7 @@ namespace PcFirma
                     row["BirthDay"] = BirthDayPicker.Text;
                     row["JobTitleID"] = categories[comboBox1.Text].ToString();
                     SaveData();
-                    MessageBox.Show("You have successfully edit");
+                    MessageBox.Show("Вы успешно редактировали запись");
                 }
                 Close();
                 
@@ -191,15 +191,15 @@ namespace PcFirma
             if (String.IsNullOrEmpty(LoginText.Text) || String.IsNullOrEmpty(PasswordText.Text) ||
                 String.IsNullOrEmpty(PhoneText.Text) || String.IsNullOrEmpty(EmailText.Text) || !mozno || !moznoEmail || !moznoPhone)
             {
-                StatusPol.Text = "Fill all fields";
+                StatusPol.Text = "Заполни все поля!";
                 StatusPol.Visible = true;
-                if (!mozno) { StatusPol.Text = "A user with this login already exists"; }
-                if (!moznoEmail) { StatusPol.Text = "A user with this email already exists"; }
-                if (!moznoPhone) { StatusPol.Text = "A user with this phone already exists"; }
+                if (!mozno) { StatusPol.Text = "Пользователь с таким логином уже существует"; }
+                if (!moznoEmail) { StatusPol.Text = "Пользователь с такой почтой уже существует"; }
+                if (!moznoPhone) { StatusPol.Text = "Пользователь с таким телофоном уже существует"; }
             }
             else if (!(IsValidEmail(EmailText.Text)))
             {
-                StatusPol.Text = "Invalid Email";
+                StatusPol.Text = "Несуществующая почта";
                 StatusPol.Visible = true;
             }
             else

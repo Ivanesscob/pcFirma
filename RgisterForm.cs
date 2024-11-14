@@ -95,13 +95,13 @@ namespace PcFirma
             {
                 StatusPol.Text = "Fill all fields";
                 StatusPol.Visible = true;
-                if (!mozno) { StatusPol.Text = "A user with this login already exists"; }
-                if (!moznoEmail) { StatusPol.Text = "A user with this email already exists"; }
-                if (!moznoPhone) { StatusPol.Text = "A user with this phone already exists"; }
+                if (!mozno) { StatusPol.Text = "Пользователь с таким логином уже существует"; }
+                if (!moznoEmail) { StatusPol.Text = "Пользователь с такой почтой уже существует"; }
+                if (!moznoPhone) { StatusPol.Text = "Пользователь с таким телефоном уже существует"; }
             }
             else if (!(IsValidEmail(EmailText.Text)))
             {
-                StatusPol.Text = "Invalid Email";
+                StatusPol.Text = "Несуществующая почта";
                 StatusPol.Visible = true;
             }
             else
@@ -136,13 +136,13 @@ namespace PcFirma
                 String.IsNullOrEmpty(PhoneText.Text) || String.IsNullOrEmpty(EmailText.Text) ||
                 String.IsNullOrEmpty(NameText.Text) || String.IsNullOrEmpty(LastNameText.Text))
             {
-                StatusPol.Text = "Fill all fields";
+                StatusPol.Text = "Заполни все поля!";
                 StatusPol.Visible = true;
                 
             }
             else if(selectedDate > sixteenYearsAgo)
             {
-                StatusPol.Text = "You need to be over 14 years old";
+                StatusPol.Text = "Ты должен быть старше 14 лет";
                 StatusPol.Visible = true;
             }
             else
@@ -158,7 +158,7 @@ namespace PcFirma
                 newRow["BirthDay"] = BirthDayPicker.Text;
                 _userSet.Tables[0].Rows.Add(newRow);
                 SaveData();
-                MessageBox.Show("You have successfully registered");
+                MessageBox.Show("Вы успешно зарегестрированы!");
                 Close();
             }
         }

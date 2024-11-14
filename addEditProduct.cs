@@ -112,7 +112,7 @@ namespace PcFirma
             if(String.IsNullOrEmpty(ComboBoxBrand.Text) || String.IsNullOrEmpty(ComboBoxCategory.Text) || String.IsNullOrEmpty(ComboBoxCountry.Text))
             {
                 StatusPol.Visible = true;
-                StatusPol.Text = "Fill all fields";
+                StatusPol.Text = "Заполните все поля!";
             }
             else
             {
@@ -134,7 +134,7 @@ namespace PcFirma
                 String.IsNullOrEmpty(StockText.Text))
             {
                 StatusPol.Visible = true;
-                StatusPol.Text = "Fill all fields";
+                StatusPol.Text = "Заполните все поля!";
                 return;
                 
             }
@@ -159,12 +159,12 @@ namespace PcFirma
             if (moznoModel && id == -1)
             {
                 StatusPol.Visible = true;
-                StatusPol.Text = "This model already exists";
+                StatusPol.Text = "Эта модель уже существует";
             }
             else if (moznoName && id == -1)
             {
                 StatusPol.Visible = true;
-                StatusPol.Text = "This product name already exists";
+                StatusPol.Text = "Этот продукт уже существует";
             }
             else
             {
@@ -189,7 +189,7 @@ namespace PcFirma
                     newRow1["Stock"] = StockText.Text;
                     _userSet.Tables[0].Rows.Add(newRow1);
                     SaveData();
-                    MessageBox.Show("You have successfully add");
+                    MessageBox.Show("Запись успешно добавлена");
                     Close();
                 }
                 else
@@ -213,7 +213,7 @@ namespace PcFirma
                     productRow["Stock"] = StockText.Text;
 
                     SaveData(); 
-                    MessageBox.Show("You have successfully edited the data.");
+                    MessageBox.Show("Запись успешно изменена");
                     Close();
 
                 }

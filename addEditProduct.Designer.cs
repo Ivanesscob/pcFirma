@@ -71,7 +71,7 @@
             // 
             this.AddCategory.Font = new System.Drawing.Font("Yu Gothic UI", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.AddCategory.Location = new System.Drawing.Point(19, 403);
-            this.AddCategory.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.AddCategory.Margin = new System.Windows.Forms.Padding(2);
             this.AddCategory.Name = "AddCategory";
             this.AddCategory.Size = new System.Drawing.Size(160, 88);
             this.AddCategory.TabIndex = 8;
@@ -83,7 +83,7 @@
             // 
             this.AddBrand.Font = new System.Drawing.Font("Yu Gothic UI", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.AddBrand.Location = new System.Drawing.Point(19, 219);
-            this.AddBrand.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.AddBrand.Margin = new System.Windows.Forms.Padding(2);
             this.AddBrand.Name = "AddBrand";
             this.AddBrand.Size = new System.Drawing.Size(160, 87);
             this.AddBrand.TabIndex = 9;
@@ -95,7 +95,7 @@
             // 
             this.AddCountry.Font = new System.Drawing.Font("Yu Gothic UI", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.AddCountry.Location = new System.Drawing.Point(19, 48);
-            this.AddCountry.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.AddCountry.Margin = new System.Windows.Forms.Padding(2);
             this.AddCountry.Name = "AddCountry";
             this.AddCountry.Size = new System.Drawing.Size(160, 84);
             this.AddCountry.TabIndex = 10;
@@ -155,7 +155,7 @@
             // StockText
             // 
             this.StockText.Location = new System.Drawing.Point(3, 38);
-            this.StockText.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.StockText.Margin = new System.Windows.Forms.Padding(2);
             this.StockText.Name = "StockText";
             this.StockText.Size = new System.Drawing.Size(193, 20);
             this.StockText.TabIndex = 37;
@@ -173,7 +173,7 @@
             // ModelText
             // 
             this.ModelText.Location = new System.Drawing.Point(6, 37);
-            this.ModelText.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.ModelText.Margin = new System.Windows.Forms.Padding(2);
             this.ModelText.Name = "ModelText";
             this.ModelText.Size = new System.Drawing.Size(190, 20);
             this.ModelText.TabIndex = 0;
@@ -191,7 +191,7 @@
             // NameText
             // 
             this.NameText.Location = new System.Drawing.Point(3, 37);
-            this.NameText.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.NameText.Margin = new System.Windows.Forms.Padding(2);
             this.NameText.Name = "NameText";
             this.NameText.Size = new System.Drawing.Size(193, 20);
             this.NameText.TabIndex = 37;
@@ -210,7 +210,7 @@
             // PriceText
             // 
             this.PriceText.Location = new System.Drawing.Point(3, 39);
-            this.PriceText.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.PriceText.Margin = new System.Windows.Forms.Padding(2);
             this.PriceText.Name = "PriceText";
             this.PriceText.Size = new System.Drawing.Size(193, 22);
             this.PriceText.TabIndex = 37;
@@ -230,7 +230,7 @@
             // 
             this.addButton.Font = new System.Drawing.Font("Yu Gothic UI", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.addButton.Location = new System.Drawing.Point(80, 446);
-            this.addButton.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.addButton.Margin = new System.Windows.Forms.Padding(2);
             this.addButton.Name = "addButton";
             this.addButton.Size = new System.Drawing.Size(160, 46);
             this.addButton.TabIndex = 34;
@@ -243,7 +243,7 @@
             // 
             this.baclButton.Font = new System.Drawing.Font("Yu Gothic UI", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.baclButton.Location = new System.Drawing.Point(245, 445);
-            this.baclButton.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.baclButton.Margin = new System.Windows.Forms.Padding(2);
             this.baclButton.Name = "baclButton";
             this.baclButton.Size = new System.Drawing.Size(170, 46);
             this.baclButton.TabIndex = 33;
@@ -256,7 +256,7 @@
             // 
             this.nextButton.Font = new System.Drawing.Font("Yu Gothic UI", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.nextButton.Location = new System.Drawing.Point(80, 445);
-            this.nextButton.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.nextButton.Margin = new System.Windows.Forms.Padding(2);
             this.nextButton.Name = "nextButton";
             this.nextButton.Size = new System.Drawing.Size(160, 46);
             this.nextButton.TabIndex = 32;
@@ -268,11 +268,11 @@
             // 
             this.ExitButton.Font = new System.Drawing.Font("Yu Gothic UI", 16.8F);
             this.ExitButton.Location = new System.Drawing.Point(419, 445);
-            this.ExitButton.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.ExitButton.Margin = new System.Windows.Forms.Padding(2);
             this.ExitButton.Name = "ExitButton";
             this.ExitButton.Size = new System.Drawing.Size(153, 46);
             this.ExitButton.TabIndex = 31;
-            this.ExitButton.Text = "Экзит";
+            this.ExitButton.Text = "Выход";
             this.ExitButton.UseVisualStyleBackColor = true;
             this.ExitButton.Click += new System.EventHandler(this.ExitButton_Click);
             // 
@@ -301,7 +301,7 @@
             // 
             this.ComboBoxCountry.FormattingEnabled = true;
             this.ComboBoxCountry.Location = new System.Drawing.Point(0, 40);
-            this.ComboBoxCountry.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.ComboBoxCountry.Margin = new System.Windows.Forms.Padding(2);
             this.ComboBoxCountry.Name = "ComboBoxCountry";
             this.ComboBoxCountry.Size = new System.Drawing.Size(195, 21);
             this.ComboBoxCountry.TabIndex = 23;
@@ -321,7 +321,7 @@
             // 
             this.ComboBoxCategory.FormattingEnabled = true;
             this.ComboBoxCategory.Location = new System.Drawing.Point(0, 40);
-            this.ComboBoxCategory.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.ComboBoxCategory.Margin = new System.Windows.Forms.Padding(2);
             this.ComboBoxCategory.Name = "ComboBoxCategory";
             this.ComboBoxCategory.Size = new System.Drawing.Size(195, 21);
             this.ComboBoxCategory.TabIndex = 23;
@@ -340,7 +340,7 @@
             // 
             this.ComboBoxBrand.FormattingEnabled = true;
             this.ComboBoxBrand.Location = new System.Drawing.Point(0, 40);
-            this.ComboBoxBrand.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.ComboBoxBrand.Margin = new System.Windows.Forms.Padding(2);
             this.ComboBoxBrand.Name = "ComboBoxBrand";
             this.ComboBoxBrand.Size = new System.Drawing.Size(195, 21);
             this.ComboBoxBrand.TabIndex = 23;

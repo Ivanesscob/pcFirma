@@ -73,7 +73,7 @@ namespace PcFirma
             {
                 var selectedRowIndex = data.SelectedRows[0].Index;
 
-                DialogResult result = MessageBox.Show("Do you sure?", "Deletion confirmation", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+                DialogResult result = MessageBox.Show("Ты уверен?", "Под", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
 
 
 
@@ -96,12 +96,12 @@ namespace PcFirma
                     }
                     else
                     {
-                        MessageBox.Show("Deletion is not possible, a model with these parameters exists");
+                        MessageBox.Show("Удаление невозможно, модель с такими параметрами уже существует");
                     }
                 }
                 else
                 {
-                    MessageBox.Show("We didn't select an edit line!");
+                    MessageBox.Show("Ты не выбрал строку!");
                     return;
                 }
 

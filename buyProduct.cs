@@ -95,7 +95,7 @@ namespace PcFirma
           if (String.IsNullOrEmpty(comboBoxName.Text) || String.IsNullOrEmpty(stock.Text))
             {
                 StatusPol.Visible = true;
-                StatusPol.Text = "Fill all fields!";
+                StatusPol.Text = "Заполни все поля!";
             }
             else
             {
@@ -127,7 +127,7 @@ namespace PcFirma
             if (String.IsNullOrEmpty(ComboBoxBrand.Text) || String.IsNullOrEmpty(ComboBoxCategory.Text) || String.IsNullOrEmpty(ComboBoxCountry.Text))
             {
                 StatusPol.Visible = true;
-                StatusPol.Text = "Fill all fields";
+                StatusPol.Text = "Заполните все поля!";
             }
             else
             {

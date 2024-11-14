@@ -26,7 +26,7 @@ namespace PcFirma
             _adapter = adapter;
             itemId = id;
             this.connection = connection;
-            addButton.Text = itemId != -1 ? "Edit" : "Add";
+            addButton.Text = itemId != -1 ? "Редактировать" : "Добавить";
 
             if (itemId != -1)
             {
@@ -69,16 +69,16 @@ namespace PcFirma
                         moznoEmail = false;
                     }
                 }
-                if (!mozno) { MessageBox.Show("Customers with this phone already exist"); }
-                if (!moznoEmail) { MessageBox.Show("Customers with this email already exist"); }
+                if (!mozno) { MessageBox.Show("Покупатель с таким телефоном уже существует"); }
+                if (!moznoEmail) { MessageBox.Show("Покупатель с такой почтой уже существует"); }
 
                 if ((String.IsNullOrWhiteSpace(NameText.Text) || String.IsNullOrWhiteSpace(PhoneText.Text) || String.IsNullOrWhiteSpace(EmailText.Text) || String.IsNullOrWhiteSpace(AddressText.Text)))
                 {
-                    MessageBox.Show("Fill all fields");
+                    MessageBox.Show("Заполните все поля");
                 }
                 else if (!(IsValidEmail(EmailText.Text)))
                 {
-                    MessageBox.Show( "Invalid Email");
+                    MessageBox.Show( "Несуществующая почта");
                     
                 }
                 else
@@ -102,11 +102,11 @@ namespace PcFirma
 
                 if ((String.IsNullOrWhiteSpace(NameText.Text) || String.IsNullOrWhiteSpace(PhoneText.Text) || String.IsNullOrWhiteSpace(EmailText.Text) || String.IsNullOrWhiteSpace(AddressText.Text)))
                 {
-                    MessageBox.Show("Fill all fields");
+                    MessageBox.Show("Заполните все поля");
                 }
                 else if (!(IsValidEmail(EmailText.Text)))
                 {
-                    MessageBox.Show("Invalid Email");
+                    MessageBox.Show("Несуществующая форма");
 
                 }
                 else

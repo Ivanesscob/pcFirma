@@ -56,7 +56,6 @@ C:\Users\ivane\PcFirma\pcFirma\bin\Debug\K4os.Compression.LZ4.dll
 C:\Users\ivane\PcFirma\pcFirma\bin\Debug\K4os.Compression.LZ4.Streams.dll
 C:\Users\ivane\PcFirma\pcFirma\bin\Debug\K4os.Hash.xxHash.dll
 C:\Users\ivane\PcFirma\pcFirma\bin\Debug\Microsoft.Bcl.AsyncInterfaces.dll
-C:\Users\ivane\PcFirma\pcFirma\bin\Debug\MySql.Data.dll
 C:\Users\ivane\PcFirma\pcFirma\bin\Debug\System.Buffers.dll
 C:\Users\ivane\PcFirma\pcFirma\bin\Debug\System.Configuration.ConfigurationManager.dll
 C:\Users\ivane\PcFirma\pcFirma\bin\Debug\System.Diagnostics.DiagnosticSource.dll
@@ -73,7 +72,6 @@ C:\Users\ivane\PcFirma\pcFirma\bin\Debug\K4os.Compression.LZ4.xml
 C:\Users\ivane\PcFirma\pcFirma\bin\Debug\K4os.Compression.LZ4.Streams.xml
 C:\Users\ivane\PcFirma\pcFirma\bin\Debug\K4os.Hash.xxHash.xml
 C:\Users\ivane\PcFirma\pcFirma\bin\Debug\Microsoft.Bcl.AsyncInterfaces.xml
-C:\Users\ivane\PcFirma\pcFirma\bin\Debug\MySql.Data.xml
 C:\Users\ivane\PcFirma\pcFirma\bin\Debug\System.Buffers.xml
 C:\Users\ivane\PcFirma\pcFirma\bin\Debug\System.Configuration.ConfigurationManager.xml
 C:\Users\ivane\PcFirma\pcFirma\bin\Debug\System.Diagnostics.DiagnosticSource.xml
@@ -112,3 +110,11 @@ C:\Users\ivane\codeProjects\c#\PcFirma\PcFirma\obj\Debug\PcFirma.JobTitles.resou
 C:\Users\ivane\codeProjects\c#\PcFirma\PcFirma\obj\Debug\PcFirma.CustomersProduct.resources
 C:\Users\ivane\codeProjects\c#\PcFirma\PcFirma\obj\Debug\PcFirma.ProfileCustpmer.resources
 C:\Users\ivane\codeProjects\c#\PcFirma\PcFirma\obj\Debug\PcFirma.buyProduct.resources
+C:\Users\ivane\PcFirma\pcFirma\bin\Debug\itextsharp.dll
+C:\Users\ivane\PcFirma\pcFirma\bin\Debug\itextsharp.xml
+C:\Users\ivane\PcFirma\pcFirma\obj\Debug\PcFirma.addEditOrder.resources
+C:\Users\ivane\PcFirma\pcFirma\obj\Debug\PcFirma.buyProduct.resources
+C:\Users\ivane\PcFirma\pcFirma\obj\Debug\PcFirma.CustomersProduct.resources
+C:\Users\ivane\PcFirma\pcFirma\obj\Debug\PcFirma.EditOrders.resources
+C:\Users\ivane\PcFirma\pcFirma\obj\Debug\PcFirma.JobTitles.resources
+C:\Users\ivane\PcFirma\pcFirma\obj\Debug\PcFirma.ProfileCustpmer.resources

@@ -45,7 +45,7 @@ namespace PcFirma
             }
             else
             {
-                MessageBox.Show("We didn't select an edit line!");
+                MessageBox.Show("Вы не выбрали строку для редактирования!");
                 return;
             }
             addEditDelete editAddPage = new addEditDelete(selectedRowIndex, _userSet, _adapter, connection);
@@ -58,7 +58,7 @@ namespace PcFirma
             {
                 var selectedRowIndex = dataOfCustomers.SelectedRows[0].Index;
 
-                DialogResult result = MessageBox.Show("Do you sure?", "Deletion confirmation", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+                DialogResult result = MessageBox.Show("Ты уверен?", "Подтверждение удаления", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
 
 
 
@@ -74,7 +74,7 @@ namespace PcFirma
             }
             else
             {
-                MessageBox.Show("We didn't select an edit line!");
+                MessageBox.Show("Вы не выбрали строку для редактирования");
                 return;
             }
 

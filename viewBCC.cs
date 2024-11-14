@@ -26,18 +26,18 @@ namespace PcFirma
             InitializeComponent();
             if (i == 0)
             {
-                label1.Text = "Countries";
+                label1.Text = "Страны";
                 bcc = "Counrties;";
             }
             else if (i == 1)
             {
-                label1.Text = "Brands";
+                label1.Text = "Бренды";
                 bcc = "Brand;";
                 
             }
             else
             {
-                label1.Text = "Categories";
+                label1.Text = "Категории";
                 bcc = "Categories;";
             }
         }
@@ -70,7 +70,7 @@ namespace PcFirma
             {
                 var selectedRowIndex = data.SelectedRows[0].Index;
 
-                DialogResult result = MessageBox.Show("Do you sure?", "Deletion confirmation", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+                DialogResult result = MessageBox.Show("Ты уверен?", "Подтверджение удаления", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
 
 
 
@@ -99,13 +99,13 @@ namespace PcFirma
                             }
                             else
                             {
-                                MessageBox.Show("Deletion is not possible, a brand with these parameters exists");
+                                MessageBox.Show("Удаление невозможно, бренд с такими параметрами существует");
                             }
                             
                         }
                         else
                         {
-                            MessageBox.Show("Deletion is not possible, a model with these parameters exists");
+                            MessageBox.Show("Удаление невозможно, модель с такими параметрами существует");
                         }
                     }
                     else if (bbc == 1)
@@ -127,7 +127,7 @@ namespace PcFirma
                         }
                         else
                         {
-                            MessageBox.Show("Deletion is not possible, a model with these parameters exists");
+                            MessageBox.Show("Удаление невозможно, модель с такими параметрами существует");
                         }
 
                     }
@@ -148,7 +148,7 @@ namespace PcFirma
                         }
                         else
                         {
-                            MessageBox.Show("Deletion is not possible, a model with these parameters exists");
+                            MessageBox.Show("Удаление невозможно, модель с такими параметрами существует");
                         }
                     }
                     
@@ -158,7 +158,7 @@ namespace PcFirma
             }
             else
             {
-                MessageBox.Show("We didn't select an edit line!");
+                MessageBox.Show("Ты не выбрал строку редактирования");
                 return;
             }
         }
@@ -189,7 +189,7 @@ namespace PcFirma
             }
             else
             {
-                MessageBox.Show("We didn't select an edit line!");
+                MessageBox.Show("Ты не выбрал строку редактирования");
                 return;
             }
             
@@ -211,12 +211,29 @@ namespace PcFirma
             _userSet = new DataSet();
             if (connection.State == System.Data.ConnectionState.Open)
             {
-                string selectQuery = "SELECT * FROM "+ bcc;
-                _adapter = new SqlDataAdapter(selectQuery, connection);
-                _adapter.Fill(_userSet);
-                data.MultiSelect = false;
-                data.DataSource = _userSet.Tables[0];
-                data.Columns[0].Visible = false;
+                string selectQuery;
+                if (bcc == "Brands")
+                {
+                    selectQuery = "SELECT Brand,Country FROM Brand join Counrties on Brand.CountryID = Counrties.Id;";
+                    _adapter = new SqlDataAdapter(selectQuery, connection);
+                    _adapter.Fill(_userSet);
+                    data.MultiSelect = false;
+                    data.DataSource = _userSet.Tables[0];
+                    data.Columns[1].HeaderText = "Бренд";
+
+                }
+                else
+                {
+                   selectQuery = "SELECT * FROM " + bcc; _adapter = new SqlDataAdapter(selectQuery, connection);
+                    _adapter.Fill(_userSet);
+                    data.MultiSelect = false;
+                    data.DataSource = _userSet.Tables[0];
+                    data.Columns[0].Visible = false;
+                    
+                }
+
+                
+                
             }
             UpdateDataGrid();
         }

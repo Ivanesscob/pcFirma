@@ -22,7 +22,7 @@ namespace PcFirma
             InitializeComponent();
             pswdTextBox.PasswordChar = '*';
 
-            this.BackgroundImage = Image.FromFile("C:\\Users\\ivane\\OneDrive\\Изображения\\RS.jpg");
+            
             this.BackgroundImageLayout = ImageLayout.Stretch;
             Connection("SELECT * FROM Customers;");
 

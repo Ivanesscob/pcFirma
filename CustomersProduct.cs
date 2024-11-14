@@ -146,7 +146,7 @@ namespace PcFirma
             {
                 selectedRowIndex = dataOfProducts.SelectedRows[0].Index;
                 var row = _userSet.Tables[0].Rows[selectedRowIndex];
-                string result = ShowInputDialog("Enter Quantity:");
+                string result = ShowInputDialog("Введите число:");
                 if (int.TryParse(result, out int quantity) && quantity >= 1)
                 {
                     if (products.ContainsKey(row["ProductName"].ToString()))
@@ -167,7 +167,7 @@ namespace PcFirma
                 }
                 else
                 {
-                    MessageBox.Show("Invalid quantity entered. Please enter a valid number.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    MessageBox.Show("Неверное число", "Ошибка", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 }
             }
             else
@@ -179,7 +179,7 @@ namespace PcFirma
 
         private void listBox1_DoubleClick(object sender, EventArgs e)
         {
-            DialogResult result = MessageBox.Show("Do you sure?", "Deletion confirmation", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+            DialogResult result = MessageBox.Show("Ты уверен?", "Подтверждение удаления", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
 
 
 
@@ -189,7 +189,7 @@ namespace PcFirma
                 if (listBox1.SelectedItem != null)
                 {
                     listBox1.Items.Remove(listBox1.SelectedItem);
-                    MessageBox.Show("Product removed from cart");
+                    MessageBox.Show("Продукт удален из корзины");
                 }
 
             }
@@ -206,7 +206,7 @@ namespace PcFirma
                 {
                     if (int.Parse(row["Stock"].ToString()) < products[(row["ProductName"].ToString().Trim())])
                     {
-                        MessageBox.Show("Product: " +row["ProductName"].ToString() + ". Quantity of this product no, select a lower value");
+                        MessageBox.Show("Продукт: " +row["ProductName"].ToString() + ". Данное количества продукта нет в наличии");
                         q = false;
                     }
                 }
@@ -240,7 +240,7 @@ namespace PcFirma
 
                     foreach (var item in products)
                     {
-                        listBox1.Items.Add(item.Key + " Qty: " + item.Value);
+                        listBox1.Items.Add(item.Key + " Кол-во: " + item.Value);
                     }
                 }
 

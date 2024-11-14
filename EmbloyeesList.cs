@@ -32,7 +32,7 @@ namespace PcFirma
             {
                 var selectedRowIndex = dataOfEmployees.SelectedRows[0].Index;
 
-                DialogResult result = MessageBox.Show("Do you sure?", "Deletion confirmation", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+                DialogResult result = MessageBox.Show("Ты уверен?", "Подтверждение удаления", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
 
 
 
@@ -48,7 +48,7 @@ namespace PcFirma
             }
             else
             {
-                MessageBox.Show("We didn't select an edit line!");
+                MessageBox.Show("Ты не выбрал строку!");
                 return;
             }
         }
@@ -62,7 +62,7 @@ namespace PcFirma
             }
             else
             {
-                MessageBox.Show("We didn't select an edit line!");
+                MessageBox.Show("Ты не выбрал строку!");
                 return;
             }
             addEditDeleteEmpl editAddPage = new addEditDeleteEmpl(selectedRowIndex, _userSet, _adapter, connection);

@@ -38,7 +38,7 @@ namespace PcFirma
             {
                 var selectedRowIndex = dataOfProducts.SelectedRows[0].Index;
 
-                DialogResult result = MessageBox.Show("Do you sure?", "Deletion confirmation", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+                DialogResult result = MessageBox.Show("Ты уверен?", "Подтверждение удаления", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
 
 
 
@@ -57,7 +57,7 @@ namespace PcFirma
             }
             else
             {
-                MessageBox.Show("We didn't select an edit line!");
+                MessageBox.Show("Вы не выбрали строку!");
                 return;
             }
         }
@@ -106,12 +106,13 @@ namespace PcFirma
             _userSet = new DataSet();
             if (connection.State == System.Data.ConnectionState.Open)
             {
-                string selectQuery = "SELECT * FROM Products;";
+                string selectQuery = "SELECT * FROM Products ;";
                 _adapter = new SqlDataAdapter(selectQuery, connection);
                 _adapter.Fill(_userSet);
                 dataOfProducts.MultiSelect = false;
                 dataOfProducts.DataSource = _userSet.Tables[0];
                 dataOfProducts.Columns[0].Visible = false;
+                dataOfProducts.Columns[1].HeaderText = "Название";
             }
             UpdateDataGrid();
         }
