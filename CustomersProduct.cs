@@ -89,12 +89,16 @@ namespace PcFirma
             _userSet = new DataSet();
             if (connection.State == System.Data.ConnectionState.Open)
             {
-                string selectQuery = "SELECT ProductName,Models,Price,Stock FROM Products JOIN " +
+                string selectQuery = "SELECT ProductName,Price,Stock FROM Products JOIN " +
                     "Models ON Products.ModelID = Models.Id;";
                 _adapter = new SqlDataAdapter(selectQuery, connection);
                 _adapter.Fill(_userSet);
                 dataOfProducts.MultiSelect = false;
                 dataOfProducts.DataSource = _userSet.Tables[0];
+                dataOfProducts.Columns[0].HeaderText = "Название продукта";
+                dataOfProducts.Columns[0].Width = 150;
+                dataOfProducts.Columns[1].HeaderText = "Цена";
+                dataOfProducts.Columns[2].HeaderText = "Количество";
             }
             UpdateDataGrid();
         }
