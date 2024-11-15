@@ -105,6 +105,14 @@ namespace PcFirma
                 _adapter.Fill(_userSet);
                 dataOfCustomers.MultiSelect = false;
                 dataOfCustomers.DataSource = _userSet.Tables[0];
+                dataOfCustomers.Columns[0].HeaderText = "Телефон";
+                dataOfCustomers.Columns[1].HeaderText = "Почта";
+                dataOfCustomers.Columns[2].HeaderText = "Логин";
+                dataOfCustomers.Columns[3].HeaderText = "Пароль";
+                dataOfCustomers.Columns[4].HeaderText = "Дата рождения";
+                dataOfCustomers.Columns[5].HeaderText = "Имя";
+                dataOfCustomers.Columns[6].HeaderText = "Фамилия";
+                dataOfCustomers.Columns[7].HeaderText = "Отчество";
             }
             UpdateDataGrid();
         }

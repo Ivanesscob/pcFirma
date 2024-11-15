@@ -106,13 +106,18 @@ namespace PcFirma
             _userSet = new DataSet();
             if (connection.State == System.Data.ConnectionState.Open)
             {
-                string selectQuery = "SELECT * FROM Products ;";
+                string selectQuery = "select ProductName, Models,Price, Stock,Brand,Country,CategoryName from Products join Models on ProductID = Id  join Brand on Brand.Id = Models.BrandID join Counrties on Counrties.Id = Brand.CountryID join Categories on Categories.CategoryID = Models.CategoryID;";
                 _adapter = new SqlDataAdapter(selectQuery, connection);
                 _adapter.Fill(_userSet);
                 dataOfProducts.MultiSelect = false;
                 dataOfProducts.DataSource = _userSet.Tables[0];
-                dataOfProducts.Columns[0].Visible = false;
-                dataOfProducts.Columns[1].HeaderText = "Название";
+                dataOfProducts.Columns[0].HeaderText = "Название продукта";
+                dataOfProducts.Columns[1].HeaderText = "Название модели";
+                dataOfProducts.Columns[2].HeaderText = "Стоимость";
+                dataOfProducts.Columns[3].HeaderText = "Кол-во";
+                dataOfProducts.Columns[4].HeaderText = "Производитель";
+                dataOfProducts.Columns[5].HeaderText = "Страна производителя";
+                dataOfProducts.Columns[6].HeaderText = "Категория";
             }
             UpdateDataGrid();
         }

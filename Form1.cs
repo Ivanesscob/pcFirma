@@ -62,7 +62,7 @@ namespace PcFirma
             {
                 if (row["Login"].ToString().Trim() == loginTextBox.Text.Trim() && row["Password"].ToString().Trim() == pswdTextBox.Text.Trim())
                 {
-                    CustomersProduct product = new CustomersProduct(row["CustonerID"].ToString().Trim());
+                    CustomersProduct product = new CustomersProduct(row["CustomerID"].ToString().Trim());
                     product.Show();
                     Hide();
                     statusLog = false;

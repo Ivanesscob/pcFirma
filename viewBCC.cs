@@ -28,6 +28,7 @@ namespace PcFirma
             {
                 label1.Text = "Страны";
                 bcc = "Counrties;";
+                
             }
             else if (i == 1)
             {
@@ -39,6 +40,7 @@ namespace PcFirma
             {
                 label1.Text = "Категории";
                 bcc = "Categories;";
+                
             }
         }
 
@@ -212,14 +214,16 @@ namespace PcFirma
             if (connection.State == System.Data.ConnectionState.Open)
             {
                 string selectQuery;
-                if (bcc == "Brands")
+                if (bcc == "Brand;")
                 {
                     selectQuery = "SELECT Brand,Country FROM Brand join Counrties on Brand.CountryID = Counrties.Id;";
                     _adapter = new SqlDataAdapter(selectQuery, connection);
                     _adapter.Fill(_userSet);
                     data.MultiSelect = false;
                     data.DataSource = _userSet.Tables[0];
-                    data.Columns[1].HeaderText = "Бренд";
+                    data.Columns[0].HeaderText = "Производитель";
+                    data.Columns[1].HeaderText = "Страна";
+
 
                 }
                 else
@@ -230,6 +234,14 @@ namespace PcFirma
                     data.DataSource = _userSet.Tables[0];
                     data.Columns[0].Visible = false;
                     
+                    if (bcc == "Categories;")
+                    {
+                        data.Columns[1].HeaderText = "Категория";
+                    }
+                    else
+                    {
+                        data.Columns[1].HeaderText = "Страна";
+                    }
                 }
 
                 

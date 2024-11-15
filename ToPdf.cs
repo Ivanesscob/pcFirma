@@ -43,7 +43,7 @@ namespace PcFirma
                 }
             }
 
-            MessageBox.Show("File created on your Desktop");
+            MessageBox.Show("Файл успешно создан на рабочем столе!");
             pdfDoc.Add(pdfTable);
             pdfDoc.Close();
 

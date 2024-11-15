@@ -73,7 +73,7 @@ namespace PcFirma
             {
                 var selectedRowIndex = data.SelectedRows[0].Index;
 
-                DialogResult result = MessageBox.Show("Ты уверен?", "Под", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+                DialogResult result = MessageBox.Show("Ты уверен?", "Подтверждение удаления", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
 
 
 
@@ -89,6 +89,7 @@ namespace PcFirma
                         Connection("SELECT * FROM JobTitles;");
                         data.MultiSelect = false;
                         data.DataSource = _userSet.Tables[0];
+                        data.Columns[0].HeaderText = "Должность";
                         data.Rows.RemoveAt(selectedRowIndex);
                         SaveData();
                         UpdateDataGrid();
