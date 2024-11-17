@@ -8,6 +8,7 @@ using System.Linq;
 using System.Management;
 using System.Text;
 using System.Threading.Tasks;
+using System.Web;
 using System.Windows.Forms;
 
 namespace PcFirma
@@ -122,6 +123,7 @@ namespace PcFirma
                 _adapter.Fill(_userSet);
 
             }
+            string a;
             foreach (DataRow row in _userSet.Tables[0].Rows)
             {
                 
@@ -130,7 +132,7 @@ namespace PcFirma
                 _userSetdop = new DataSet();
                 if (connection1.State == System.Data.ConnectionState.Open)
                 {
-                    string a = "";
+                    a = "";
                     _adapterdop = new SqlDataAdapter("select ProductName, Stock from Orders join OrderDetails on OrderDetails.OrdersID = Orders.OrderID join Products on Products.ProductID = OrderDetails.ProductID where Orders.CustomerID = " +id.ToString() + " and Orders.OrderID = "+ row["OrderID"].ToString() +";", connection1);
                     _adapterdop.Fill(_userSetdop);
                     foreach (DataRow row1 in _userSetdop.Tables[0].Rows)

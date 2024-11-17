@@ -178,3 +178,4 @@ C:\Users\ivane\codeProjects\c#\pcFrima\pcFirma\obj\Debug\PcFirma.csproj.CoreComp
 C:\Users\ivane\codeProjects\c#\pcFrima\pcFirma\obj\Debug\PcFirma.csproj.Up2Date
 C:\Users\ivane\codeProjects\c#\pcFrima\pcFirma\obj\Debug\PcFirma.exe
 C:\Users\ivane\codeProjects\c#\pcFrima\pcFirma\obj\Debug\PcFirma.pdb
+C:\Users\ivane\codeProjects\c#\pcFrima\pcFirma\obj\Debug\PcFirma.ProgressForm.resources

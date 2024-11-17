@@ -215,9 +215,59 @@ namespace PcFirma
                     }
                 }
             }
-            if (q) { 
-                
+            if (q) {
+                double sum = 0d;
+                Connection("SELECT * FROM Products;");
+                foreach (DataRow row in _userSet.Tables[0].Rows)
+                {
+                    if (products.ContainsKey(row["ProductName"].ToString().Trim()))
+                    {
+                        sum += double.Parse(row["Price"].ToString()) * products[row["ProductName"].ToString()];
+                    }
+
+                }
+                Connection("SELECT * FROM Orders;");
+                DataRow newRow = _userSet.Tables[0].NewRow();
+                newRow["OrderDate"] = DateTime.Now.ToString();
+                newRow["CustomerID"] = id.ToString();
+                newRow["totalAmount"] = sum.ToString();
+                newRow["EmployeeID"] = "1";
+                _userSet.Tables[0].Rows.Add(newRow);
+                SaveData();
+                Connection("SELECT * FROM Orders;");
+                string a = ((int)_userSet.Tables[0].Rows[_userSet.Tables[0].Rows.Count - 1]["OrderId"]).ToString();
+                foreach (var item in products)
+                {
+                    string idOfProduct = "";
+                    double uitprice = 0d;
+                    Connection("SELECT * FROM Products;");
+                    foreach (DataRow row in _userSet.Tables[0].Rows)
+                    {
+                        if (row["ProductName"].ToString().Trim() == item.Key.ToString())
+                        {
+                            idOfProduct = row["ProductID"].ToString();
+                            uitprice = double.Parse(row["Price"].ToString());
+                        }
+
+                    }
+                    Connection("SELECT * FROM OrderDetails;");
+                    newRow = _userSet.Tables[0].NewRow();
+                    newRow["OrdersID"] = a.ToString();
+                    newRow["Quantity"] = item.Value.ToString();
+                    newRow["ProductID"] = idOfProduct.ToString();
+                    newRow["UnitPrice"] = (uitprice * item.Value).ToString();
+                    _userSet.Tables[0].Rows.Add(newRow);
+                    SaveData();
+                    
+                }
+                MessageBox.Show("Товар куплен!");
+
             }
+        }
+        private void SaveData()
+        {
+            SqlCommandBuilder sqlCommandBuilder = new SqlCommandBuilder(_adapter);
+            _adapter.Update(_userSet);
         }
 
         private void button2_Click(object sender, EventArgs e)
