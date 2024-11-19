@@ -119,30 +119,27 @@ namespace PcFirma
             if (connection.State == System.Data.ConnectionState.Open)
             {
 
-                _adapter = new SqlDataAdapter("select * from Orders where CustomerID =" + id.ToString(), connection);
+                _adapter = new SqlDataAdapter("select * from OrderDetails join Orders on Orders.OrderID = OrderDetails.OrdersID  join Products on Products.ProductID = OrderDetails.ProductID where CustomerID = " + id.ToString(), connection);
                 _adapter.Fill(_userSet);
 
             }
-            string a;
-            foreach (DataRow row in _userSet.Tables[0].Rows)
+            string a = "";
+            string idOrd = _userSet.Tables[0].Rows[0]["OrderID"].ToString();
+            foreach(DataRow row in _userSet.Tables[0].Rows)
             {
-                
-                SqlConnection connection1 = new SqlConnection(s.ConnectionString());
-                connection1.Open();
-                _userSetdop = new DataSet();
-                if (connection1.State == System.Data.ConnectionState.Open)
+                if (row["OrdersID"].ToString() == idOrd)
                 {
-                    a = "";
-                    _adapterdop = new SqlDataAdapter("select ProductName, Stock from Orders join OrderDetails on OrderDetails.OrdersID = Orders.OrderID join Products on Products.ProductID = OrderDetails.ProductID where Orders.CustomerID = " +id.ToString() + " and Orders.OrderID = "+ row["OrderID"].ToString() +";", connection1);
-                    _adapterdop.Fill(_userSetdop);
-                    foreach (DataRow row1 in _userSetdop.Tables[0].Rows)
-                    {
-                        a += row1["ProductName"].ToString().Trim() + " - " + row1["Stock"].ToString() + " ";
-                    }
-                    
+                    a += row["ProductName"].ToString();      
+                }
+                else
+                {
                     listBox1.Items.Add(a);
+                    idOrd = row["OrdersID"].ToString();
+                    a = row["ProductName"].ToString();
                 }
             }
+            listBox1.Items.Add(a);
+            
 
         }
        
