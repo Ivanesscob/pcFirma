@@ -41,20 +41,19 @@
             // dataOfCustomers
             // 
             this.dataOfCustomers.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataOfCustomers.Location = new System.Drawing.Point(57, 88);
-            this.dataOfCustomers.Margin = new System.Windows.Forms.Padding(2);
+            this.dataOfCustomers.Location = new System.Drawing.Point(76, 108);
+            this.dataOfCustomers.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.dataOfCustomers.Name = "dataOfCustomers";
             this.dataOfCustomers.RowHeadersWidth = 51;
             this.dataOfCustomers.RowTemplate.Height = 24;
-            this.dataOfCustomers.Size = new System.Drawing.Size(788, 355);
+            this.dataOfCustomers.Size = new System.Drawing.Size(1051, 437);
             this.dataOfCustomers.TabIndex = 0;
             // 
             // label1
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Yu Gothic UI", 36F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label1.Location = new System.Drawing.Point(297, 9);
-            this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label1.Location = new System.Drawing.Point(396, 11);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(287, 65);
             this.label1.TabIndex = 1;
@@ -63,10 +62,10 @@
             // addButton
             // 
             this.addButton.Font = new System.Drawing.Font("Yu Gothic UI", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.addButton.Location = new System.Drawing.Point(57, 486);
-            this.addButton.Margin = new System.Windows.Forms.Padding(2);
+            this.addButton.Location = new System.Drawing.Point(76, 598);
+            this.addButton.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.addButton.Name = "addButton";
-            this.addButton.Size = new System.Drawing.Size(160, 46);
+            this.addButton.Size = new System.Drawing.Size(213, 57);
             this.addButton.TabIndex = 5;
             this.addButton.Text = "Добавить";
             this.addButton.UseVisualStyleBackColor = true;
@@ -75,10 +74,10 @@
             // changeButton
             // 
             this.changeButton.Font = new System.Drawing.Font("Yu Gothic UI", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.changeButton.Location = new System.Drawing.Point(268, 486);
-            this.changeButton.Margin = new System.Windows.Forms.Padding(2);
+            this.changeButton.Location = new System.Drawing.Point(357, 598);
+            this.changeButton.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.changeButton.Name = "changeButton";
-            this.changeButton.Size = new System.Drawing.Size(160, 46);
+            this.changeButton.Size = new System.Drawing.Size(213, 57);
             this.changeButton.TabIndex = 6;
             this.changeButton.Text = "Изменить";
             this.changeButton.UseVisualStyleBackColor = true;
@@ -87,10 +86,10 @@
             // deleteButton
             // 
             this.deleteButton.Font = new System.Drawing.Font("Yu Gothic UI", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.deleteButton.Location = new System.Drawing.Point(480, 486);
-            this.deleteButton.Margin = new System.Windows.Forms.Padding(2);
+            this.deleteButton.Location = new System.Drawing.Point(640, 598);
+            this.deleteButton.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.deleteButton.Name = "deleteButton";
-            this.deleteButton.Size = new System.Drawing.Size(160, 46);
+            this.deleteButton.Size = new System.Drawing.Size(213, 57);
             this.deleteButton.TabIndex = 7;
             this.deleteButton.Text = "Удалить";
             this.deleteButton.UseVisualStyleBackColor = true;
@@ -99,10 +98,10 @@
             // ExitButton
             // 
             this.ExitButton.Font = new System.Drawing.Font("Yu Gothic UI", 16.8F);
-            this.ExitButton.Location = new System.Drawing.Point(692, 486);
-            this.ExitButton.Margin = new System.Windows.Forms.Padding(2);
+            this.ExitButton.Location = new System.Drawing.Point(923, 598);
+            this.ExitButton.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.ExitButton.Name = "ExitButton";
-            this.ExitButton.Size = new System.Drawing.Size(153, 46);
+            this.ExitButton.Size = new System.Drawing.Size(204, 57);
             this.ExitButton.TabIndex = 17;
             this.ExitButton.Text = "Выйти";
             this.ExitButton.UseVisualStyleBackColor = true;
@@ -111,10 +110,10 @@
             // toPdf
             // 
             this.toPdf.Font = new System.Drawing.Font("Yu Gothic UI", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.toPdf.Location = new System.Drawing.Point(9, 10);
-            this.toPdf.Margin = new System.Windows.Forms.Padding(2);
+            this.toPdf.Location = new System.Drawing.Point(12, 12);
+            this.toPdf.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.toPdf.Name = "toPdf";
-            this.toPdf.Size = new System.Drawing.Size(160, 47);
+            this.toPdf.Size = new System.Drawing.Size(213, 58);
             this.toPdf.TabIndex = 34;
             this.toPdf.Text = "В PDF";
             this.toPdf.UseVisualStyleBackColor = true;
@@ -122,9 +121,9 @@
             // 
             // CustomersList
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(911, 573);
+            this.ClientSize = new System.Drawing.Size(1215, 705);
             this.Controls.Add(this.toPdf);
             this.Controls.Add(this.ExitButton);
             this.Controls.Add(this.deleteButton);
@@ -132,9 +131,9 @@
             this.Controls.Add(this.addButton);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.dataOfCustomers);
-            this.Margin = new System.Windows.Forms.Padding(2);
+            this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "CustomersList";
-            this.Text = "Customers";
+            this.Text = ",";
             this.Activated += new System.EventHandler(this.CustomersList_Activated);
             ((System.ComponentModel.ISupportInitialize)(this.dataOfCustomers)).EndInit();
             this.ResumeLayout(false);

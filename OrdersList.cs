@@ -34,9 +34,17 @@ namespace PcFirma
 
                 if (result == DialogResult.Yes)
                 {
-
+                    Connection("select * from Orders;");
+                    DataTable ordersTable = _userSet.Tables[0];
+                    string id = ordersTable.Rows[selectedRowIndex]["OrderID"].ToString();
+                    ordersTable.Rows[selectedRowIndex].Delete();
+                    SaveData();
+                    Connection("select * from OrderDetails where OrdersID = " +id+ ";");
+                    ordersTable = _userSet.Tables[0];
+                    ordersTable.Clear();
+                    SaveData();
+                    UpdateDataGrid();
                 }
-
             }
             else
             {
@@ -63,8 +71,9 @@ namespace PcFirma
 
         private void addButton_Click(object sender, EventArgs e)
         {
-            EditOrders es = new EditOrders();
-            es.ShowDialog();
+            
+            chooseCust f = new chooseCust();
+            f.ShowDialog();
         }
 
         private void OrdersList_Activated(object sender, EventArgs e)
@@ -75,18 +84,17 @@ namespace PcFirma
             _userSet = new DataSet();
             if (connection.State == System.Data.ConnectionState.Open)
             {
-                string selectQuery = "SELECT * FROM Orders;";
+                string selectQuery = "select OrderDate,TotalAmount,Customers.FirstName,Customers.LastName,Customers.Patronymic, Employees.FirstName,Employees.LastName,Employees.Patronymic from Orders join Customers on Orders.CustomerID = Customers.CustomerID\r\njoin Employees on Employees.EmployeeID = Orders.EmployeeID;";
                 _adapter = new SqlDataAdapter(selectQuery, connection);
                 _adapter.Fill(_userSet);
                 dataOfPrders.MultiSelect = false;
                 dataOfPrders.DataSource = _userSet.Tables[0];
-                dataOfPrders.Columns[0].Visible = false;
             }
             UpdateDataGrid();
         }
         public void UpdateDataGrid()
         {
-
+            Connection("select OrderDate,TotalAmount,Customers.FirstName,Customers.LastName,Customers.Patronymic, Employees.FirstName,Employees.LastName,Employees.Patronymic from Orders join Customers on Orders.CustomerID = Customers.CustomerID\r\njoin Employees on Employees.EmployeeID = Orders.EmployeeID;");
             dataOfPrders.DataSource = _userSet.Tables[0];
             dataOfPrders.Refresh();
         }
@@ -95,7 +103,6 @@ namespace PcFirma
             SqlCommandBuilder sqlCommandBuilder = new SqlCommandBuilder(_adapter);
             _adapter.Update(_userSet);
         }
-
         private void toPdf_Click(object sender, EventArgs e)
         {
             ToPdf d = new ToPdf("Orders.pdf", dataOfPrders);

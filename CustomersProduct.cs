@@ -16,21 +16,24 @@ namespace PcFirma
         private DataSet _userSet;
         private SqlDataAdapter _adapter;
         private SqlConnection connection;
-        
+        private int Emid;
 
         private int id;
 
         Dictionary<string, int> products = new Dictionary<string, int>();
 
-        public CustomersProduct(string log)
+        public CustomersProduct(string log, string logEm)
         {
             InitializeComponent();
             listBox1.DrawMode = DrawMode.OwnerDrawVariable;
             listBox1.MeasureItem += ListBox1_MeasureItem;
             listBox1.DrawItem += ListBox1_DrawItem;
             id = int.Parse(log);
-            
-
+            Emid= int.Parse(logEm);
+            if (Emid != 5)
+            {
+                button2.Visible = false;
+            }
 
         }
         private void ListBox1_MeasureItem(object sender, MeasureItemEventArgs e)
@@ -75,8 +78,6 @@ namespace PcFirma
 
             
             e.Graphics.DrawRectangle(Pens.Gray, e.Bounds);
-
-            
             e.DrawFocusRectangle();
         }
 
@@ -165,7 +166,7 @@ namespace PcFirma
 
                     foreach (var item in products)
                     {
-                        listBox1.Items.Add(item.Key + " Qty: " + item.Value);
+                        listBox1.Items.Add(item.Key + " Кол-во: " + item.Value);
                     }
 
                 }
@@ -203,6 +204,11 @@ namespace PcFirma
         private void button1_Click(object sender, EventArgs e)
         {
             bool q = true;
+            if (products.Count==0)
+            {
+                MessageBox.Show("Корзина пуста!");
+                return;
+            }
             Connection("SELECT * FROM Products");
             foreach (DataRow row in _userSet.Tables[0].Rows)
             {
@@ -231,7 +237,7 @@ namespace PcFirma
                 newRow["OrderDate"] = DateTime.Now.ToString();
                 newRow["CustomerID"] = id.ToString();
                 newRow["totalAmount"] = sum.ToString();
-                newRow["EmployeeID"] = "1";
+                newRow["EmployeeID"] = Emid.ToString();
                 _userSet.Tables[0].Rows.Add(newRow);
                 SaveData();
                 Connection("SELECT * FROM Orders;");

@@ -17,6 +17,7 @@ namespace PcFirma
     {
         private DataSet _userSet;
         private SqlDataAdapter _adapter;
+        public static string idEm;
         public Form1()
         {
             InitializeComponent();
@@ -54,6 +55,7 @@ namespace PcFirma
                     Hide();
                     statusLog = false;
                     statusLogIn.Visible = false;
+                    idEm = row["EmployeeID"].ToString();
                     return;
                 }
             }
@@ -62,7 +64,7 @@ namespace PcFirma
             {
                 if (row["Login"].ToString().Trim() == loginTextBox.Text.Trim() && row["Password"].ToString().Trim() == pswdTextBox.Text.Trim())
                 {
-                    CustomersProduct product = new CustomersProduct(row["CustomerID"].ToString().Trim());
+                    CustomersProduct product = new CustomersProduct(row["CustomerID"].ToString().Trim(), "5");
                     product.Show();
                     Hide();
                     statusLog = false;

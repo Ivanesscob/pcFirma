@@ -16,7 +16,7 @@ namespace PcFirma
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new CustomersProduct("1"));
+            Application.Run(new Form1());
         }
     }
 }
