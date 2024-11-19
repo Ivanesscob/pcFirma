@@ -50,7 +50,7 @@ namespace PcFirma
             {
                 if (row["Login"].ToString().Trim() == loginTextBox.Text.Trim() && row["Password"].ToString().Trim() == pswdTextBox.Text.Trim())
                 {
-                    MainMenu m = new MainMenu();
+                    MainMenu m = new MainMenu(int.Parse(row["JobTitleID"].ToString()));
                     m.Show();
                     Hide();
                     statusLog = false;
@@ -64,7 +64,7 @@ namespace PcFirma
             {
                 if (row["Login"].ToString().Trim() == loginTextBox.Text.Trim() && row["Password"].ToString().Trim() == pswdTextBox.Text.Trim())
                 {
-                    CustomersProduct product = new CustomersProduct(row["CustomerID"].ToString().Trim(), "5");
+                    CustomersProduct product = new CustomersProduct(row["CustomerID"].ToString().Trim(), "1");
                     product.Show();
                     Hide();
                     statusLog = false;

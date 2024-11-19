@@ -267,7 +267,7 @@ namespace PcFirma
                     
                 }
                 MessageBox.Show("Товар куплен!");
-
+                listBox1.Items.Clear();
             }
         }
         private void SaveData()

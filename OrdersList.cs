@@ -89,6 +89,17 @@ namespace PcFirma
                 _adapter.Fill(_userSet);
                 dataOfPrders.MultiSelect = false;
                 dataOfPrders.DataSource = _userSet.Tables[0];
+                dataOfPrders.Columns[0].HeaderText = "Дата заказа";
+                dataOfPrders.Columns[1].HeaderText = "Сумма";
+                dataOfPrders.Columns[2].HeaderText = "Имя покупателя";
+                dataOfPrders.Columns[3].HeaderText = "Фамилия покупателя";
+                dataOfPrders.Columns[4].HeaderText = "Отчество покупателя";
+                dataOfPrders.Columns[5].HeaderText = "Имя продовца";
+                dataOfPrders.Columns[6].HeaderText = "Фамилия продовца";
+                dataOfPrders.Columns[7].HeaderText = "Отчество продовца";
+                
+                
+
             }
             UpdateDataGrid();
         }

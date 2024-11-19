@@ -1,15 +1,20 @@
 ﻿using System;
 using System.Windows.Forms;
 using System.Drawing;
+using System.Web;
 
 namespace PcFirma
 {
     public partial class MainMenu : Form
     {
-        public MainMenu()
+        public MainMenu(int id)
         {
+           
+
             InitializeComponent();
-            
+            if (id == 3) { groupBox1.Visible = false; }
+            if (id >= 4) { groupBox2.Visible = false; }
+
         }
 
         private void ExitButton_Click(object sender, EventArgs e)
