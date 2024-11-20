@@ -193,7 +193,23 @@ namespace PcFirma
 
                 if (listBox1.SelectedItem != null)
                 {
-                    listBox1.Items.Remove(listBox1.SelectedItem);
+
+
+                    string selectedItem = listBox1.SelectedItem.ToString();
+
+
+                    string key = selectedItem.Split(new[] { " Кол-во: " }, StringSplitOptions.None)[0];
+
+
+
+                    listBox1.Items.Remove(selectedItem);
+
+                    
+                    if (products.ContainsKey(key))
+                    {
+                        products.Remove(key);
+                    }
+
                     MessageBox.Show("Продукт удален из корзины");
                 }
 
@@ -268,6 +284,7 @@ namespace PcFirma
                 }
                 MessageBox.Show("Товар куплен!");
                 listBox1.Items.Clear();
+                products.Clear();
             }
         }
         private void SaveData()

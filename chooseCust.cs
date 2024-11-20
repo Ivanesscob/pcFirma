@@ -37,7 +37,9 @@ namespace PcFirma
                     if (row["Phone"].ToString() == textBox1.Text.ToString().Trim())
                     {
                         CustomersProduct f = new CustomersProduct(row["CustomerID"].ToString(),Form1.idEm);
+                        this.Close();
                         f.ShowDialog();
+                        
                         return;
                     }
                 }
