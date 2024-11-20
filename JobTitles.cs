@@ -19,6 +19,7 @@ namespace PcFirma
         public JobTitles()
         {
             InitializeComponent();
+            ControlBox = false;
         }
 
         private void ExitButton_Click(object sender, EventArgs e)

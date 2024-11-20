@@ -23,6 +23,7 @@ namespace PcFirma
         {
             InitializeComponent();
             _userSet = dataset;
+            ControlBox = false;
             _adapter = adapter;
             itemId = id;
             this.connection = connection;

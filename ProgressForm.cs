@@ -17,7 +17,7 @@ namespace PcFirma
         {
             InitializeComponent();
             progressBar1.Style = ProgressBarStyle.Marquee; 
-            progressBar1.MarqueeAnimationSpeed = 30;
+            progressBar1.MarqueeAnimationSpeed = 30; ControlBox = false;
         }
     }
 }

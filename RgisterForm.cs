@@ -19,6 +19,7 @@ namespace PcFirma
             this._adapter = _adapter;
             InitializeComponent();
             PasswordText.PasswordChar = '*';
+            ControlBox = false;
         }
 
         private void backButton_Click(object sender, EventArgs e)

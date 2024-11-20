@@ -55,7 +55,7 @@
             this.label1.Font = new System.Drawing.Font("Yu Gothic UI", 36F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.label1.Location = new System.Drawing.Point(396, 11);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(287, 65);
+            this.label1.Size = new System.Drawing.Size(361, 81);
             this.label1.TabIndex = 1;
             this.label1.Text = "Покупатели";
             // 
@@ -133,7 +133,7 @@
             this.Controls.Add(this.dataOfCustomers);
             this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "CustomersList";
-            this.Text = ",";
+            this.Text = "Покупатели";
             this.Activated += new System.EventHandler(this.CustomersList_Activated);
             ((System.ComponentModel.ISupportInitialize)(this.dataOfCustomers)).EndInit();
             this.ResumeLayout(false);

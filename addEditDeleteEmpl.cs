@@ -28,6 +28,7 @@ namespace PcFirma
         public addEditDeleteEmpl(int id, DataSet dataset, SqlDataAdapter adapter, SqlConnection connection)
         {
             InitializeComponent();
+            ControlBox = false;
             _userSet = dataset;
             _adapter = adapter;
             this.connection = connection;

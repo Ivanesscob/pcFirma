@@ -20,7 +20,7 @@ namespace PcFirma
         public CustomersList()
         {
             InitializeComponent();
-            
+            ControlBox = false;
         }
         
         public void UpdateDataGrid()

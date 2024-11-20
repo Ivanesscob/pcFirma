@@ -30,10 +30,7 @@ namespace PcFirma
             listBox1.DrawItem += ListBox1_DrawItem;
             id = int.Parse(log);
             Emid= int.Parse(logEm);
-            if (Emid != 5)
-            {
-                button2.Visible = false;
-            }
+            ControlBox = false;
 
         }
         private void ListBox1_MeasureItem(object sender, MeasureItemEventArgs e)
@@ -322,6 +319,11 @@ namespace PcFirma
                 }
 
             }
+        }
+
+        private void ExitButton_Click(object sender, EventArgs e)
+        {
+            Close();
         }
     }
 }

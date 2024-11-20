@@ -15,6 +15,7 @@ namespace PcFirma
         public OrdersList()
         {
             InitializeComponent();
+            ControlBox = false;
         }
 
         private void ExitButton_Click(object sender, EventArgs e)
@@ -65,8 +66,8 @@ namespace PcFirma
                 MessageBox.Show("Вы не выбрали строку!");
                 return;
             }
-            EditOrders es = new EditOrders();
-            es.ShowDialog();
+            
+            
         }
 
         private void addButton_Click(object sender, EventArgs e)

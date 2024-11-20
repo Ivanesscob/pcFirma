@@ -24,7 +24,7 @@ namespace PcFirma
         public ProfileCustpmer(int id)
         {
             InitializeComponent();
-            this.id = id;
+            this.id = id; ControlBox = false;
 
             listBox1.DrawMode = DrawMode.OwnerDrawVariable;
             listBox1.MeasureItem += ListBox1_MeasureItem;

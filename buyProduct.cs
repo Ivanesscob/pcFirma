@@ -49,6 +49,7 @@ namespace PcFirma
         public buyProduct(CustomersProduct f)
         {
             InitializeComponent();
+            ControlBox = false;
             a = f;
             price.Text = "-";
             DataClass s = new DataClass();

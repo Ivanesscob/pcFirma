@@ -22,11 +22,8 @@ namespace PcFirma
         {
             InitializeComponent();
             pswdTextBox.PasswordChar = '*';
-
-            
-            this.BackgroundImageLayout = ImageLayout.Stretch;
             Connection("SELECT * FROM Customers;");
-
+            ControlBox = false;
         }
         private void Connection(string selectQuery)
         {

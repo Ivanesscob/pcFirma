@@ -25,6 +25,7 @@ namespace PcFirma
         public ProductsList()
         {
             InitializeComponent();
+            ControlBox = false;
         }
 
         private void ExitButton_Click(object sender, EventArgs e)

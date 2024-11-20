@@ -45,7 +45,7 @@ namespace PcFirma
             selectCategories = "SELECT * FROM Counrties";
             _adapterForDic = new SqlDataAdapter(selectCategories, connection);
             _adapterForDic.Fill(_userSetForDic);
-
+            ControlBox = false;
             foreach (DataRow categoryRow in _userSetForDic.Tables[0].Rows)
             {
                 countries.Add(categoryRow["Country"].ToString(),

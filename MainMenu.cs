@@ -23,6 +23,7 @@ namespace PcFirma
 
 
             InitializeComponent();
+            ControlBox = false;
             if (id == 3)
             {
                 groupBox1.Visible = false;
@@ -91,19 +92,8 @@ namespace PcFirma
         private void button1_Click(object sender, EventArgs e)
         {
 
-            DataClass s = new DataClass();
-            connection = new SqlConnection(s.ConnectionString());
-            connection.Open();
-            _userSet = new DataSet();
-            if (connection.State == System.Data.ConnectionState.Open)
-            {
-                _adapter = new SqlDataAdapter("SELECT \r\n    OrderDate as \"Дата продажи\",\r\n\tCustomers.FirstName as\"Имя покупателя\",\r\n\tCustomers.LastName as\"Фамилия покупателя\",\r\n\tCustomers.Patronymic as\"Отчество покупателя\",\r\n\tCustomers.Phone as\"Телефон покупателя\",\r\n\tProducts.ProductName as\"Имя продукта\",\r\n\tSUM(UnitPrice) as \"Сумма\",\r\n\tSum(Quantity) as \"Количество\",\r\n\tCategoryName\r\n\r\nFROM \r\n    OrderDetails \r\nJOIN Orders ON OrderDetails.OrdersID = Orders.OrderID\r\nJOIN Customers ON Orders.CustomerID = Customers.CustomerID\r\nJOIN Products ON Products.ProductID = OrderDetails.ProductID\r\nJOIN Models ON Products.ModelID = Models.Id\r\nJOIN Categories ON Models.CategoryID = Categories.CategoryID\r\n\r\nGROUP BY \r\nProductName,\r\nFirstName,LastName,Patronymic,Phone,CategoryName,OrderDate\r\n\r\nORDER BY\r\nLastName;", connection);
-                _adapter.Fill(_userSet);
-                dg.DataSource = _userSet.Tables[0];
-
-            }
-
-            ToPdf f = new ToPdf("Отчет 1.pdf", dg);
+            ReportForm reportForm = new ReportForm();
+            reportForm.ShowDialog();
         }
 
         private void button3_Click(object sender, EventArgs e)

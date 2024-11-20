@@ -157,12 +157,10 @@ C:\Users\ivane\codeProjects\c#\pcFrima\pcFirma\obj\Debug\PcFirma.csproj.Assembly
 C:\Users\ivane\codeProjects\c#\pcFrima\pcFirma\obj\Debug\PcFirma.addCountryCategoryCountry.resources
 C:\Users\ivane\codeProjects\c#\pcFrima\pcFirma\obj\Debug\PcFirma.addEditDelete.resources
 C:\Users\ivane\codeProjects\c#\pcFrima\pcFirma\obj\Debug\PcFirma.addEditDeleteEmpl.resources
-C:\Users\ivane\codeProjects\c#\pcFrima\pcFirma\obj\Debug\PcFirma.addEditOrder.resources
 C:\Users\ivane\codeProjects\c#\pcFrima\pcFirma\obj\Debug\PcFirma.addEditProduct.resources
 C:\Users\ivane\codeProjects\c#\pcFrima\pcFirma\obj\Debug\PcFirma.buyProduct.resources
 C:\Users\ivane\codeProjects\c#\pcFrima\pcFirma\obj\Debug\PcFirma.CustomersList.resources
 C:\Users\ivane\codeProjects\c#\pcFrima\pcFirma\obj\Debug\PcFirma.CustomersProduct.resources
-C:\Users\ivane\codeProjects\c#\pcFrima\pcFirma\obj\Debug\PcFirma.EditOrders.resources
 C:\Users\ivane\codeProjects\c#\pcFrima\pcFirma\obj\Debug\PcFirma.EmbloyeesList.resources
 C:\Users\ivane\codeProjects\c#\pcFrima\pcFirma\obj\Debug\PcFirma.Form1.resources
 C:\Users\ivane\codeProjects\c#\pcFrima\pcFirma\obj\Debug\PcFirma.JobTitles.resources
@@ -182,3 +180,4 @@ C:\Users\ivane\codeProjects\c#\pcFrima\pcFirma\obj\Debug\PcFirma.ProgressForm.re
 C:\Users\ivane\codeProjects\c#\pcFrima\pcFirma\obj\Debug\PcFirma.chooseCust.resources
 C:\Users\ivane\PcFirma\pcFirma\obj\Debug\PcFirma.chooseCust.resources
 C:\Users\ivane\PcFirma\pcFirma\obj\Debug\PcFirma.ProgressForm.resources
+C:\Users\ivane\codeProjects\c#\pcFrima\pcFirma\obj\Debug\PcFirma.ReportForm.resources

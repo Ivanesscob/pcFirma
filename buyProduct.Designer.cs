@@ -63,9 +63,11 @@
             this.groupBox7.Controls.Add(this.groupBox11);
             this.groupBox7.Controls.Add(this.groupBox9);
             this.groupBox7.Controls.Add(this.groupBox10);
-            this.groupBox7.Location = new System.Drawing.Point(289, 52);
+            this.groupBox7.Location = new System.Drawing.Point(385, 64);
+            this.groupBox7.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.groupBox7.Name = "groupBox7";
-            this.groupBox7.Size = new System.Drawing.Size(215, 336);
+            this.groupBox7.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.groupBox7.Size = new System.Drawing.Size(287, 414);
             this.groupBox7.TabIndex = 43;
             this.groupBox7.TabStop = false;
             this.groupBox7.Visible = false;
@@ -73,27 +75,31 @@
             // groupBox11
             // 
             this.groupBox11.Controls.Add(this.stock);
-            this.groupBox11.Location = new System.Drawing.Point(6, 223);
+            this.groupBox11.Location = new System.Drawing.Point(8, 274);
+            this.groupBox11.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.groupBox11.Name = "groupBox11";
-            this.groupBox11.Size = new System.Drawing.Size(200, 81);
+            this.groupBox11.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.groupBox11.Size = new System.Drawing.Size(267, 100);
             this.groupBox11.TabIndex = 30;
             this.groupBox11.TabStop = false;
             this.groupBox11.Text = "Количество";
             // 
             // stock
             // 
-            this.stock.Location = new System.Drawing.Point(3, 38);
-            this.stock.Margin = new System.Windows.Forms.Padding(2);
+            this.stock.Location = new System.Drawing.Point(4, 47);
+            this.stock.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.stock.Name = "stock";
-            this.stock.Size = new System.Drawing.Size(196, 20);
+            this.stock.Size = new System.Drawing.Size(260, 22);
             this.stock.TabIndex = 0;
             // 
             // groupBox9
             // 
             this.groupBox9.Controls.Add(this.comboBoxName);
-            this.groupBox9.Location = new System.Drawing.Point(9, 32);
+            this.groupBox9.Location = new System.Drawing.Point(12, 39);
+            this.groupBox9.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.groupBox9.Name = "groupBox9";
-            this.groupBox9.Size = new System.Drawing.Size(200, 81);
+            this.groupBox9.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.groupBox9.Size = new System.Drawing.Size(267, 100);
             this.groupBox9.TabIndex = 29;
             this.groupBox9.TabStop = false;
             this.groupBox9.Text = "Название продукта";
@@ -101,19 +107,21 @@
             // comboBoxName
             // 
             this.comboBoxName.FormattingEnabled = true;
-            this.comboBoxName.Location = new System.Drawing.Point(1, 40);
-            this.comboBoxName.Margin = new System.Windows.Forms.Padding(2);
+            this.comboBoxName.Location = new System.Drawing.Point(1, 49);
+            this.comboBoxName.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.comboBoxName.Name = "comboBoxName";
-            this.comboBoxName.Size = new System.Drawing.Size(198, 21);
+            this.comboBoxName.Size = new System.Drawing.Size(263, 24);
             this.comboBoxName.TabIndex = 44;
             this.comboBoxName.SelectedIndexChanged += new System.EventHandler(this.comboBoxName_SelectedIndexChanged);
             // 
             // groupBox10
             // 
             this.groupBox10.Controls.Add(this.price);
-            this.groupBox10.Location = new System.Drawing.Point(6, 129);
+            this.groupBox10.Location = new System.Drawing.Point(8, 159);
+            this.groupBox10.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.groupBox10.Name = "groupBox10";
-            this.groupBox10.Size = new System.Drawing.Size(200, 81);
+            this.groupBox10.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.groupBox10.Size = new System.Drawing.Size(267, 100);
             this.groupBox10.TabIndex = 28;
             this.groupBox10.TabStop = false;
             this.groupBox10.Text = "Цена";
@@ -122,10 +130,9 @@
             // 
             this.price.AutoSize = true;
             this.price.Font = new System.Drawing.Font("Yu Gothic UI", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.price.Location = new System.Drawing.Point(5, 38);
-            this.price.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.price.Location = new System.Drawing.Point(7, 47);
             this.price.Name = "price";
-            this.price.Size = new System.Drawing.Size(148, 25);
+            this.price.Size = new System.Drawing.Size(189, 32);
             this.price.TabIndex = 0;
             this.price.Text = "Первый лейбел";
             // 
@@ -134,19 +141,18 @@
             this.StatusPol.AutoSize = true;
             this.StatusPol.Font = new System.Drawing.Font("Yu Gothic UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.StatusPol.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.StatusPol.Location = new System.Drawing.Point(145, 422);
-            this.StatusPol.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.StatusPol.Location = new System.Drawing.Point(193, 519);
             this.StatusPol.Name = "StatusPol";
-            this.StatusPol.Size = new System.Drawing.Size(0, 21);
+            this.StatusPol.Size = new System.Drawing.Size(0, 28);
             this.StatusPol.TabIndex = 42;
             // 
             // addButton
             // 
             this.addButton.Font = new System.Drawing.Font("Yu Gothic UI", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.addButton.Location = new System.Drawing.Point(142, 449);
-            this.addButton.Margin = new System.Windows.Forms.Padding(2);
+            this.addButton.Location = new System.Drawing.Point(189, 553);
+            this.addButton.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.addButton.Name = "addButton";
-            this.addButton.Size = new System.Drawing.Size(160, 46);
+            this.addButton.Size = new System.Drawing.Size(213, 57);
             this.addButton.TabIndex = 41;
             this.addButton.Text = "Добавить";
             this.addButton.UseVisualStyleBackColor = true;
@@ -156,10 +162,10 @@
             // baclButton
             // 
             this.baclButton.Font = new System.Drawing.Font("Yu Gothic UI", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.baclButton.Location = new System.Drawing.Point(307, 449);
-            this.baclButton.Margin = new System.Windows.Forms.Padding(2);
+            this.baclButton.Location = new System.Drawing.Point(409, 553);
+            this.baclButton.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.baclButton.Name = "baclButton";
-            this.baclButton.Size = new System.Drawing.Size(170, 46);
+            this.baclButton.Size = new System.Drawing.Size(227, 57);
             this.baclButton.TabIndex = 40;
             this.baclButton.Text = "Назад";
             this.baclButton.UseVisualStyleBackColor = true;
@@ -169,10 +175,10 @@
             // nextButton
             // 
             this.nextButton.Font = new System.Drawing.Font("Yu Gothic UI", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.nextButton.Location = new System.Drawing.Point(142, 449);
-            this.nextButton.Margin = new System.Windows.Forms.Padding(2);
+            this.nextButton.Location = new System.Drawing.Point(189, 553);
+            this.nextButton.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.nextButton.Name = "nextButton";
-            this.nextButton.Size = new System.Drawing.Size(160, 46);
+            this.nextButton.Size = new System.Drawing.Size(213, 57);
             this.nextButton.TabIndex = 39;
             this.nextButton.Text = "Далее";
             this.nextButton.UseVisualStyleBackColor = true;
@@ -181,10 +187,10 @@
             // ExitButton
             // 
             this.ExitButton.Font = new System.Drawing.Font("Yu Gothic UI", 16.8F);
-            this.ExitButton.Location = new System.Drawing.Point(481, 449);
-            this.ExitButton.Margin = new System.Windows.Forms.Padding(2);
+            this.ExitButton.Location = new System.Drawing.Point(641, 553);
+            this.ExitButton.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.ExitButton.Name = "ExitButton";
-            this.ExitButton.Size = new System.Drawing.Size(153, 46);
+            this.ExitButton.Size = new System.Drawing.Size(204, 57);
             this.ExitButton.TabIndex = 38;
             this.ExitButton.Text = "Выход";
             this.ExitButton.UseVisualStyleBackColor = true;
@@ -195,18 +201,22 @@
             this.groupBox6.Controls.Add(this.groupBox3);
             this.groupBox6.Controls.Add(this.groupBox5);
             this.groupBox6.Controls.Add(this.groupBox4);
-            this.groupBox6.Location = new System.Drawing.Point(289, 52);
+            this.groupBox6.Location = new System.Drawing.Point(385, 64);
+            this.groupBox6.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.groupBox6.Name = "groupBox6";
-            this.groupBox6.Size = new System.Drawing.Size(215, 336);
+            this.groupBox6.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.groupBox6.Size = new System.Drawing.Size(287, 414);
             this.groupBox6.TabIndex = 37;
             this.groupBox6.TabStop = false;
             // 
             // groupBox3
             // 
             this.groupBox3.Controls.Add(this.ComboBoxCountry);
-            this.groupBox3.Location = new System.Drawing.Point(6, 32);
+            this.groupBox3.Location = new System.Drawing.Point(8, 39);
+            this.groupBox3.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.groupBox3.Name = "groupBox3";
-            this.groupBox3.Size = new System.Drawing.Size(200, 81);
+            this.groupBox3.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.groupBox3.Size = new System.Drawing.Size(267, 100);
             this.groupBox3.TabIndex = 27;
             this.groupBox3.TabStop = false;
             this.groupBox3.Text = "Страна";
@@ -214,19 +224,21 @@
             // ComboBoxCountry
             // 
             this.ComboBoxCountry.FormattingEnabled = true;
-            this.ComboBoxCountry.Location = new System.Drawing.Point(0, 40);
-            this.ComboBoxCountry.Margin = new System.Windows.Forms.Padding(2);
+            this.ComboBoxCountry.Location = new System.Drawing.Point(0, 49);
+            this.ComboBoxCountry.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.ComboBoxCountry.Name = "ComboBoxCountry";
-            this.ComboBoxCountry.Size = new System.Drawing.Size(195, 21);
+            this.ComboBoxCountry.Size = new System.Drawing.Size(259, 24);
             this.ComboBoxCountry.TabIndex = 23;
             this.ComboBoxCountry.SelectedIndexChanged += new System.EventHandler(this.ComboBoxCountry_SelectedIndexChanged);
             // 
             // groupBox5
             // 
             this.groupBox5.Controls.Add(this.ComboBoxCategory);
-            this.groupBox5.Location = new System.Drawing.Point(9, 131);
+            this.groupBox5.Location = new System.Drawing.Point(12, 161);
+            this.groupBox5.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.groupBox5.Name = "groupBox5";
-            this.groupBox5.Size = new System.Drawing.Size(200, 81);
+            this.groupBox5.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.groupBox5.Size = new System.Drawing.Size(267, 100);
             this.groupBox5.TabIndex = 29;
             this.groupBox5.TabStop = false;
             this.groupBox5.Text = "Категория";
@@ -234,18 +246,20 @@
             // ComboBoxCategory
             // 
             this.ComboBoxCategory.FormattingEnabled = true;
-            this.ComboBoxCategory.Location = new System.Drawing.Point(0, 40);
-            this.ComboBoxCategory.Margin = new System.Windows.Forms.Padding(2);
+            this.ComboBoxCategory.Location = new System.Drawing.Point(0, 49);
+            this.ComboBoxCategory.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.ComboBoxCategory.Name = "ComboBoxCategory";
-            this.ComboBoxCategory.Size = new System.Drawing.Size(195, 21);
+            this.ComboBoxCategory.Size = new System.Drawing.Size(259, 24);
             this.ComboBoxCategory.TabIndex = 23;
             // 
             // groupBox4
             // 
             this.groupBox4.Controls.Add(this.ComboBoxBrand);
-            this.groupBox4.Location = new System.Drawing.Point(6, 228);
+            this.groupBox4.Location = new System.Drawing.Point(8, 281);
+            this.groupBox4.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.groupBox4.Name = "groupBox4";
-            this.groupBox4.Size = new System.Drawing.Size(200, 81);
+            this.groupBox4.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.groupBox4.Size = new System.Drawing.Size(267, 100);
             this.groupBox4.TabIndex = 28;
             this.groupBox4.TabStop = false;
             this.groupBox4.Text = "Бренд";
@@ -253,10 +267,10 @@
             // ComboBoxBrand
             // 
             this.ComboBoxBrand.FormattingEnabled = true;
-            this.ComboBoxBrand.Location = new System.Drawing.Point(0, 40);
-            this.ComboBoxBrand.Margin = new System.Windows.Forms.Padding(2);
+            this.ComboBoxBrand.Location = new System.Drawing.Point(0, 49);
+            this.ComboBoxBrand.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.ComboBoxBrand.Name = "ComboBoxBrand";
-            this.ComboBoxBrand.Size = new System.Drawing.Size(195, 21);
+            this.ComboBoxBrand.Size = new System.Drawing.Size(259, 24);
             this.ComboBoxBrand.TabIndex = 23;
             // 
             // label1
@@ -264,17 +278,16 @@
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Yu Gothic UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.label1.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.label1.Location = new System.Drawing.Point(285, 406);
-            this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label1.Location = new System.Drawing.Point(380, 500);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(0, 21);
+            this.label1.Size = new System.Drawing.Size(0, 28);
             this.label1.TabIndex = 44;
             // 
             // buyProduct
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(776, 518);
+            this.ClientSize = new System.Drawing.Size(1035, 638);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.groupBox7);
             this.Controls.Add(this.StatusPol);
@@ -283,9 +296,9 @@
             this.Controls.Add(this.nextButton);
             this.Controls.Add(this.ExitButton);
             this.Controls.Add(this.groupBox6);
-            this.Margin = new System.Windows.Forms.Padding(2);
+            this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "buyProduct";
-            this.Text = "buyProduct";
+            this.Text = "Выбор продукта";
             this.groupBox7.ResumeLayout(false);
             this.groupBox11.ResumeLayout(false);
             this.groupBox11.PerformLayout();

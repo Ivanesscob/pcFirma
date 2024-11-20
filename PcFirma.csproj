@@ -116,12 +116,6 @@
     <Compile Include="addEditDeleteEmpl.Designer.cs">
       <DependentUpon>addEditDeleteEmpl.cs</DependentUpon>
     </Compile>
-    <Compile Include="addEditOrder.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="addEditOrder.Designer.cs">
-      <DependentUpon>addEditOrder.cs</DependentUpon>
-    </Compile>
     <Compile Include="addEditProduct.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -153,12 +147,6 @@
       <DependentUpon>CustomersProduct.cs</DependentUpon>
     </Compile>
     <Compile Include="DataClass.cs" />
-    <Compile Include="EditOrders.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="EditOrders.Designer.cs">
-      <DependentUpon>EditOrders.cs</DependentUpon>
-    </Compile>
     <Compile Include="EmbloyeesList.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -209,6 +197,12 @@
       <DependentUpon>ProgressForm.cs</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ReportForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ReportForm.Designer.cs">
+      <DependentUpon>ReportForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="RgisterForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -231,9 +225,6 @@
     <EmbeddedResource Include="addEditDeleteEmpl.resx">
       <DependentUpon>addEditDeleteEmpl.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="addEditOrder.resx">
-      <DependentUpon>addEditOrder.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="addEditProduct.resx">
       <DependentUpon>addEditProduct.cs</DependentUpon>
     </EmbeddedResource>
@@ -248,9 +239,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="CustomersProduct.resx">
       <DependentUpon>CustomersProduct.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="EditOrders.resx">
-      <DependentUpon>EditOrders.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="EmbloyeesList.resx">
       <DependentUpon>EmbloyeesList.cs</DependentUpon>
@@ -285,6 +273,9 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="ReportForm.resx">
+      <DependentUpon>ReportForm.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="RgisterForm.resx">
       <DependentUpon>RgisterForm.cs</DependentUpon>
     </EmbeddedResource>

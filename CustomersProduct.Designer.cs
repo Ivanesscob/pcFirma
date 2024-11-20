@@ -59,6 +59,7 @@
             this.ExitButton.TabIndex = 33;
             this.ExitButton.Text = "Выйти";
             this.ExitButton.UseVisualStyleBackColor = true;
+            this.ExitButton.Click += new System.EventHandler(this.ExitButton_Click);
             // 
             // addButton
             // 
@@ -144,7 +145,7 @@
             this.Controls.Add(this.dataOfProducts);
             this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "CustomersProduct";
-            this.Text = "CustomersProduct";
+            this.Text = "Покупка";
             this.Activated += new System.EventHandler(this.CustomersProduct_Activated);
             ((System.ComponentModel.ISupportInitialize)(this.dataOfProducts)).EndInit();
             this.ResumeLayout(false);

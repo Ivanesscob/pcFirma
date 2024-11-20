@@ -119,7 +119,7 @@
             this.Controls.Add(this.dataOfPrders);
             this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "OrdersList";
-            this.Text = "OrdersList";
+            this.Text = "Заказы";
             this.Activated += new System.EventHandler(this.OrdersList_Activated);
             ((System.ComponentModel.ISupportInitialize)(this.dataOfPrders)).EndInit();
             this.ResumeLayout(false);

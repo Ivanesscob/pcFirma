@@ -35,7 +35,7 @@ namespace PcFirma
             _userSet = dataset;
             _adapter = adapter;
             this.connection = connection;
-
+            ControlBox = false;
             if (addOrEdit == -1) {
             
                 switch (status)

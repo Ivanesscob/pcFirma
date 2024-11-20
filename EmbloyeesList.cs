@@ -19,6 +19,7 @@ namespace PcFirma
         public EmbloyeesList()
         {
             InitializeComponent();
+            ControlBox = false;
         }
 
         private void ExitButton_Click(object sender, EventArgs e)

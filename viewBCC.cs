@@ -24,6 +24,7 @@ namespace PcFirma
             bbc = i;
 
             InitializeComponent();
+            ControlBox = false;
             if (i == 0)
             {
                 label1.Text = "Страны";

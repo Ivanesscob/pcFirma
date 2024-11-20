@@ -29,8 +29,8 @@
         private void InitializeComponent()
         {
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.textBox1 = new System.Windows.Forms.TextBox();
             this.button1 = new System.Windows.Forms.Button();
+            this.textBox1 = new System.Windows.Forms.TextBox();
             this.groupBox1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -45,13 +45,6 @@
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Номер телефона";
             // 
-            // textBox1
-            // 
-            this.textBox1.Location = new System.Drawing.Point(16, 43);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(235, 22);
-            this.textBox1.TabIndex = 0;
-            // 
             // button1
             // 
             this.button1.Font = new System.Drawing.Font("Yu Gothic UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
@@ -63,6 +56,13 @@
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
+            // textBox1
+            // 
+            this.textBox1.Location = new System.Drawing.Point(16, 43);
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(235, 22);
+            this.textBox1.TabIndex = 0;
+            // 
             // chooseCust
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -70,7 +70,7 @@
             this.ClientSize = new System.Drawing.Size(442, 137);
             this.Controls.Add(this.groupBox1);
             this.Name = "chooseCust";
-            this.Text = "chooseCust";
+            this.Text = "Телефон";
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             this.ResumeLayout(false);
